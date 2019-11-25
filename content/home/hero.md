@@ -3,7 +3,7 @@
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 10  # Order that this section will appear.
+weight = 20  # Order that this section will appear.
 
 #title = "the Istmobiome Project"
 
@@ -17,7 +17,7 @@ weight = 10  # Order that this section will appear.
   #   Any HTML color name or Hex value is valid.
 
   # Background color.
-  color = "#282828"
+  color = "rgb(0,114,178,0.50)"
 
   # Background gradient.
   # gradient_start = "#4bb4e3"

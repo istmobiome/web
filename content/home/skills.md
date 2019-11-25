@@ -2,8 +2,8 @@
 # A Skills section created with the Featurette widget.
 widget = "featurette"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
-weight = 30  # Order that this section will appear.
+active = true  # Activate this widget? true/false
+weight = 60  # Order that this section will appear.
 
 title = "Content"
 subtitle = ""
@@ -21,15 +21,15 @@ subtitle = ""
   description = "2"
 
 [[feature]]
-  icon = "chart-line"
+  icon = "fish"
   icon_pack = "fas"
-  name = "Statistics"
-  description = "100%"
+  name = "Fish"
+  description = "15 species | 104 individuals"
 
 [[feature]]
-  icon = "camera-retro"
+  icon = "dna"
   icon_pack = "fas"
-  name = "Photography"
+  name = "Sequence Data"
   description = "10%"
 
 +++

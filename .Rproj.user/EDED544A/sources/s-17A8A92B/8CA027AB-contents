@@ -1,0 +1,200 @@
+---
+title: "Introduction"
+output:
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_depth: 3
+    toc_float:
+       collapsed: false
+    theme: default
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css: styles.css
+---
+
+```{r setup, include=FALSE, cache=TRUE}
+remove(list = ls())
+library(dada2); packageVersion("dada2")
+library(ShortRead); packageVersion("ShortRead")
+library(phyloseq); packageVersion("phyloseq")
+library(ggplot2); packageVersion("ggplot2")
+library("plyr"); packageVersion("plyr")
+library(vegan)
+library(scales)
+library(grid)
+library(reshape2)
+library(rstudioapi)
+library(knitr)
+library(kableExtra)
+library(data.table)
+library(DT)
+library(rmarkdown)
+library(pander)
+library(formatR)
+library(tidyverse)
+library(gridExtra)
+library(grid)
+library(grDevices)
+library(svgPanZoom)
+library(RCurl)
+library(plotly)
+library(pairwiseAdonis)
+library(dplyr)
+library(leaflet)
+sessionInfo()
+set.seed(0199)
+```
+
+```{r set_wd, include=FALSE}
+knitr::opts_knit$set(root.dir = getwd())
+# This will setwd to wherever the .Rmd file is opened.
+ptm <- proc.time()
+start_time <- Sys.time()
+#opts_chunk$set(,cache=TRUE)
+#formatR::tidy_app() run this in R to tidy code. How to do it here?
+```
+
+```{r mkdirs, include=FALSE, eval=FALSE}
+dir.create("DATA/PHYLOSEQ/TABLES/OUTPUT/PS/", recursive = TRUE)
+dir.create("DATA/PHYLOSEQ/TABLES/OUTPUT/OTHER/", recursive = TRUE)
+dir.create("DATA/PHYLOSEQ/TABLES/OUTPUT/LEfSe/", recursive = TRUE)
+dir.create("DATA/PHYLOSEQ/TABLES/OUTPUT/SUPP/", recursive = TRUE)
+dir.create("DATA/PHYLOSEQ/FIGURES/OUTPUT/", recursive = TRUE)
+dir.create("DATA/PHYLOSEQ/PS_OBJECTS/", recursive = TRUE)
+dir.create("DATA/RDS/", recursive = TRUE)
+```
+<p id="opennote">
+In this study, we looked at <span class="callout">intestinal microbial</span> communities from five <span class="callout">herbivorous fish</span> species across two families---*Sparisoma viride*, *Sparisoma aurofrenatum* and *Scarus taeniopterus* from the Labridae  and *Acanthurus tractus* and *Acanthurus coeruleus* from the  Acanthuridae.
+</p>
+
+<div style="padding-top: 2em"></div>
+## Definitions & Abbreviations
+<ul>
+  <li>[Amplicon Sequence Variant](https://www.nature.com/articles/ismej2017119){target="_new"} (**ASV**): Exact sequence variant---analogous to an OTU---but with single nucleotide resolution.</li>
+  <li>Differentially abundant (**DA**) feature: Taxa, ASV, etc. that is disproportionately abundant in a group of samples and statistically different than other groups.</li>
+</ul>
+
+<div style="padding-top: 2em"></div>
+## Goals of the Study
+<ol>
+  <li>Assess the taxonomic composition of intestinal communities from herbivorous reef fish.</li>
+  <li>Determine the diversity of these communities and their similarity/dissimilarity.</li>
+  <li>Identify differentially abundant ASVs across the host species.</li>
+  <li>Predict the specificity of differentially abundant ASVs.</li>
+</ol>
+
+<div style="padding-top: 2em"></div>
+## Workflow Overview
+
+#### <a href="1_field_observations.html">N<sup><u>o</u></sup> 1. Field Observations</a>
+
+In the first section we run some analyses on field-based behavioral assays of the different herbivorous reef fish species.
+
+<div style="padding-top: 0.5em"></div>
+#### <a href="2_dada2.html">N<sup><u>o</u></sup> 2. DADA2 Workflow</a>
+
+In this part we go through the process of processing raw 16S rRNA read data including assessing read quality, filtering reads, correcting errors, and infersing amplicon sequence variants (ASVs).
+
+<div style="padding-top: 0.5em"></div>
+#### <a href="3_data_prep.html">N<sup><u>o</u></sup> 3. Data Preparation</a>
+
+Next we go through the steps of defining sample groups, creating phyloseq objects, removing unwanted samples, and removing contaminant ASVs. Various parts of this section can easily be modified to perform different analyses. For example, if you were only interested in a specific taxa or group of samples, you could change the code here to create new phyloseq objects.
+
+<div style="padding-top: 0.5em"></div>
+#### <a href="4_diversity.html">N<sup><u>o</u></sup> 4. Composition & Diversity</a>
+
+Here we assess taxonomic composition, alpha diversity, and beta diversity. Phyloseq offers many options for assessing diversity, including several alpha diversity metrics, additional ordination  and distance methods, and so on. You can play around with these settings to how it affects the results.
+
+<div style="padding-top: 0.5em"></div>
+#### <a href="5_da_asv.html">N<sup><u>o</u></sup> 5. Differentially Abundant ASVs</a>
+
+We wanted to understand how ASVs partitioned across host species. We also wanted to assess the specificity of each ASV to determine habitat preference. To our knowledge there is no quantitative way to do this. The only attempt we are aware of was [MetaMetaDB](http://mmdb.aori.u-tokyo.ac.jp/){target="_new"} but it is based on a 454 database and no longer seems to be in active development. So we used an approach based on the work of [Sullam *et. al.*](https://doi.org/10.1111/j.1365-294X.2012.05552.x){target="_new"}, first identifying differentially abundant ASVs, then searching for closest database hits, and finally using phylogenetic analysis and top hit metadata (isolation source, natural host) to infer habitat preference.
+
+<div style="padding-top: 0.5em"></div>
+#### <a href="6_synthesis.html">N<sup><u>o</u></sup> 6. Synthesis</a>
+
+In this section we pull together the results and try to make sense of the microbiomes from these herbivorous reef fish. How are ASVs partitioning across host? How similar are these ASVs to sequences from other studies? What can these patterns tell us about host specificity?
+<div style="padding-top: 0.5em"></div>
+#### <a href="7_appendices.html">Appendices</a>
+
+This section contains information on <b>a</b>) other analyses & visualizations, <b>b</b>) tools & resources used in this workflow, <b>c</b>) submitting sequencing data to public archives, and <b>d</b>) specific R package & versions used in this workflow.
+
+
+> All tables and figures presented herein are named as they appeared in the original publication. We also include many additional data productes that were not part of the original publication.
+
+<div style="padding-top: 2em"></div>
+## Color & Graphics
+
+Throughout this workflow we are going to rely on color to help us tell a story. We will use color to delineate host fish species and to delineate microbial taxa. Microbial diversity is pretty vast and it can be difficult to display all of this diversity in a single, static figure.
+
+<div class="warning">
+Many of us perceive color and/or differences in color, well, differently. So when designing figures it is important to use <b>a</b>) a relatively few colors and <b>b</b>) a palette that is friendly to a variety of people. For our figures, we generated a palette based on Bang Wong's scheme described in this [paper](http://dx.doi.org/10.1038/nmeth.1618){target="_new"}. Wong's  scheme uses contrasting colors that can be distinguished by a range of people. Consider that roughly 8% of people (mostly males) are color blind. So what do you think? Do you want Keanu Reeves to understand your figures or not?
+</div>
+
+Wong's scheme is conservative---there are only 7 colors. We added black grey, and a blueish white to give us some wiggle room (we cheated a little). Others have developed [12 and 15 color palette schemes](http://mkweb.bcgsc.ca/colorblind/){target="_new"} and these are worth looking into, but be careful---figures with too many colors can inhibit our ability to discern patterns. This conservative palette forced us to choose carefully when deciding which taxa to target or how many groups to display. To keep things simple, we  created two palettes---one for microbial taxa (`friend_pal`) with all the colors and another for the five host fish species (`samp_pal`). The fish palette is just a subset of the full palette. Here is the code:
+
+```{r define_color_blind_scheme, cache=TRUE, fig.height=3}
+#Full palette
+friend_pal <- c("#009E73", "#D55E00", "#F0E442",
+                "#CC79A7", "#56B4E9", "#E69F00",
+                "#0072B2", "#7F7F7F", "#B6DBFF",
+                "#000000")
+
+#Fish palette
+samp_pal <- c("#CC79A7", "#0072B2", "#009E73",
+              "#56B4E9", "#E69F00")
+
+cols <- function(a) image(1:10, 1, as.matrix(1:10),
+                          col=a, axes=FALSE , xlab="", ylab="")
+cols(friend_pal)
+```
+
+```{r save_1, include = FALSE, cache=TRUE, eval=FALSE}
+save.image(file = "DATA/RDS/pw_intro_0.rds")
+```
+
+There is a great article on [Coloring for Colorblindness](https://davidmathlogic.com/colorblind/#%23000000-%23E69F00-%2356B4E9-%23009E73-%23F0E442-%230072B2-%23D55E00-%23CC79A7){target="_new"} by David Nichols that has an interactive color picker and recommendations for accessible palettes. This is also a [really cool site](https://www.canva.com/colors/color-wheel/){target="_new"} for looking at  color combinations. Both resources are highly recommended.
+
+<div style="padding-top: 2em"></div>
+## Links to Figures & Tables
+
+Use the links below if you want to jump directly to the code used to produce the **figures and tables** from the original publication. You can also find the full Supplementary files for the paper  [here](supplemental_material.html){target="_blank"} but there is no R code on this page. If you want to see the code that produced the supplemental material, the direct links are also below. There is no code for Tables S2 and S7.
+
+<div style="padding-top: 1em"></div>
+### Main Paper
+
+<ul>
+<li>[Figure 1](1_field_observations.html#nmds_analysis){target="_blank"}: NMDS analysis of host feeding behavior.</li>
+<li>[Figure 2A](4_diversity.html#abundance_by_host_species){target="_blank"}: Taxa abundance by host species.</li>
+<li>[Figure 2B](4_diversity.html#diversity_plots){target="_blank"}: Alpha diversity.</li>
+<li>[Figure 2C](4_diversity.html#diversity_plots10){target="_blank"}: Beta diversity.</li>
+<li>[Figure 3](6_synthesis.html#putting_the_pieces_together){target="_blank"}: DA ASV tree.</li>
+<li>[Figure 4](6_synthesis.html#heatmap){target="_blank"}: DA ASV heatmap.</li>
+<li>[Table 1](6_synthesis.html#summary_of_habitat_preference){target="_blank"}: Summary of habitat preference.</li>
+</ul>
+
+<div style="padding-top: 1em"></div>
+### [Supplemental Material](supplemental_material.html){target="_blank"}
+
+<ul>
+<li>[Table S1](1_field_observations.html#observational_data){target="_blank"}: Summary of field-based feeding observations.</li>
+<li>[Table S2](supplemental_material.html#table_s2){target="_blank"}: Number of bites observed for each herbivore species at each site.</li>
+<li>[Table S3](4_diversity.html#statistical_tests){target="_blank"}: Metadata and microbiome diversity estimates for each sample.</li>
+<li>[Table S4](4_diversity.html#taxonomic_composition){target="_blank"}: Total taxonomic diversity (by Class) of herbivore microbiomes.</li>
+<li>[Table S5](5_da_asv.html#results_of_lefse_analysis){target="_blank"}: Results of LEfSe analysis.</li>
+<li>[Table S6](6_synthesis.html#assessing_habitat_specificity){target="_blank"}: Results of BLAST analysis for DA ASVs.</li>
+<li>[Table S7](supplemental_material.html#table_s7){target="_blank"}: Accession numbers and unique codes for sequence data in Figure 3.</li>
+<li>[Figure S1](7_appendices.html#appendix_a:_other_analyses__visualizations){target="_blank"}: Class-level relative abundance of microbial communities from each sample.</li>
+</ul>
+
+</br>
+
+<div style="text-align:right">
+  <span class="linkboxfont-sm">
+    <button class="favorite styled" type="button">
+      <a href="1_field_observations.html">N<sup><u>o</u></sup> 1. Field Observations -></a>
+    </button>
+  </span>
+</div>

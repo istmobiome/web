@@ -1,0 +1,58 @@
+---
+title: "ProjectDIGEST"
+output:
+  html_document:
+    toc: false
+    code_folding: none
+    includes:
+      in_header: images/fish_tree_clip_title.html
+      after_body: footer.html
+    css: styles.css
+---
+
+<div style="padding-top: 2em"></div>
+
+<p id = "notice">
+This website provides a <span class="callout">completely reproducible workflow</span> of our [study](publication.html){target="_new"} on the intestinal microbial communities from five species of herbivorous coral reef fishes. The workflow goes through the steps we used to process the raw 16S rRNA marker data and the various tools we used to analyze and interpret  the data. With this workflow you can generate the figures and tables from the paper as well as many additional data products. The workflow is written in R Markdown and contains a mixture plain text and R code. Anyone should be able to reproduce our results with just this workflow and the raw data.
+</p>
+
+<div style="padding-top: 2em"></div>
+## About this Site
+
+The <span class="callout">navigation bar</span> at the top contains links to workflows, data/data products, supplementary material from the paper (see SOM), and a variety of other useful information. The site itself has many <span class="callout">dynamic</span> components. For example, you can <span class="callout">sort</span> and <span class="callout">scroll</span> through most of the tables, several figures expand when clicked, and one figure is <span class="callout">zoomable</span>. All figures and tables from the final publication are highlighted in <span class="paper">red font</span> to make them easy to identify. You can choose to <span class="callout">show</span> or <span class="callout">hide</span> the R code using the `Code` button in the upper right hand corner of each page (default is mostly hide).  An unannotated version of the R code is available for download using the navbar link.
+
+<br/>
+
+<div style="text-align:center">
+  <span class="linkboxfont-sm">
+    <button class="favorite styled" type="button">
+      <a href="0_pw_intro.html">Proceed to Workflow</a>
+    </button>
+  </span>
+</div>
+
+<div style="padding-top: 2em"></div>
+## About this Tree
+
+One  of our [analyses](6_synthesis.html#asvs__host_trait_correlation){target="_new"} required us to create a phylogenetic tree of the five host species. To construct the tree we first needed an appropriate out group. Our search for an  out group  lead to [DeepFin](https://sites.google.com/site/guilleorti/){target="_new"} and the amazing paper by [Betancur-R et. al., (2017)](https://link.springer.com/article/10.1186/s12862-017-0958-3){target="_new"} on the phylogenetic classification of bony fishes. The tree in this paper is the 4th version (the original dates back to 2013) and is based on the phylogeny of a whopping <span class="callout">1990 species</span> encompassing <span class="callout">72 orders</span> and <span class="callout">410 families</span>. Wow. In our study, we looked at intestinal microbes  from five fish species across two families.
+
+Anyway, we used the original tree from the paper to choose an out group for our analysis (Gerreidae) and for the fun of it  decided to make our own representation of the Betancur-R et. al., tree. To construct the tree above we first downloaded the newick file from the paper's supplementary material ([download link](https://static-content.springer.com/esm/art%3A10.1186%2Fs12862-017-0958-3/MediaObjects/12862_2017_958_MOESM2_ESM.tre){target="_new"}), parsed out the Family data from the tree file (included in the name of each leaf), and finally visualized the tree in [anvi'o](http://merenlab.org/software/anvio/){target="_new"}. Within the anvi'o interface we visualized the tree as a circular phylogram and collapsed any Family represented by two or more species. The size of each triangle is proportional to the number of species in that family while the colors are somewhat arbitrary. Originally we thought it would be cool to color leaves by the taxa but that was too complicated. So the colors are really just for looks. The families we studied in this project are in the lower left, marked by asterisks. In the future we would like to identify which fish families have been the subject of microbial investigations and use the phylogenetic framework to identify gaps in knowledge and patterns of associations.
+
+> The image above is actually just half the Betancur-R tree. You can download a full SVG version by clicking on the tree. Or you can download the files we used to make the tree from this [GitHub repo](https://github.com/projectdigest/betancur_r-fish-tree){target="_new"} and then use anvi'o to make an better tree.
+
+
+<!--
+
+<pre>
+for species in `cat list.txt`;
+do
+  pysradb search --db /pool/genomics/stri_istmobiome/dbs/pysradb/SRAmetadb.sqlite "$species" --desc --expand |& tee -a results.txt;
+done
+</pre>
+-->
+
+<!--
+<a href="images/fish_tree.svg" download>
+  <img src="images/fish_tree.svg" alt="full tree" width="404" height="442">
+</a>
+-->

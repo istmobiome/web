@@ -2,7 +2,7 @@
 date: "2016-04-27T00:00:00Z"
 external_link: ""
 image:
-  caption: Photo by rawpixel on Unsplash
+  caption: Photo by Sean Mattson/STRI 
   focal_point: Smart
 links:
 - icon: twitter
@@ -13,7 +13,7 @@ slides: example
 summary: An example of using the in-built project page.
 tags:
 - Deep Learning
-title: Internal Project
+title: TransIsthmian Water
 url_code: ""
 url_pdf: ""
 url_slides: ""

@@ -3,7 +3,7 @@
 widget = "slider"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 2  # Order that this section will appear.
+weight = 10  # Order that this section will appear.
 
 # Slide interval.
 # Use `false` to disable animation or enter a time in ms, e.g. `5000` (5s).
@@ -17,12 +17,12 @@ height = "200px"
 # Duplicate an `[[item]]` block to add more slides.
 [[item]]
   title = "the Isthmus of Panama changed the World..."
-  content = "a spectacular natural experiment"
+  content = "Three million years ago an experiment began"
   align = "center"  # Choose `center`, `left`, or `right`.
 
   # Overlay a color or image (optional).
   #   Deactivate an option by commenting out the line, prefixing it with `#`.
-  overlay_color = "#282828"  # An HTML color value.
+  overlay_color = "#0072B280"  # An HTML color value. Extra digits to cotrol opacity
   overlay_img = ""  # Image path relative to your `static/img/` folder.
   overlay_filter = 0  # Darken the image. Value in range 0-1.
 
@@ -37,7 +37,7 @@ height = "200px"
 [[item]]
   title = "...on Land..."
   content = "that connected two continents"
-  align = "left"
+  align = "right"
 
   overlay_color = "#666"  # An HTML color value.
   overlay_img = "headers/land.jpg"  # Image path relative to your `static/img/` folder.

@@ -4,9 +4,10 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-  name = "Home"
+  name = " Home"
   url = "#hero"
   weight = 10
+  pre = "<i class='fas fa-home fa-lg'></i>"
 
 [[main]]
   name = "Posts"
@@ -24,11 +25,6 @@
   weight = 50
 
 [[main]]
-  name = "Contact"
-  url = "contact/"
-  weight = 200
-
-[[main]]
   name = "Post2"
   url = "post/"
   weight = 80
@@ -37,6 +33,18 @@
   name = "Projects2"
   url = "project/"
   weight = 90
+
+[[main]]
+  pre = "<i class='fab fa-github fa-lg '></i>"
+  name = "  "
+  url = "https://github.com/istmobiome/web/"
+  weight = 240
+
+[[main]]
+  name = ""
+  url = "contact/"
+  weight = 250
+  pre = "<i class='fas fa-envelope fa-lg'></i>"
 
 
 # Link to a PDF of your resume/CV from the menu.

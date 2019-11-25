@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1574640767333.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "24D4CCF3",
+    "lastKnownWriteTime" : 1574509655,
+    "last_content_update" : 1574509655,
+    "path" : "~/github/PROJECT_DIGEST/web/build/index.Rmd",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "15,46",
+        "scrollLine" : "5"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
