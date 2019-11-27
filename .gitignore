@@ -1,16 +1,16 @@
 ## General files to ignore ##
 #############################
 # History files
-#.Rhistory
-#.Rapp.history
-#.DS_Store
+.Rhistory
+.Rapp.history
+.DS_Store
 
 # Session Data files
-#.RData
+.RData
 
 # User-specific files
-#.Ruserdata
-#.Rproj.user
+.Ruserdata
+.Rproj.user
 
 # Example code in package build process
 *-Ex.R
@@ -33,16 +33,15 @@
 *.utf8.md
 *.knit.md
 
-# Data from processing scripts
-*_read_changes.txt
-DATA/
-
-# DIGEST web files
-#web.Rproj
-#*.Rmd
 
 # knitr and R markdown default cache directories
 *_cache/
 /cache/
 build/*_files/
 
+.Rproj.user
+
+
+# HUGO/blogdown-related
+themes/ # unadulterated theme dir
+public/ # Only if using netlify

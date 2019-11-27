@@ -9,7 +9,7 @@ active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
 title = "The Great Trans-Isthmian Experiment"
-subtitle = "## A tale told in two oceans"
+subtitle = "### A bridge on land &  a barrier in the sea"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -40,7 +40,7 @@ subtitle = "## A tale told in two oceans"
 
 [design.spacing]
   # Customize the section spacing. Order is top, right, bottom, left.
-  padding = ["20px", "0", "20px", "0"]
+  padding = ["30px", "0", "30px", "0"]
 
 [advanced]
  # Custom CSS.
@@ -62,8 +62,8 @@ subtitle = "## A tale told in two oceans"
 
   <p>Yet pairs of closely related <span class="callout">sister species</span> (<span class="callout">geminates</span>) thrive on either side. Some of these species pairs are so similar that morphology alone is not enough to tell them apart.</p>
 
-  <p><span class="callout">What effect did the rise of the Isthmus have on microbes?</span></p>
+  <p><em>How did the close of the Isthmus affect the evolution of microorganisms, the structure of microbial communities, and the function of host-associated microbiomes?</em></p>
 
-  <p>In this project, we exploit contrasting <span class="callout">(a)</span> geographic regions, <span class="callout">(b)</span> benthic habitats, and <span class="callout">(c)</span> environmental gradients to understand the evolutionary divergence of marine microbiomes in changing environments & their functional significance in different systems.</p>
+  <p>In this project, we exploit contrasting (a) <span class="callout">geographic regions</span>, (b) <span class="callout">benthic habitats</span>, and (c) <span class="callout">environmental gradients</span>, to understand the evolutionary divergence of marine microbiomes in changing environments & their functional significance in different systems.</p>
 
 </div>

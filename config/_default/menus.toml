@@ -5,7 +5,7 @@
 
 [[main]]
   name = " Home"
-  url = "#hero"
+  url = "#slider"
   weight = 10
   pre = "<i class='fas fa-home fa-lg'></i>"
 
@@ -16,7 +16,7 @@
 
 [[main]]
   name = "Projects"
-  url = "#project"
+  url = "#projects"
   weight = 30
 
 [[main]]

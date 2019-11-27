@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 40  # Order that this section will appear.
 
 title = "Projects"
-subtitle = ""
+subtitle = "Portal for studies that fall under the umbrella of the Istmobiome Project. Use the buttons to filter by projects by keyword. "
 
 [content]
   # Page type to display. E.g. project.

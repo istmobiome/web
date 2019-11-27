@@ -5,8 +5,8 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
-title = "Geminate Pairs"
-subtitle = ""
+title = "Geminate Species"
+subtitle = "Each card contains a geminate pair; top panels are Western Atlantic species and bottom panels are Eastern Pacific species."
 +++
 
 {{< gallery >}}
