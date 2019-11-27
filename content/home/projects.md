@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 40  # Order that this section will appear.
 
 title = "Projects"
-subtitle = "Portal for studies that fall under the umbrella of the Istmobiome Project. Use the buttons to filter by projects by keyword. "
+subtitle = "Portal for studies from the Istmobiome Project. Use the buttons to filter by projects by keyword. "
 
 [content]
   # Page type to display. E.g. project.
@@ -30,12 +30,17 @@ subtitle = "Portal for studies that fall under the umbrella of the Istmobiome Pr
     tag = "Fish"
 
   [[content.filter_button]]
-    name = "Erysipelotrichaceae"
-    tag = "Erysipelotrichaceae"
+    name = "Water"
+    tag = "Water"
 
   [[content.filter_button]]
-    name = "Lachnospiraceae"
-    tag = "Lachnospiraceae"
+    name = "Shrimp"
+    tag = "Shrimp"
+
+  [[content.filter_button]]
+    name = "Clams"
+    tag = "Clams"
+
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns = "2"

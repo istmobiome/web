@@ -10,8 +10,8 @@
   pre = "<i class='fas fa-home fa-lg'></i>"
 
 [[main]]
-  name = "Posts"
-  url = "post/"
+  name = "The Story"
+  url = "#summary"
   weight = 20
 
 [[main]]
@@ -20,19 +20,19 @@
   weight = 30
 
 [[main]]
-  name = "Courses"
-  url = "courses/"
+  name = "Geminates"
+  url = "#gallery"
+  weight = 40
+
+[[main]]
+  name = "Publications"
+  url = ""
   weight = 50
 
 [[main]]
-  name = "Post2"
-  url = "post/"
-  weight = 80
-
-[[main]]
-  name = "Projects2"
-  url = "project/"
-  weight = 90
+  name = "Events"
+  url = "events/"
+  weight = 100
 
 [[main]]
   pre = "<i class='fab fa-github fa-lg '></i>"

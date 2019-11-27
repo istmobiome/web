@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 60  # Order that this section will appear.
 
-title = "Content"
+title = "By the Numbers"
 subtitle = ""
 
 # Showcase personal skills or business features.
@@ -30,6 +30,6 @@ subtitle = ""
   icon = "dna"
   icon_pack = "fas"
   name = "Sequence Data"
-  description = "10%"
+  description = "50 base pairs"
 
 +++
