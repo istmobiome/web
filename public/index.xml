@@ -1,0 +1,1466 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Istmobiome</title>
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <description>Istmobiome</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©metacrobe &amp; Istmobiome Project 2019</copyright><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/panama_dna_50.png</url>
+      <title>Istmobiome</title>
+      <link>/</link>
+    </image>
+    
+    <item>
+      <title>Example Page 1</title>
+      <link>/courses/example/example1/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/example/example1/</guid>
+      <description>
+
+&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-2&#34;&gt;Tip 2&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>General Information</title>
+      <link>/events/bocas-del-toro-panama-2018/important-details/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0100</pubDate>
+      <guid>/events/bocas-del-toro-panama-2018/important-details/</guid>
+      <description>
+
+&lt;h2 id=&#34;venue&#34;&gt;Venue&lt;/h2&gt;
+
+&lt;p&gt;The workshop will take place at the Bocas del Toro field station, Smithsonian Tropical Research Institute, Republic of Panama. Bocas del Toro is an archipelago of six main islands and hundreds of mangrove islands of varying size. Dominant shallow water benthic habitats include the red mangrove (&lt;em&gt;Rhizophora mangle&lt;/em&gt;), seagrass (mainly &lt;em&gt;Thalassia testudinum&lt;/em&gt;), and coral (e.g., &lt;em&gt;Porites&lt;/em&gt; spp. &amp;amp;  &lt;em&gt;Agaricia&lt;/em&gt; spp.). The station is equipped with eight field boats, two field trucks, a full dive facility, numerous lab spaces, microscopy equipment, a seawater facility, and experimental tanks. There are two houses, eight research dorms, a student dorm, and a common kitchen/dinning hall. In addition to primary research activities that encompass both marine and terrestrial systmes, the station hosts  undergraduate and graduate courses as well as taxonomy workshops.&lt;/p&gt;
+
+&lt;p&gt;Transportation, accommodation, and meals will be provided to all participants. Any questions or inquiries about the logistics can be addressed to Fabiola Jenkins or Jarrod Scott.&lt;/p&gt;
+
+&lt;h2 id=&#34;drinking-water&#34;&gt;Drinking Water&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&#34;callout&#34;&gt;Do not drink&lt;/span&gt; untreated tap water in Bocas. There are special taps at the station that deliver clean drinking water. &lt;span class=&#34;callout&#34;&gt;Bring a water bottle&lt;/span&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;spending-money&#34;&gt;Spending Money&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&#34;callout&#34;&gt;Cash&lt;/span&gt;  rules in Bocas and there is only one ATM on the island. The currency in Panama is the USD.&lt;/p&gt;
+
+&lt;h2 id=&#34;outside-communication&#34;&gt;Outside Communication&lt;/h2&gt;
+
+&lt;p&gt;You can get &lt;span class=&#34;callout&#34;&gt;WiFi&lt;/span&gt; in the houses, research dorms, labs, &amp;amp; dinning hall. Occasionally internet service does go out. WhatsApp is a great option for communicating back home &amp;amp; within Bocas. You can also get a local SIM card and a pay as you go data plan at the airport in Panama City or in Bocas. Ask us for more details if you are interested.&lt;/p&gt;
+
+&lt;h2 id=&#34;climate&#34;&gt;Climate&lt;/h2&gt;
+
+&lt;p&gt;The climate in Bocas is mild. It does &lt;span class=&#34;callout&#34;&gt;rain&lt;/span&gt;, sometime a lot. So plan accordingly or just plan on getting wet. You rarely need long sleeves &amp;amp; it doesn&amp;rsquo;t really get too hot. That said,  many of the labs at the station can be quite cool so you may want to pack a hoodie or something else to keep you comfortable when we are inside.&lt;/p&gt;
+
+&lt;h2 id=&#34;health-safety-in-bocas&#34;&gt;Health &amp;amp; Safety in Bocas&lt;/h2&gt;
+
+&lt;p&gt;Petty crime is the biggest safety concern in Bocas (well that and taxis drive entirely too fast). Be mindful of your belongings and you should be fine. There are many free roaming dogs around town but they are pretty mellow. Something is always under construction so mind your step when you are out and about. All in all, Bocas is generally a peaceful place.&lt;/p&gt;
+
+&lt;h2 id=&#34;stuff-to-bring&#34;&gt;Stuff to Bring&lt;/h2&gt;
+
+&lt;h3 id=&#34;in-the-field&#34;&gt;In the field&lt;/h3&gt;
+
+&lt;p&gt;We are planning to spend some time in the field exploring local sites. We will be in &lt;span class=&#34;callout&#34;&gt;boats&lt;/span&gt;, &lt;span class=&#34;callout&#34;&gt;snorkeling&lt;/span&gt;, and &lt;span class=&#34;callout&#34;&gt;scrambling&lt;/span&gt; around on shore (possibly in mangroves). If you are not interested in participating in these activities, please let one of the organizers know and we will arrange for an equally awesome alternative activity. To ensure your comfort and enjoyment please consider bringing the following items:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Mask and snorkel&lt;/li&gt;
+&lt;li&gt;Hat&lt;/li&gt;
+&lt;li&gt;Water bottle&lt;/li&gt;
+&lt;li&gt;Sunscreen&lt;/li&gt;
+&lt;li&gt;Crocs, dive booties, Natives, old sneaks, etc.&lt;/li&gt;
+&lt;li&gt;Sunglasses&lt;/li&gt;
+&lt;li&gt;SPF 50 rash guard or other arm/shoulder protection&lt;/li&gt;
+&lt;li&gt;Swim gear&lt;/li&gt;
+&lt;li&gt;Camera&lt;/li&gt;
+&lt;li&gt;Flip flops/sandals&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;If you don&amp;rsquo;t have some of these items&lt;/strong&gt;, like a mask and snorkel, don&amp;rsquo;t worry about it. We will sort you out&amp;mdash;just let us know what you need ahead of time.&lt;/p&gt;
+
+&lt;h3 id=&#34;other-items&#34;&gt;Other items&lt;/h3&gt;
+
+&lt;p&gt;Each dorm room has lockers for your personal effects. Please bring a &lt;span class=&#34;callout&#34;&gt;Pad lock&lt;/span&gt; if you would like to use a locker.&lt;/p&gt;
+
+&lt;h2 id=&#34;cuisine-local-flavors&#34;&gt;Cuisine &amp;amp; Local Flavors&lt;/h2&gt;
+
+&lt;p&gt;The province of Bocas del Toro and  surrounding islands are  home to many &lt;span class=&#34;callout&#34;&gt;cacao&lt;/span&gt; farms and chocolate makers. You can find cacao in several different forms including bars, nibs, powder, and raw beans. Be sure to talk to &lt;strong&gt;Luis   Mejia&lt;/strong&gt; (one of the workshop participants) about &lt;em&gt;Theobroma cacao&lt;/em&gt;&amp;mdash;he is an expert on this amazing plant.&lt;/p&gt;
+
+&lt;p&gt;If you like spicy there is some awesome local hot sauce made with &lt;span class=&#34;callout&#34;&gt;aji chombo&lt;/span&gt; (&lt;em&gt;Capsicum chinense&lt;/em&gt;), a fiery Panamanian pepper similar in appearance to a habanero. Typical Panamanian food in not spicy but most restaurants will have some variation of hot sauce made with these peppers that you can slather on your food.&lt;/p&gt;
+
+&lt;p&gt;There are many cool varieties of &lt;span class=&#34;callout&#34;&gt;fruit &amp;amp; vegetables&lt;/span&gt; available in Bocas including plantains, papaya, passionfruit, mango, rambutan, and naranjilla. And you can get some pretty dang good &lt;span class=&#34;callout&#34;&gt;ceviche&lt;/span&gt; too.&lt;/p&gt;
+
+&lt;p&gt;For all intents and purposes, Panama has two national &lt;span class=&#34;callout&#34;&gt;beers&lt;/span&gt;&amp;mdash;Panama and Balboa. There are also two different local spirits. Seco Herrerano, distilled from sugar cane, is often mixed with tropical fruits or milk (known as &amp;ldquo;seco con vaca&amp;rdquo;). Use at your own risk. More well known is Panama&amp;rsquo;s de facto national rum, Ron Abuelo, which is available in several ages. If you enjoy rum it is definitely worth a try.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>/events/bocas-del-toro-panama-2018/monday/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0100</pubDate>
+      <guid>/events/bocas-del-toro-panama-2018/monday/</guid>
+      <description>
+
+&lt;p&gt;Welcome to Smithsonian Tropical Research Institute (STRI) and the Bocas del Toro research station. The program for the afternoon session is pretty straightforward. We will begin with a brief overview of the workshop, discuss the importance of the Isthmus of Panama, and tell you a bit about the project that inspired this workshop.&lt;/p&gt;
+
+&lt;p&gt;The purpose of this session is to introduce you to past, present, and future work at STRI. STRI has over 40 permanent staff scientists and hosts over a thousand  visiting researchers every year. Research at STRI spans many disciplines&amp;mdash;from Archaeology and Paleobiology to Neurobiology and Microbial Ecology&amp;mdash;across a spectrum of tropical systems. You can find scientists climbing in the canopy of a massive tree or diving on a beautiful coral reef.&lt;/p&gt;
+
+&lt;p&gt;STRI&amp;rsquo;s research assests are as diverse as it&amp;rsquo;s science. The Institute maintains 11 permenant research and educational facilities, including a tiny field station at Fortuna in the cloud forests of Panama&amp;rsquo;s highlands and a new state of the art facility in Gamboa on the Panama Canal.&lt;/p&gt;
+
+&lt;h2 id=&#34;schedule&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;h4 id=&#34;0730-0830-breakfast&#34;&gt;0730-0830 Breakfast&lt;/h4&gt;
+
+&lt;p&gt;for those on station.&lt;/p&gt;
+
+&lt;h4 id=&#34;0830-1115&#34;&gt;0830-1115&lt;/h4&gt;
+
+&lt;p&gt;Due to flight delay, we will not do lightening talks.
+Those on station will have free time&lt;/p&gt;
+
+&lt;h4 id=&#34;1000&#34;&gt;1000&lt;/h4&gt;
+
+&lt;p&gt;pick up arrivals
+back to station
+settle in&lt;/p&gt;
+
+&lt;h4 id=&#34;1130-1215-lunch&#34;&gt;1130&amp;ndash;1215 Lunch&lt;/h4&gt;
+
+&lt;h4 id=&#34;1230-1630-afternoon-session&#34;&gt;1230&amp;ndash;1630 Afternoon Session&lt;/h4&gt;
+
+&lt;h4 id=&#34;1230-1245&#34;&gt;1230-1245&lt;/h4&gt;
+
+&lt;p&gt;Matt Leray&amp;ndash;General Introduction&lt;/p&gt;
+
+&lt;h5 id=&#34;1245-1255&#34;&gt;1245-1255&lt;/h5&gt;
+
+&lt;p&gt;Plinio Gondola&amp;ndash;The Bocas Station&lt;/p&gt;
+
+&lt;h4 id=&#34;1255-1315&#34;&gt;1255-1315&lt;/h4&gt;
+
+&lt;p&gt;Rachel Collin
+&lt;em&gt;Title: Environmental &amp;amp; Biodiversity Research in Bocas del Toro.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;1315-1330&#34;&gt;1315-1330&lt;/h4&gt;
+
+&lt;p&gt;Jarrod Scott
+&lt;em&gt;Title: STRI &amp;amp; The Isthmus of Panama&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;1330-1400-break&#34;&gt;1330-1400 Break&lt;/h4&gt;
+
+&lt;h4 id=&#34;1400-1420&#34;&gt;1400-1420&lt;/h4&gt;
+
+&lt;p&gt;Ross Robertson
+&lt;em&gt;Title: Contrasts in the marine environments and biotas across the central American Isthmus&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;1420-1445&#34;&gt;1420-1445&lt;/h4&gt;
+
+&lt;p&gt;Haris Lessios
+&lt;em&gt;Title:&lt;/em&gt; TBA&lt;/p&gt;
+
+&lt;h4 id=&#34;1445-1505&#34;&gt;1445-1505&lt;/h4&gt;
+
+&lt;p&gt;Allen   Herre
+&lt;em&gt;Title:&lt;/em&gt; TBA&lt;/p&gt;
+
+&lt;h4 id=&#34;1505-1530-break&#34;&gt;1505-1530 Break&lt;/h4&gt;
+
+&lt;h4 id=&#34;1530-1550&#34;&gt;1530-1550&lt;/h4&gt;
+
+&lt;p&gt;Emmett Duffy
+&lt;em&gt;Title:&lt;/em&gt; TBA&lt;/p&gt;
+
+&lt;h4 id=&#34;1550-1610&#34;&gt;1550-1610&lt;/h4&gt;
+
+&lt;p&gt;Laetitia Wilkins
+&lt;em&gt;Title: The IstmoBiome Project&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;1610-1700-open-for-now&#34;&gt;1610&amp;ndash;1700 Open for now&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Jon Kaye&lt;/li&gt;
+&lt;li&gt;Bill Wcislo&lt;/li&gt;
+&lt;li&gt;Jonathan Eisen&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;1700-2130-happy-hour-dinner-in-town&#34;&gt;1700&amp;ndash;2130 Happy Hour &amp;amp; Dinner in Town&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Defining &amp; Sampling a Microbiome</title>
+      <link>/events/bocas-del-toro-panama-2018/topic-1/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0100</pubDate>
+      <guid>/events/bocas-del-toro-panama-2018/topic-1/</guid>
+      <description>
+
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;In the literature, core microbiomes are broadly defined as assemblages of microbial taxa that are consistently found across individuals of the same species. They form intimate and specialized relationships with their host.&lt;/p&gt;
+
+&lt;h2 id=&#34;general-discussion&#34;&gt;General Discussion&lt;/h2&gt;
+
+&lt;p&gt;What are the attributes of a core microbiome? Do all metazoan have a core microbiomes? Are some microbial taxa consistently found across hosts of a community? And are they functionally important or opportunistic taxa?&lt;/p&gt;
+
+&lt;p&gt;How to characterize the core microbiome of all hosts within a community (i.e., methodological considerations for comparative approaches)? How do marine hosts acquire this core community? How to account for environmental (oceanographic) factors impacting this core or masking the detection of the core community?&lt;/p&gt;
+
+&lt;h2 id=&#34;discussion-questions&#34;&gt;Discussion Questions&lt;/h2&gt;
+
+&lt;h4 id=&#34;1a-what-is-a-core-microbiome&#34;&gt;1A: What is a core microbiome?&lt;/h4&gt;
+
+&lt;p&gt;Group members, moderator, note taker/presenter&lt;/p&gt;
+
+&lt;h4 id=&#34;1b-how-to-characterize-the-core-microbiome&#34;&gt;1B: How to characterize the core microbiome?&lt;/h4&gt;
+
+&lt;p&gt;Group members, moderator, note taker/presenter&lt;/p&gt;
+
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+
+&lt;h2 id=&#34;outcomes&#34;&gt;Outcomes&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;1A: What is a core microbiome?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Groups 1 and 2&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;What is a microbiome? All microbial organisms (e.g. bacteria, archaea, viruses, fungi,
+protozoans, and small microbial eukaryotes) “somehow” related/associated with an
+organism/host or found in a particular habitat/ecosystem in a given place and time.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Is there a need to define/separate what is environmental microbiome, that is, the
+microbial community structure in a habitat (e.g. soil microbiome, water column
+microbiome) from host microbiome, that is, the microbial community structure
+associated to an organism (e.g. coral microbiome).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What is the core microbiome? Microbes constantly (i.e. highly frequent and
+abundant/dominant) found in a habitat/host. In this sense, stability (i.e. taxon
+composition) and functionality of the microbial community is maintained within a
+defined scale.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Is symbiosis between microbes and host a “must” to be considered as core
+microbiome? What about the environment? Is there a need to differentiate/define
+what is the “core taxonomic” (i.e. consistent microbial) members and “core
+functional” (i.e. genes or pathways) microbiome? Super organisms to neutral
+models, context dependent interactions.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;How can we tease a part and potentially quantify the direct and indirect effects of
+certain microbial groups/genes within the microbiome?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Should use a metric(s) to define the core microbiome? Relative abundance (&amp;gt; a
+specific cut-off, e.g. 80%), spatial and temporal frequency (found in most samples or
+all samples), or simply presence/absence.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Large microbiome picture: Community similarity analysis: gain and loss of
+taxonomic/functional core microbiome across different hosts through time. At what
+level the microbiome is shared in a given specific group (i.e. at the tips of the host
+phylogeny; species vs. higher taxonomic ranks). In addition, network analysis across
+different groups to characterize a particular habitat/system.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What are some of the pros and cons associated to the concepts of microbiome and
+core microbiome?&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;1B: How to characterize the core microbiome?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Groups 3 and 4&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;How to characterize the core microbiome? In addition to the considerations on how we define the core microbiome, spatio-temporal variation is a key aspect when characterizing the core microbiome. The spatial component might give us an idea of “how common/spread ” such microbial taxa and associations are in a particular host/habitat, whereas the temporal component might inform us on how stable/frequent these associations are.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Long-term studies are crucial to identify community patterns and also to detect drastic shifts.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Baseline studies for different habitats/hosts and archiving material for future analyses can also advance our understanding. In addition, these baseline studies might direct us to more specific questions/goals.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Taxonomic scale of both host and microbial taxa should be considered, potentially tested using different resolution levels. What taxonomic resolution should we be considering when characterizing microbiomes?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Organism and ecosystem health should be evaluated, particularly the links between microbiome and their function&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Stability and variability (both in space and time) of the microbiome should be explored&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Mapping the landscape of the host/ecosystem (e.g. strata, body regions, organism geography/distribution), life stage, life history and other important aspects of the system. This would allow us to fully/properly characterize the microbiome. Additionally, a comparison between whole/integrated vs. partitioned microbiomes or microbiome/tissue specificity can be determined.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;How important is to characterize the background environmental (i.e. sediment, water, etc.) to understand the core microbiome of an organism? How do they acquire/select their microbiome?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;How to standardize sampling strategies for microbiome studies? The importance of standard protocols, particularly for worldwide scale studies (e.g. ZEN network).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What is the importance of well-curate databases for microbiome studies? 16S, 18S, ITS datasets (who is there)? Who is there and what they potentially do?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What sort of datasets should we be producing (e.g. metabarcoding/amplicon, transcriptomic, and metagenomics)? What are the other techniques we might consider to use (e.g. microscopy)?&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Random Comments:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;One comment I wanted to provide regarding core microbiome and healthy microbiome is that I think studies often don&amp;rsquo;t examine enough individuals to really address this question.  Sample sets of hundreds of individuals provide much clearer patterns compared to only a handful of individuals.  In corals and other highly permitted animals, it is often difficult to get access to these larger number of individuals, and we need managers and permitters to understand how necessary this is, especially today as ocean conditions (and likely microbiomes) will only change more in the future.&lt;/p&gt;
+
+&lt;p&gt;Another general comment&amp;hellip;I also see a trend in the journals and at meetings in that descriptive studies (such as core microbiome descriptions) are now often viewed as less important than those that provide more in-depth functional trends in symbiotic interactions.  Yet, we still need descriptive studies in marine animal microbiome research!  And these types of studies are perfect for training undergraduates and graduate students and provide context for other researchers to establish new projects upon.  I am not sure how to change the culture, but perhaps this is a point that could be make in the Outcome article that descriptive studies are still incredibly valuable.&lt;/p&gt;
+
+&lt;h2 id=&#34;schedule&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;h4 id=&#34;0700-0830-breakfast&#34;&gt;0700&amp;ndash;0830 Breakfast&lt;/h4&gt;
+
+&lt;h4 id=&#34;0900-1200-topic-1&#34;&gt;0900&amp;ndash;1200 Topic 1&lt;/h4&gt;
+
+&lt;p&gt;Jarrod will get Becky from the airport&lt;/p&gt;
+
+&lt;h5 id=&#34;0900-0915&#34;&gt;0900&amp;ndash;0915&lt;/h5&gt;
+
+&lt;p&gt;Introduction to Topic 1 (Jarrod)&lt;/p&gt;
+
+&lt;h5 id=&#34;0915-1015&#34;&gt;0915&amp;ndash;1015&lt;/h5&gt;
+
+&lt;h5 id=&#34;font-color-red-break-out-groups-font&#34;&gt;&lt;font color=&#34;red&#34;&gt;&lt;strong&gt;Break-out groups&lt;/strong&gt;&lt;/font&gt;&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1A: &lt;strong&gt;What is a core microbiome?&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;1B: &lt;strong&gt;How to characterize the core microbiome?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;1015-1045-break&#34;&gt;1015&amp;ndash;1045 Break&lt;/h4&gt;
+
+&lt;h5 id=&#34;1045-1115&#34;&gt;1045&amp;ndash;1115&lt;/h5&gt;
+
+&lt;p&gt;Report and discuss ideas from topics&lt;/p&gt;
+
+&lt;h5 id=&#34;1115-1200&#34;&gt;1115&amp;ndash;1200&lt;/h5&gt;
+
+&lt;p&gt;Summary and discussion of morning sessions&lt;/p&gt;
+
+&lt;h4 id=&#34;1200-1630-field-trip&#34;&gt;1200&amp;ndash;1630 Field trip&lt;/h4&gt;
+
+&lt;p&gt;with lunch in the field&lt;/p&gt;
+
+&lt;h5 id=&#34;1630-1730&#34;&gt;1630&amp;ndash;1730&lt;/h5&gt;
+
+&lt;p&gt;Debrief&lt;/p&gt;
+
+&lt;h4 id=&#34;1800-1930-dinner&#34;&gt;1800&amp;ndash;1930 Dinner&lt;/h4&gt;
+
+&lt;h5 id=&#34;1930-2100&#34;&gt;1930&amp;ndash;2100&lt;/h5&gt;
+
+&lt;p&gt;Evening Discussion&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Discuss sampling strategies from in the field.&lt;/li&gt;
+&lt;li&gt;How to standardize it. Storage and extraction protocols.&lt;/li&gt;
+&lt;li&gt;Do common protocols introduce bias and selection?&lt;/li&gt;
+&lt;li&gt;Which species are missed?&lt;/li&gt;
+&lt;li&gt;Would it make sense to produce guidelines/website/protocols?&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Predicting Drivers of Diversity</title>
+      <link>/events/bocas-del-toro-panama-2018/topic-2/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0100</pubDate>
+      <guid>/events/bocas-del-toro-panama-2018/topic-2/</guid>
+      <description>
+
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;The magnitude and frequency of environmental stressors are impacting the dynamics of host microbe interactions. The breakdown of mutualistic relationships can cascade through entire ecosystems with devastating effects on biodiversity and ecological services. Emerging evidence suggests that a set of environmental conditions must be met to initiate the switch from beneficial to detrimental interactions. For example, temperature anomalies beyond some number of days lead to the exclusion of zooxanthellae by host corals. In the case of corals, a well-studied system, symbionts consume too much sugar and get expelled from the host when temperature rises. There is a fine line between mutualism and parasitism.&lt;/p&gt;
+
+&lt;p&gt;Existing studies of microbial communities on marine hosts highlight in most cases: 1) a great diversity of microbial partners (i.e., one host - one microbe such as interactions highlight the squid-vibio model are not the norm); 2) some hosts have much more diverse microbiomes than others (e.g., within sponges and corals). The significant of these large differences in diversity is not well understood but microbial diversity (both alpha and beta) might have an import role in host fitness and stability in changing environmental conditions.&lt;/p&gt;
+
+&lt;h2 id=&#34;general-discussion&#34;&gt;General Discussion&lt;/h2&gt;
+
+&lt;p&gt;Is a higher richness of microbes beneficial to a host? Do diverse associations promote host fitness and stable holobionts in changing environmental conditions?&lt;/p&gt;
+
+&lt;p&gt;How to identify the tipping point from symbiosis to dysbiosis in host-associated microbiomes (beyond corals-zooxanthellae)? How to differentiate microbial imbalance from natural variations in microbiomes (e.g., driven by seasonality, changes in diet and life history events)? What is a healthy microbiome?&lt;/p&gt;
+
+&lt;h2 id=&#34;discussion-questions&#34;&gt;Discussion Questions&lt;/h2&gt;
+
+&lt;h4 id=&#34;2a-what-is-a-healthy-microbiome-does-microbial-diversity-matter-for-the-host-is-more-microbes-better-or-fewer-beneficial-symbionts&#34;&gt;2A: What is a healthy microbiome? Does microbial diversity matter for the host? Is more microbes better? Or fewer beneficial symbionts?&lt;/h4&gt;
+
+&lt;p&gt;Group members, moderator, note taker/presenter&lt;/p&gt;
+
+&lt;h4 id=&#34;2b-how-to-identify-the-tipping-point-from-symbiosis-to-dysbiosis-in-host-associated-microbiomes&#34;&gt;2B: How to identify the tipping point from symbiosis to dysbiosis in host-associated microbiomes?&lt;/h4&gt;
+
+&lt;p&gt;Group members, moderator, note taker/presenter&lt;/p&gt;
+
+&lt;h4 id=&#34;2c-modelling-of-host-microbe-interactions-how-do-we-go-from-describing-the-variation-to-deciphering-what-is-driving-it&#34;&gt;2C: Modelling of host-microbe interactions. How do we go from describing the variation to deciphering what is driving it.&lt;/h4&gt;
+
+&lt;p&gt;Group members, moderator, note taker/presenter&lt;/p&gt;
+
+&lt;h4 id=&#34;2d-a-null-model-for-microbial-communities&#34;&gt;2D: A null model for microbial communities&lt;/h4&gt;
+
+&lt;p&gt;Group members, moderator, note taker/presenter&lt;/p&gt;
+
+&lt;h4 id=&#34;2e-monitoring-host-microbe-interactions-can-we-identify-model-systems-or-hosts-to-monitor-e-g-host-microbiomes-with-cosmopolitan-distribution&#34;&gt;2E: Monitoring host-microbe interactions: can we identify model systems or hosts to monitor (e.g., host-microbiomes with cosmopolitan distribution)?&lt;/h4&gt;
+
+&lt;p&gt;Group members, moderator, note taker/presenter&lt;/p&gt;
+
+&lt;h2 id=&#34;outcomes&#34;&gt;Outcomes&lt;/h2&gt;
+
+&lt;h3 id=&#34;tipping-points-from-healthy-to-unhealthy-microbiomes&#34;&gt;Tipping points (from healthy to unhealthy microbiomes)&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Stability, similarity in the microbiome in time and space, that is, the community structure. Does healthy microbiome mean stable? Different timing points might show different community structure (e.g. uniqueness, complete distinctness).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Disruption of the community structure might increase diversity which in turn can also lead to an unstable/unhealthy system, that is, high diversity does not always mean healthier microbiome&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;How can we evaluate these tipping points? Dispersion analysis, estimating variance?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Should we consider host and microbial regulations, trade-offs in the system? How to measure the impacts on the host (e.g. host growth, metabolism, density in the environment)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Dysbiosis not always lead unhealthy/mortality&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Importance of associating host/microbiome changes with environment variables, so we can predict tipping points between healthy to unhealthy microbiome&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Can we define a set of conditions in the environment to predict tipping points (e.g. nutrients, temperature, etc.)?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Resilience/Succession in microbiome (prior, during, and post disturbance, e.g. antibiotic usage). If the system is prone to tipping, often the system cannot recover, how can we test that?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Can/should we quantify tipping points in the microbiome? Soil microbiome literature seems to be rich in this aspect&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Multi stressors should be evaluated when evaluating healthy microbiomes and tipping points&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;To what degree microbiomes assemble because the host is controlling the system and to what the degree the microbiomes are the controllers (assembly and disassembly of microbiomes)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What is the outcome of tipping points? Does it always lead to dysbiosis?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Example of dysbiosis in bats seem to show how unbalance their microbial community was and how affected the host health.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Adaptable communities to couple with potential changes&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Key functional traits need to be maintained&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Diversity is not always good, since it can make the system unstable&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Relative abundance is not always a good metric (not always functionally active)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Different ways to measure diversity, species richness, beta and alpha diversity, functional diversity&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Healthy microbiomes are not always ease to be determined, but relative. Should we move away from it?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;There is also short term and long term issues related to microbiome and what is a healthy microbiome. Ecological and evolutionary time scales should be considered.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Total metrics, without teasing a part the potential subgroups can mask some important patterns&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Stable as predictable/predictability&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Complete dysbiosis can also occur (quiescence can be an alternative as well).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;schedule&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;h4 id=&#34;0700-0830-breakfast&#34;&gt;0700-0830 Breakfast&lt;/h4&gt;
+
+&lt;h4 id=&#34;0900-1200-topic-2&#34;&gt;0900&amp;ndash;1200 Topic 2&lt;/h4&gt;
+
+&lt;h4 id=&#34;0900-0915&#34;&gt;0900&amp;ndash;0915&lt;/h4&gt;
+
+&lt;p&gt;Introduction to Topic 2  (Laetitia/Matt)&lt;/p&gt;
+
+&lt;h4 id=&#34;0915-1015&#34;&gt;0915&amp;ndash;1015&lt;/h4&gt;
+
+&lt;h4 id=&#34;font-color-red-break-out-groups-font&#34;&gt;&lt;font color=&#34;red&#34;&gt;&lt;strong&gt;Break-out groups&lt;/strong&gt;&lt;/font&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2A: **What is a healthy microbiome? **
+&lt;em&gt;Does microbial diversity matter for the host? Are more microbes better? Or fewer beneficial symbionts?&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;2B: &lt;strong&gt;How to identify the tipping point from symbiosis to dysbiosis in host-associated microbiomes?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;10-15-1045&#34;&gt;10:15&amp;ndash;1045&lt;/h4&gt;
+
+&lt;p&gt;Report and discuss ideas&lt;/p&gt;
+
+&lt;h4 id=&#34;1045-1115-break&#34;&gt;1045&amp;ndash;1115 Break&lt;/h4&gt;
+
+&lt;h4 id=&#34;1115-1200&#34;&gt;1115&amp;ndash;1200&lt;/h4&gt;
+
+&lt;p&gt;Summary and discussion of morning sessions&lt;/p&gt;
+
+&lt;h4 id=&#34;1200-1300-lunch&#34;&gt;1200&amp;ndash;1300 Lunch&lt;/h4&gt;
+
+&lt;h4 id=&#34;1300-1500&#34;&gt;1300&amp;ndash;1500&lt;/h4&gt;
+
+&lt;h4 id=&#34;font-color-red-break-out-groups-font-modelling-of-host-microbe-interactions&#34;&gt;&lt;font color=&#34;red&#34;&gt;&lt;strong&gt;Break-out groups&lt;/strong&gt;&lt;/font&gt;: Modelling of host-microbe interactions.&lt;/h4&gt;
+
+&lt;p&gt;Introduction by Jonathan Eisen&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;2C: &lt;strong&gt;How do we go from describing the variation to deciphering what is driving it.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;2D: &lt;strong&gt;A null model for microbial communities&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;2E: &lt;strong&gt;Monitoring host-microbe interactions: can we identify model systems or hosts to monitor (e.g., host-microbiomes with cosmopolitan distribution)?&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;1500-1545&#34;&gt;1500&amp;ndash;1545&lt;/h4&gt;
+
+&lt;p&gt;Report and discuss ideas&lt;/p&gt;
+
+&lt;h4 id=&#34;1545-1700-break&#34;&gt;1545&amp;ndash;1700     Break&lt;/h4&gt;
+
+&lt;h4 id=&#34;1700-1830&#34;&gt;1700&amp;ndash;1830&lt;/h4&gt;
+
+&lt;p&gt;General discussion How do we progress from surveying the microbiome to modeling it? How do we move from defining variation to understanding what is driving it?&lt;/p&gt;
+
+&lt;h4 id=&#34;1830-1930-dinner&#34;&gt;1830&amp;ndash;1930 Dinner&lt;/h4&gt;
+
+&lt;p&gt;After dinner social mixing, relaxing, resting, individual time.&lt;/p&gt;
+
+&lt;h4 id=&#34;19-30&#34;&gt;19:30&amp;ndash;&lt;/h4&gt;
+
+&lt;p&gt;For those interested Laetitia will organize a voluntary session on modeling the null model of microbial colonization of a host that night.&lt;/p&gt;
+
+&lt;p&gt;We need a theoretical framework that simulates how a Null hypothesis would look like. In the case of microbiomes this is a distribution of microorganisms (in a simple case just 16S reads) on hosts that does not follow any form of coevolution with the host. Just random assemblages that follow rules of colonization, migration, drift and mutation.&lt;/p&gt;
+
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Conserving Diversity</title>
+      <link>/events/bocas-del-toro-panama-2018/topic-3/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0100</pubDate>
+      <guid>/events/bocas-del-toro-panama-2018/topic-3/</guid>
+      <description>
+
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;There is growing concern about the resilience of marine ecosystems. For example, corals, the foundation species of coral reefs, may not be able to acclimate or adapt to ongoing environmental changes. This has stimulated debates about how methods of assisted evolution could be used to help marine ecosystems to retain ecosystem services.&lt;/p&gt;
+
+&lt;p&gt;Discussion: The inoculation of bacterial communities or strains that can promote the resistance of hosts to stress. Which microbial symbionts influence the host phenotype/fitness (e.g., core microbes, specific strains absent in wild populations?)? At what scale should these measures be taken? And what are the precautions to be taken?&lt;/p&gt;
+
+&lt;h2 id=&#34;discussion-questions&#34;&gt;Discussion Questions&lt;/h2&gt;
+
+&lt;h4 id=&#34;what-can-microbiology-do-for-conservation-bioremediation-probiotics-etc-to-help-conservation&#34;&gt;What can microbiology do for conservation?  Bioremediation, probiotics, etc. to help conservation&lt;/h4&gt;
+
+&lt;p&gt;Group members, moderator, note taker/presenter&lt;/p&gt;
+
+&lt;h2 id=&#34;outcomes&#34;&gt;Outcomes&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Spatio-temporal studies as baseline, so that the dynamics of microbial communities (bad and good guys) can be known.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Importance of culturing and characterizing the different microbial symbionts for conservation purposes&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Identify potential bioindicators (potential good symbionts) to manipulate the host microbiome&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Structural work on the host (corals, sponges, etc.) might help to evaluate the impacts of a particular pollutant&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Short time series experiment in the lab, including T0 as the starting point.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Probiotics can be an alternative from improving ecosystem health&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Global scale sampling (e.g. mangrove in the Atlantic coast from Mexico to southeast Brazil). Seagrass can be another example for probiotic studies&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Connectivity of mangrove species, microbial species related to these habitats, etc.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Endophytes being transplanted into species undergoing decline on their distribution, population size, etc.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The ability of establishing large laboratory experiments (manipulation) to more fully represent the effects of the environment&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;schedule&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;p&gt;See end of No. 4&lt;/p&gt;
+
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Expanding the breath of host-microbe studies</title>
+      <link>/events/bocas-del-toro-panama-2018/topic-4/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0100</pubDate>
+      <guid>/events/bocas-del-toro-panama-2018/topic-4/</guid>
+      <description>
+
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;Our understanding of host-microbe interactions is known in great depth from a very few number of “simple” study systems (i.e., squid-vibrio, lucinid clams, Atlantic killfish, &lt;em&gt;Olavius oligochaete&lt;/em&gt;) and a larger number of foundation species (i.e., corals, sponges). Assuming that between 0.3 and 2.2 million metazoan species live in the ocean, our knowledge about host-microbe interactions is based upon 0.03% and 0.004% of all marine host species only (they fall in 5 out of 32 phyla living in the ocean).&lt;/p&gt;
+
+&lt;p&gt;Expanding the breath of host-microbe studies
+On what taxonomic, phylogenetic and functional groups should future studies on symbiosis be focusing and why?&lt;/p&gt;
+
+&lt;h2 id=&#34;discussion-questions&#34;&gt;Discussion Questions&lt;/h2&gt;
+
+&lt;h4 id=&#34;what-have-we-learned-from-these-systems&#34;&gt;What have we learned from these systems?&lt;/h4&gt;
+
+&lt;h4 id=&#34;why-are-some-systems-being-studied-more-than-others&#34;&gt;Why are some systems being studied more than others?&lt;/h4&gt;
+
+&lt;h4 id=&#34;on-what-taxonomic-phylogenetic-and-functional-groups-should-future-studies-on-symbiosis-be-focusing-and-why&#34;&gt;On what taxonomic, phylogenetic and functional groups should future studies on symbiosis be focusing and why?&lt;/h4&gt;
+
+&lt;h4 id=&#34;play-a-game-with-the-group-if-you-could-pick-10-organisms-to-study-how-would-you-pick-them-why&#34;&gt;Play a game with the group: If you could pick 10 organisms to study, how would you pick them? Why?&lt;/h4&gt;
+
+&lt;h4 id=&#34;can-we-study-hosts-in-aquaria-without-disrupting-their-symbioses-or-are-field-studies-necessary&#34;&gt;Can we study hosts in aquaria without disrupting their symbioses, or are field studies necessary?&lt;/h4&gt;
+
+&lt;h4 id=&#34;how-can-a-system-be-studied-with-a-more-systematic-approach-how-deep-do-you-have-to-study-a-system-where-should-we-prioritize-research&#34;&gt;How can a system be studied with a more systematic approach? How deep do you have to study a system? Where should we prioritize research?&lt;/h4&gt;
+
+&lt;h2 id=&#34;outcomes&#34;&gt;Outcomes&lt;/h2&gt;
+
+&lt;h2 id=&#34;schedule&#34;&gt;Schedule&lt;/h2&gt;
+
+&lt;h4 id=&#34;0630-0730-breakfast&#34;&gt;0630-0730 Breakfast&lt;/h4&gt;
+
+&lt;h4 id=&#34;0800-1200-field-trip&#34;&gt;0800&amp;ndash;1200 Field trip&lt;/h4&gt;
+
+&lt;p&gt;Fossils with Aaron O’Dea&lt;/p&gt;
+
+&lt;p&gt;Lunch in the field&lt;/p&gt;
+
+&lt;h4 id=&#34;1400-1700-topic-3&#34;&gt;1400&amp;ndash;1700 Topic 3&lt;/h4&gt;
+
+&lt;h4 id=&#34;1400-1430&#34;&gt;1400&amp;ndash;1430&lt;/h4&gt;
+
+&lt;p&gt;Raquel Peixoto &amp;amp; Luis  Mejia on Probiotics/BMMO (title TBA; confirmed)&lt;/p&gt;
+
+&lt;h4 id=&#34;1440-1540&#34;&gt;1440&amp;ndash;1540&lt;/h4&gt;
+
+&lt;h4 id=&#34;font-color-red-break-out-groups-font&#34;&gt;&lt;font color=&#34;red&#34;&gt;&lt;strong&gt;Break-out groups&lt;/strong&gt;&lt;/font&gt;&lt;/h4&gt;
+
+&lt;p&gt;3A: &lt;strong&gt;What can microbiology do for conservation?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;1540-1640&#34;&gt;1540&amp;ndash;1640&lt;/h4&gt;
+
+&lt;p&gt;Report and discuss ideas&lt;/p&gt;
+
+&lt;h4 id=&#34;1640-1700-break&#34;&gt;1640&amp;ndash;1700 Break&lt;/h4&gt;
+
+&lt;h4 id=&#34;1700-1900-topic-4&#34;&gt;1700&amp;ndash;1900 Topic 4&lt;/h4&gt;
+
+&lt;p&gt;With refreshments&lt;/p&gt;
+
+&lt;h4 id=&#34;1700-1715&#34;&gt;1700&amp;ndash;1715&lt;/h4&gt;
+
+&lt;p&gt;Introduction to  Topic 4 (Laetitia/Matt/Jarrod)&lt;/p&gt;
+
+&lt;h4 id=&#34;1715-1815&#34;&gt;1715&amp;ndash;1815&lt;/h4&gt;
+
+&lt;h4 id=&#34;font-color-red-break-out-groups-font-1&#34;&gt;&lt;font color=&#34;red&#34;&gt;&lt;strong&gt;Break-out groups&lt;/strong&gt;&lt;/font&gt;&lt;/h4&gt;
+
+&lt;p&gt;4A: &lt;strong&gt;On what taxonomic, phylogenetic and functional groups should future studies on symbiosis be focusing and why?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;1815-1900&#34;&gt;1815&amp;ndash;1900&lt;/h4&gt;
+
+&lt;p&gt;Report and discuss ideas&lt;/p&gt;
+
+&lt;h4 id=&#34;1900-happy-hour-dinner&#34;&gt;1900&amp;ndash; Happy hour &amp;amp; Dinner&lt;/h4&gt;
+
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Page 2</title>
+      <link>/courses/example/example2/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/example/example2/</guid>
+      <description>
+
+&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-4&#34;&gt;Tip 4&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Talk</title>
+      <link>/talk/example/</link>
+      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
+      <guid>/talk/example/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>test-file</title>
+      <link>/post/test-file/</link>
+      <pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/post/test-file/</guid>
+      <description>
+
+
+
+</description>
+    </item>
+    
+    <item>
+      <title>Writing technical content in Academic</title>
+      <link>/post/writing-technical-content/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/post/writing-technical-content/</guid>
+      <description>&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On this page, you&#39;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;code&#34;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;Academic supports a Markdown extension for highlighting code syntax. You can enable this feature by toggling the &lt;code&gt;highlight&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```python
+import pandas as pd
+data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
+data.head()
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas as pd
+data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
+data.head()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;math&#34;&gt;Math&lt;/h3&gt;
+
+&lt;p&gt;Academic supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the &lt;code&gt;math&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file and adding &lt;code&gt;markup: mmark&lt;/code&gt; to your page front matter.&lt;/p&gt;
+
+&lt;p&gt;To render &lt;em&gt;inline&lt;/em&gt; or &lt;em&gt;block&lt;/em&gt; math, wrap your LaTeX math with &lt;code&gt;$$...$$&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Example &lt;strong&gt;math block&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;$$\gamma_{n} = \frac{ 
+\left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T 
+\left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}
+{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Example &lt;strong&gt;inline math&lt;/strong&gt; &lt;code&gt;$$\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2$$&lt;/code&gt; renders as &lt;span  class=&#34;math&#34;&gt;\(\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2\)&lt;/span&gt; .&lt;/p&gt;
+
+&lt;p&gt;Example &lt;strong&gt;multi-line math&lt;/strong&gt; using the &lt;code&gt;\\&lt;/code&gt; math linebreak:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;$$f(k;p_0^*) = \begin{cases} p_0^* &amp;amp; \text{if }k=1, \\
+1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[f(k;p_0^*) = \begin{cases} p_0^* &amp; \text{if }k=1, \\
+1-p_0^* &amp; \text {if }k=0.\end{cases}\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h3&gt;
+
+&lt;p&gt;Academic supports a Markdown extension for diagrams. You can enable this feature by toggling the &lt;code&gt;diagram&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file or by adding &lt;code&gt;diagram: true&lt;/code&gt; to your page front matter.&lt;/p&gt;
+
+&lt;p&gt;An example &lt;strong&gt;flowchart&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```mermaid
+graph TD;
+  A--&amp;gt;B;
+  A--&amp;gt;C;
+  B--&amp;gt;D;
+  C--&amp;gt;D;
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;graph TD;
+  A--&amp;gt;B;
+  A--&amp;gt;C;
+  B--&amp;gt;D;
+  C--&amp;gt;D;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```mermaid
+sequenceDiagram
+  participant Alice
+  participant Bob
+  Alice-&amp;gt;John: Hello John, how are you?
+  loop Healthcheck
+      John-&amp;gt;John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts &amp;lt;br/&amp;gt;prevail...
+  John--&amp;gt;Alice: Great!
+  John-&amp;gt;Bob: How about you?
+  Bob--&amp;gt;John: Jolly good!
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;sequenceDiagram
+  participant Alice
+  participant Bob
+  Alice-&amp;gt;John: Hello John, how are you?
+  loop Healthcheck
+      John-&amp;gt;John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts &amp;lt;br/&amp;gt;prevail...
+  John--&amp;gt;Alice: Great!
+  John-&amp;gt;Bob: How about you?
+  Bob--&amp;gt;John: Jolly good!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;An example &lt;strong&gt;Gantt diagram&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```mermaid
+gantt
+  dateFormat  YYYY-MM-DD
+  section Section
+  A task           :a1, 2014-01-01, 30d
+  Another task     :after a1  , 20d
+  section Another
+  Task in sec      :2014-01-12  , 12d
+  another task      : 24d
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;gantt
+  dateFormat  YYYY-MM-DD
+  section Section
+  A task           :a1, 2014-01-01, 30d
+  Another task     :after a1  , 20d
+  section Another
+  Task in sec      :2014-01-12  , 12d
+  another task      : 24d
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;todo-lists&#34;&gt;Todo lists&lt;/h3&gt;
+
+&lt;p&gt;You can even write your todo lists in Academic too:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;- [x] Write math example
+- [x] Write diagram example
+- [ ] Do something else
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34;&gt; Write math example&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34;&gt; Write diagram example&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled=&#34;&#34;&gt; Do something else&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;tables&#34;&gt;Tables&lt;/h3&gt;
+
+&lt;p&gt;Represent your data in tables:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;First Header&lt;/th&gt;
+&lt;th&gt;Second Header&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;asides&#34;&gt;Asides&lt;/h3&gt;
+
+&lt;p&gt;Academic supports a Markdown extension for asides, also referred to as &lt;em&gt;notices&lt;/em&gt; or &lt;em&gt;hints&lt;/em&gt;. By prefixing a paragraph with &lt;code&gt;A&amp;gt;&lt;/code&gt;, it will render as an aside. You can enable this feature by adding &lt;code&gt;markup: mmark&lt;/code&gt; to your page front matter, or alternatively using the &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/#alerts&#34;&gt;&lt;em&gt;Alert&lt;/em&gt; shortcode&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;A&amp;gt; A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;aside&gt;
+&lt;p&gt;A Markdown aside is useful for displaying notices, hints, or definitions to your readers.&lt;/p&gt;
+&lt;/aside&gt;
+
+&lt;h3 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example preprint / working paper</title>
+      <link>/publication/preprint/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/preprint/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Display Jupyter Notebooks with Academic</title>
+      <link>/post/jupyter/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/post/jupyter/</guid>
+      <description>
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
+Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;./index_1_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;Welcome to Academic!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;install-python-and-jupyterlab&#34;&gt;Install Python and JupyterLab&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and JupyterLab.&lt;/p&gt;
+
+&lt;p&gt;Alternatively, install JupyterLab with &lt;code&gt;pip3 install jupyterlab&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
+
+&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY-WEBSITE-FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;SHORT-POST-TITLE&amp;gt;&lt;/code&gt; with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir -p &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
+cd &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
+jupyter lab index.ipynb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;jupyter&lt;/code&gt; command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.&lt;/p&gt;
+
+&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
+
+&lt;p&gt;The first cell of your Jupter notebook will contain your post metadata (&lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34;&gt;front matter&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;In Jupter, choose &lt;em&gt;Markdown&lt;/em&gt; as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+title: My post&#39;s title
+date: 2019-09-01
+
+# Put any other Academic metadata here...
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Edit the metadata of your post, using the &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content&#34; target=&#34;_blank&#34;&gt;documentation&lt;/a&gt; as a guide to the available options.&lt;/p&gt;
+
+&lt;p&gt;To set a &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
+
+&lt;p&gt;For other tips, such as using math, see the guide on &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir=.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+
+&lt;p&gt;This post was created with Jupyter. The orginal files can be found at &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&#34; target=&#34;_blank&#34;&gt;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>/slides/transisthmian-water/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/slides/transisthmian-water/</guid>
+      <description>
+
+&lt;h2 id=&#34;how-the-isthmus-of-panama-changed-the-world&#34;&gt;How the Isthmus of Panama Changed the World&lt;/h2&gt;
+
+&lt;p&gt;On Land &amp;amp; in the Sea&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Code block:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+
+&lt;p&gt;Block math:&lt;/p&gt;
+
+&lt;p&gt;$$
+f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+   One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   &lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   Three
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/aside&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/img/boards.jpg&#34;
+  &gt;
+
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Academic: the website builder for Hugo</title>
+      <link>/post/getting-started/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/post/getting-started/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34; target=&#34;_blank&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;👉 &lt;a href=&#34;#install&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📚 &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;View the &lt;strong&gt;documentation&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💬 &lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Ask a question&lt;/strong&gt; on the forum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;👥 &lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34;&gt;Chat with the &lt;strong&gt;community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐦 Twitter: &lt;a href=&#34;https://twitter.com/source_themes&#34; target=&#34;_blank&#34;&gt;@source_themes&lt;/a&gt; &lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34;&gt;@GeorgeCushen&lt;/a&gt; &lt;a href=&#34;https://twitter.com/search?q=%23MadeWithAcademic&amp;amp;src=typd&#34; target=&#34;_blank&#34;&gt;#MadeWithAcademic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💡 &lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;⬆️ &lt;strong&gt;Updating?&lt;/strong&gt; View the &lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;❤ &lt;strong&gt;Support development&lt;/strong&gt; of Academic:
+
+&lt;ul&gt;
+&lt;li&gt;☕️ &lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Donate a coffee&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💵 &lt;a href=&#34;https://www.patreon.com/cushen&#34; target=&#34;_blank&#34;&gt;Become a backer on &lt;strong&gt;Patreon&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🖼️ &lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34;&gt;Decorate your laptop or journal with an Academic &lt;strong&gt;sticker&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;👕 &lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34;&gt;Wear the &lt;strong&gt;T-shirt&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;👩‍💻 &lt;a href=&#34;https://sourcethemes.com/academic/docs/contribute/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Contribute&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; data-caption=&#34;Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34;&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+
+&lt;p&gt;Academic comes with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Alternatively, visitors can  choose their preferred mode - click the sun/moon icon in the top right of the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt; to see it in action! Day/night mode can also be disabled by the site admin in &lt;code&gt;params.toml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully &lt;a href=&#34;https://sourcethemes.com/academic/docs/customization/#custom-theme&#34; target=&#34;_blank&#34;&gt;customizable&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34;&gt;Academic Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-scripts&#34; target=&#34;_blank&#34;&gt;Academic Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of Academic&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+
+&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-git&#34; target=&#34;_blank&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-zip&#34; target=&#34;_blank&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34;&gt;personalize and deploy your new site&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;View the Update Guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; to help keep track of &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34;&gt;updates&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+
+&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example journal article</title>
+      <link>/publication/journal-article/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;code&gt;this is inline&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline this is long inline&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block this is long block  &lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;R Markdown&lt;/h1&gt;
+&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &amp;lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Including Plots&lt;/h1&gt;
+&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
+  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
+  init.angle = -50, border = NA
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: A fancy pie chart.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example conference paper</title>
+      <link>/publication/conference-paper/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/conference-paper/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Florida reef fish</title>
+      <link>/project/florida-reef-fish-microbiome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/florida-reef-fish-microbiome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trans-Isthmian Water</title>
+      <link>/project/transisthmian-water/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/transisthmian-water/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://anvi-server.org/jscott/trans_tara_phylogenomics?view_key=efdy6Lu3XO5Q2tHY&#34; target=&#34;_blank&#34;&gt;http://anvi-server.org/jscott/trans_tara_phylogenomics?view_key=efdy6Lu3XO5Q2tHY&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
