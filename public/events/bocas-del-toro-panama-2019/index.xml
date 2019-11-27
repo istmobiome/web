@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marine Microbiome Workshop II | Istmobiome</title>
+    <link>/events/bocas-del-toro-panama-2019/</link>
+      <atom:link href="/events/bocas-del-toro-panama-2019/index.xml" rel="self" type="application/rss+xml" />
+    <description>Marine Microbiome Workshop II</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©metacrobe &amp; Istmobiome Project 2019</copyright><lastBuildDate>Tue, 05 Nov 2019 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>/img/panama_dna_50.png</url>
+      <title>Marine Microbiome Workshop II</title>
+      <link>/events/bocas-del-toro-panama-2019/</link>
+    </image>
+    
+  </channel>
+</rss>
