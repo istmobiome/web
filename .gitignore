@@ -41,5 +41,5 @@
 build/*_files/
 
 # HUGO/blogdown-related
-themes/ # unadulterated theme dir
-public/ # Only if using netlify
+themes/
+public/ 
