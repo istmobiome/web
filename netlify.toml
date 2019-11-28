@@ -12,15 +12,15 @@
 
 [[redirects]]
   from = "http://istmobiome.rbind.io/*"
-  to = "https://istmobiome.rbind.io/:splat "
-  status = 300
+  to = "https://istmobiome.rbind.io/:splat"
+  status = 301
 
 [[redirects]]
   from = "http://istmobiome.netlify.com/*"
   to = "https://istmobiome.rbind.io/:splat"
-  status = 300
+  status = 301
 
 [[redirects]]
   from = "https://istmobiome.netlify.com/*"
   to = "https://istmobiome.rbind.io/:splat"
-  status = 300
+  status = 301
