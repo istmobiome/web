@@ -14,13 +14,16 @@
   from = "http://istmobiome.netlify.com/*"
   to = "https://istmobiome.rbind.io/:splat"
   status = 301
+  force = true
 
 [[redirects]]
   from = "https://istmobiome.netlify.com/*"
   to = "https://istmobiome.rbind.io/:splat"
   status = 301
+  force = true
 
-  [[redirects]]
-    from = "http://istmobiome.rbind.io/*"
-    to = "https://istmobiome.rbind.io/:splat"
-    status = 301
+[[redirects]]
+  from = "http://istmobiome.rbind.io/*"
+  to = "https://istmobiome.rbind.io/:splat"
+  status = 301
+  force = true
