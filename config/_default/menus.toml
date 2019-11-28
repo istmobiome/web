@@ -35,17 +35,16 @@
   weight = 100
 
 [[main]]
-  pre = "<i class='fab fa-github fa-lg '></i>"
-  name = "  "
-  url = "https://github.com/istmobiome/web/"
-  weight = 240
-
-[[main]]
   name = ""
   url = "contact/"
-  weight = 250
+  weight = 240
   pre = "<i class='fas fa-envelope fa-lg'></i>"
 
+  [[main]]
+    pre = "<i class='fab fa-github fa-lg '></i>"
+    name = "  "
+    url = "https://github.com/istmobiome/web/"
+    weight = 250
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.

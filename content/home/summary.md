@@ -9,7 +9,7 @@ active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
 title = "The Great Trans-Isthmian Experiment"
-subtitle = "### A bridge on land &  a barrier in the sea"
+subtitle = "### A bridge on land, a barrier in the sea"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
