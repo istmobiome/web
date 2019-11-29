@@ -59,7 +59,7 @@
   identifier = "github"
   name = ""
   pre = "<i class=\"fab fa-github fa-lg\"></i>"
-  url = "https:///github.com/istmobiome/web"
+  url = "https://github.com/istmobiome/web"
   weight = 110
 
 
