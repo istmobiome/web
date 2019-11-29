@@ -54,15 +54,17 @@ subtitle = "### A bridge on land, a barrier in the sea"
 
   <p>Some <span class="callout">three million years</span> ago, a spectacular natural experiment began when the <span class="callout">Isthmus</span> of <span class="callout">Panama</span> finally <span class="callout">closed</span>, a process that began several million years earlier.</p>
 
-  <p>For <span class="callout">terrestrial</span> organisms, the formation of the Isthmus created a land bridge that <span class="callout">connected</span> North & South America, allowing for massive <span class="callout">migrations</span> of plants & animals.</p>
+  <p>For <span class="callout">terrestrial</span> organisms, the formation of the Isthmus created a land <span class="callout">bridge</span> that connected North & South America, allowing for massive <span class="callout">migrations</span> of plants & animals.</p>
 
   <p>For <span class="callout">marine</span> organisms, the story unfolded quite differently. Where once a single tropical ocean flowed, the land bridge became a marine <span class="callout">barrier</span>, altering ocean currents & causing different physicochemical environments to emerge.</p>
 
-  <p>These radically different conditions are reflected in the resident benthic communities. Many species went locally extinct after the Isthmus closed (e.g., coral, fish, bivalves).</p>
+  <p>These radically different conditions are reflected in the resident benthic communities. Many species went locally extinct after the Isthmus closed (e.g., coral, fish, bivalves) and gene flow ceased.</p>
 
-  <p>Yet pairs of closely related <span class="callout">sister species</span> (<span class="callout">geminates</span>) thrive on either side. Some of these species pairs are so similar that morphology alone is not enough to tell them apart.</p>
+  <p>Yet pairs of closely related sister species (<span class="callout">geminates</span>) thrive on either side today. Some of these species pairs are so similar that morphology alone is not enough to tell them apart.</p>
 
-  <p><em>How did the close of the Isthmus affect the evolution of microorganisms, the structure of microbial communities, and the function of host-associated microbiomes?</em></p>
+  {{% alert question %}}
+  <p>How did the close of the Isthmus affect the evolution of microorganisms, the structure of microbial communities, and the function of host-associated microbiomes?</p>
+  {{% /alert %}}
 
   <p>In this project, we exploit contrasting (a) <span class="callout">geographic regions</span>, (b) <span class="callout">benthic habitats</span>, and (c) <span class="callout">environmental gradients</span>, to understand the evolutionary divergence of marine microbiomes in changing environments & their functional significance in different systems.</p>
 

@@ -576,6 +576,13 @@ div.alert-warning > div:first-child::before {
   content: '\f071';
 }
 
+div.alert-question > div:first-child::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #414141;
+  content: '\f059';
+}
+
 .article-style aside a,
 div.alert a {
   color: currentColor;
@@ -594,4 +601,10 @@ div.alert a {
   color: #cd0930;
   background-color: #fff5f7;
   border-color: #ff3860;
+}
+
+.alert-question {
+  color: #414141;
+  background-color: #FCFCFC;
+  border-color: #414141;
 }
