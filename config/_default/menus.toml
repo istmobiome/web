@@ -7,7 +7,7 @@
   name = " Home"
   url = "#slider"
   weight = 10
-  pre = "<i class='fas fa-home fa-lg'></i>"
+  pre = "<i class=\"fas fa-home fa-lg\"></i>"
 
 [[main]]
   name = "The Story"
@@ -19,9 +19,9 @@
   url = "#gallery"
   weight = 30
 
-  [[main]]
-    name = "Projects"
-    url = "#projects"
+[[main]]
+  name = "Projects"
+  url = "#projects"
     weight = 40
 
 [[main]]
@@ -32,19 +32,19 @@
 [[main]]
   name = "Events"
   url = "events/"
+  weight = 60
+
+[[main]]
+  name = "<i class=\"fas fa-envelope fa-lg\"></i>"
+  url = "contact/"
+  post = ""
   weight = 100
 
 [[main]]
-  name = ""
-  url = "contact/"
-  weight = 240
-  pre = "<i class='fas fa-envelope fa-lg'></i>"
-
-  [[main]]
-    pre = "<i class='fab fa-github fa-lg '></i>"
-    name = "  "
-    url = "https://github.com/istmobiome/web/"
-    weight = 250
+  name = "<i class=\"fab fa-github fa-lg\"></i>"
+  post = ""
+  url = "https://github.com/istmobiome/web"
+  weight = 110
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
