@@ -21,6 +21,12 @@ subtitle = ""
   description = "2"
 
 [[feature]]
+  icon = "binoculars"
+  icon_pack = "fas"
+  name = "Field Sites"
+  description = "33"
+
+[[feature]]
   icon = "fish"
   icon_pack = "fas"
   name = "Fish"

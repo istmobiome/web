@@ -5,8 +5,8 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
-title = "Projects"
-subtitle = "Portal for studies from the Istmobiome Project. Use the buttons to filter by projects by keyword or click [here](project/) to access the landing page. "
+title = "Project Portal"
+subtitle = "Use the buttons to filter projects by keyword or click [here](project/) to access the project landing page."
 
 [content]
   # Page type to display. E.g. project.
