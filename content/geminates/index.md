@@ -13,6 +13,6 @@ widget: blank
 {{< gallery album = "fish">}}
 
 
-# Geminate shrimp
+# Awesome Tile Work
 
 {{< gallery album = "shrimp">}}
