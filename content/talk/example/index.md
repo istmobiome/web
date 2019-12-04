@@ -6,9 +6,9 @@ abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere 
 address:
   city: Bocas del Toro
   country: Panama
-  postcode:
-  region:
-  street:
+  postcode: null
+  region: null
+  street: null
 all_day: false
 authors: []
 date: "2030-06-01T13:00:00Z"

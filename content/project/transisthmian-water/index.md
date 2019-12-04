@@ -9,9 +9,9 @@ links:
   icon_pack: fab
   name: Follow
   url: https://twitter.com/
+publication: null
 slides: transisthmian-water
-publication:
-summary:
+summary: Stuff
 tags:
 - Water
 title: Trans-Isthmian Water Microbiomes

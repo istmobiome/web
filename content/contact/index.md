@@ -1,6 +1,7 @@
 ---
+aliases:
+- bio
 summary: How to get in touch
-title: "Contact"
+title: Contact
 type: widget_page
-aliases: [bio]
 ---

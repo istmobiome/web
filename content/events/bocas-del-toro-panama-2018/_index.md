@@ -1,19 +1,20 @@
 ---
-date: '2018-11-05T00:00:00+01:00'
+categories: []
+date: "2018-11-05T00:00:00+01:00"
 draft: false
-lastmod: '2018-11-05T00:00:00+01:00'
+lastmod: "2018-11-05T00:00:00+01:00"
 linktitle: Bocas Del Toro Panama 2018
 menu:
   bocas-del-toro-panama-2018:
     name: Motivation
     weight: 1
-summary: From model organisms to ecosystems&#58; scaling-up our understanding of host-microbe symbiosis in the sea
+summary: From model organisms to ecosystems&#58; scaling-up our understanding of host-microbe
+  symbiosis in the sea
+tags: []
 title: Marine Microbiome Workshop
-toc: no
+toc: false
 type: docs
 weight: 1
-categories: []
-tags: []
 ---
 
 ### From model organisms to ecosystems&#58; scaling-up our understanding of host-microbe symbiosis in the sea

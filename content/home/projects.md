@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
 title = "Project Portal"
-subtitle = "Use the buttons to filter projects by keyword or click [here](project/) to access the project landing page."
+subtitle = "Use the buttons to filter projects by keyword or click [here](/project/) to access the project landing page."
 
 [content]
   # Page type to display. E.g. project.
