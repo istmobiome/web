@@ -1,0 +1,11 @@
+# Font style metadata
+name = "Minimal"
+
+# Optional Google font URL
+google_fonts = "PT+Sans|PT+Sans+Narrow|PT+Serif|Roboto+Condensed|Nunito:300|Nunito+Sans:300|Lato:300|Roboto:300|Ropa+Sans|Monaco|PT+Mono|Source+Sans+Pro|"
+
+# Font families
+heading_font = "Lato"
+body_font = "Source Sans Pro"
+nav_font = "Roboto"
+mono_font = "Monaco"
