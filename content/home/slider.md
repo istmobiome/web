@@ -38,7 +38,7 @@ height = "250px"
 
   [[item]]
     title = "The Isthmus of Panama Changed the World..."
-    content = "Three million years ago an experiment began that"
+    content = "Three million years ago an experiment began"
     align = "center"  # Choose `center`, `left`, or `right`.
 
     # Overlay a color or image (optional).
@@ -49,7 +49,7 @@ height = "250px"
 
 [[item]]
   title = "...on Land..."
-  content = "connected two continents"
+  content = "it connected two continents"
   align = "right"
 
   overlay_color = "#666"  # An HTML color value.
@@ -58,7 +58,7 @@ height = "250px"
 
 [[item]]
   title = "...and in the Sea."
-  content = "and divided one ocean. "
+  content = "it divided one ocean. "
   align = "right"
 
   overlay_color = "#333"  # An HTML color value.

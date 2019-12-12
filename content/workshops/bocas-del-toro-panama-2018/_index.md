@@ -6,7 +6,7 @@ lastmod: "2018-11-05T00:00:00+01:00"
 linktitle: Bocas Del Toro Panama 2018
 menu:
   bocas-del-toro-panama-2018:
-    name: Main Menu
+    name: Front Page
     weight: 1
 summary: From model organisms to ecosystems&#58; scaling-up our understanding of host-microbe symbiosis in the sea
 tags: []
@@ -17,7 +17,6 @@ weight: 1
 ---
 
 ### From model organisms to ecosystems&#58; scaling-up our understanding of host-microbe symbiosis in the sea
-
 
 December 3--8 2018<br/>
 Smithsonian Tropical Research Institute<br/>
