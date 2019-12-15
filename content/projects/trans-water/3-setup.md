@@ -14,7 +14,7 @@ weight: 5
 # - parent: Reference a parent ID if this page is a child.
 # - weight: Position of link in the submenu.
 menu:
-  setup:
+  trans-water:
     parent: Environment Setup
     # parent: YourParentID
     weight: 5

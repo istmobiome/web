@@ -1,0 +1,55 @@
+---
+title: Test
+linktitle: Test
+summary:
+date: 2019-12-13T15:58:49-05:00
+lastmod: 2019-12-13T15:58:49-05:00
+draft: false  # Is this a draft? true/false
+toc: true  # Show table of contents? true/false
+type: docs  # Do not modify.
+weight: 5
+# Add menu entry to sidebar.
+# - Substitute `example` with the name of your course/documentation folder.
+# - name: Declare this menu item as a parent with ID `name`.
+# - parent: Reference a parent ID if this page is a child.
+# - weight: Position of link in menu.
+menu:
+  trans-water:
+    parent: Environment Setup
+    # parent: YourParentID
+    weight: 5
+---
+
+
+<div id="TOC">
+true
+</div>
+
+<pre class="r"><code>library(DiagrammeR)
+library(htmlwidgets)
+library(DiagrammeRsvg)
+library(rsvg)
+my_graphviz &lt;- grViz(&quot;
+digraph boxes_and_circles {
+
+ # add node statements
+ node [shape = circle]
+ A; B; C; D; E; F
+
+ node [shape = box]
+ 1; 2; 3; 4; 5; 6; 7[label = &#39;stuff&#39;]; 8[label = &#39;stuff&#39;]
+
+ # Add edge statements
+ A-&gt;1; B-&gt;2; B-&gt;3; B-&gt;4; C-&gt;A;
+ 1-&gt;D; E-&gt;A; 2-&gt;4; 1-&gt;5; 1-&gt;F;
+ E-&gt;6; 4-&gt;6; 5-&gt;7; 6-&gt;7;
+
+}
+&quot;)</code></pre>
+<p><img src="dag.png" /></p>
+<p>{{&lt; figure library=“true” src=“dag.png” title=“A caption” lightbox=“true” &gt;}}</p>
+<p>{{ figure src=“dag.png” title=“A caption” lightbox=“true” }}</p>
+<div class="figure">
+<img src="dag.png" alt="alternative text for search engines" />
+<p class="caption">alternative text for search engines</p>
+</div>

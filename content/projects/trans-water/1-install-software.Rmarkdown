@@ -1,5 +1,5 @@
 ---
-title: Installing Anvi'o
+title: Software Installation
 linktitle: Software
 summary:
 date: 2019-12-07T16:44:26-05:00
@@ -14,7 +14,7 @@ weight: 3
 # - parent: Reference a parent ID if this page is a child.
 # - weight: Position of link in menu.
 menu:
-  setup:
+  trans-water:
     parent: Environment Setup
     # parent: YourParentID
     weight: 3
@@ -26,8 +26,6 @@ menu:
 For this project we are going to use [anvi'o](http://merenlab.org/software/anvio/)---a gnarly, innovative platform for metagenomic analysis and visualization. If you put in the time to learn this platform, you will be rewarded with beautifully rendered, interactive graphics, that allow you to explore your data in novel ways. As the developers like to say, anvi'o helps you get your hands dirty.
 
 We will use many other external tools to generate data products that we can then port into the anvi'o ecosystem.
-
-WARNING: By the time you read this, some of these instructions may be out of date. Please consult the source material for  individual programs and databases to ensure up-to-date installations.
 
 ## Miniconda
 

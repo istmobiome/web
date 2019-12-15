@@ -57,7 +57,7 @@ height = "250px"
   overlay_filter = 0.3  # Darken the image. Value in range 0-1.
 
 [[item]]
-  title = "...and in the Sea."
+  title = "...in the Sea."
   content = "it divided one ocean. "
   align = "right"
 

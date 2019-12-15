@@ -14,7 +14,7 @@ weight: 4
 # - parent: Reference a parent ID if this page is a child.
 # - weight: Position of link in menu.
 menu:
-  setup:
+  trans-water:
     parent: Environment Setup
     # parent: YourParentID
     weight: 4
@@ -27,6 +27,9 @@ There are two main types of annotations we are interested in for this metagenomi
 Lets start with the tools and databases for **taxonomic** classification.
 
 ## Taxonomic Classification
+
+anvi-setup-scg-databases
+
 
 ### Centrifuge
 

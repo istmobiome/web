@@ -1,0 +1,288 @@
+---
+title: Test
+linktitle: Test
+summary:
+date: 2019-12-13T15:58:49-05:00
+lastmod: 2019-12-13T15:58:49-05:00
+draft: false  # Is this a draft? true/false
+toc: true  # Show table of contents? true/false
+type: docs  # Do not modify.
+weight: 5
+# Add menu entry to sidebar.
+# - Substitute `example` with the name of your course/documentation folder.
+# - name: Declare this menu item as a parent with ID `name`.
+# - parent: Reference a parent ID if this page is a child.
+# - weight: Position of link in menu.
+menu:
+  trans-water:
+    parent: Environment Setup
+    # parent: YourParentID
+    weight: 5
+---
+
+
+```{r}
+library(DiagrammeR)
+library(htmlwidgets)
+library(DiagrammeRsvg)
+library(rsvg)
+my_graphviz <- grViz("
+digraph boxes_and_circles {
+
+ # add node statements
+ node [shape = circle]
+ A; B; C; D; E; F
+
+ node [shape = box]
+ 1; 2; 3; 4; 5; 6; 7[label = 'stuff']; 8[label = 'stuff']
+
+ # Add edge statements
+ A->1; B->2; B->3; B->4; C->A;
+ 1->D; E->A; 2->4; 1->5; 1->F;
+ E->6; 4->6; 5->7; 6->7;
+
+}
+")
+
+```
+
+
+```{r, workflow, echo = FALSE}
+library(DiagrammeR)
+library(htmlwidgets)
+library(DiagrammeRsvg)
+library(rsvg)
+
+
+dag <- grViz ("
+digraph boxes_and_circles {
+  graph [layout = dot]
+
+
+	0[label = 'metagenomics_workflow_target_rule', color = '0.03 0.6 0.85', style='rounded'];
+	1[label = 'annotate_contigs_database\ngroup: WA', color = '0.27 0.6 0.85', style='rounded'];
+	2[label = 'gen_qc_report', color = '0.24 0.6 0.85', style='rounded'];
+	3[label = 'annotate_contigs_database\ngroup: EP', color = '0.27 0.6 0.85', style='rounded'];
+	4[label = 'anvi_merge', color = '0.45 0.6 0.85', style='rounded'];
+	5[label = 'anvi_merge', color = '0.45 0.6 0.85', style='rounded'];
+	6[label = 'anvi_run_ncbi_cogs', color = '0.61 0.6 0.85', style='rounded'];
+	7[label = 'anvi_gen_contigs_database', color = '0.09 0.6 0.85', style='rounded'];
+	8[label = 'anvi_run_pfams', color = '0.65 0.6 0.85', style='rounded'];
+	9[label = 'anvi_import_taxonomy_for_genes', color = '0.33 0.6 0.85', style='rounded'];
+	10[label = 'anvi_run_hmms', color = '0.18 0.6 0.85', style='rounded'];
+	11[label = 'anvi_run_scg_taxonomy', color = '0.16 0.6 0.85', style='rounded'];
+	12[label = 'iu_filter_quality_minoche\nsample: WAM_MYS', color = '0.11 0.6 0.85', style='rounded'];
+	13[label = 'iu_filter_quality_minoche\nsample: WAR_MAR', color = '0.11 0.6 0.85', style='rounded'];
+	14[label = 'iu_filter_quality_minoche\nsample: EPR_11A', color = '0.11 0.6 0.85', style='rounded'];
+	15[label = 'iu_filter_quality_minoche\nsample: EPR_9A', color = '0.11 0.6 0.85', style='rounded'];
+	16[label = 'import_krakenuniq_taxonomy', color = '0.57 0.6 0.85', style='rounded'];
+	17[label = 'import_percent_of_reads_mapped', color = '0.62 0.6 0.85', style='rounded'];
+	18[label = 'anvi_profile', color = '0.35 0.6 0.85', style='rounded'];
+	19[label = 'import_krakenuniq_taxonomy', color = '0.57 0.6 0.85', style='rounded'];
+	20[label = 'anvi_gen_contigs_database', color = '0.09 0.6 0.85', style='rounded'];
+	21[label = 'import_percent_of_reads_mapped', color = '0.62 0.6 0.85', style='rounded'];
+	22[label = 'anvi_profile', color = '0.35 0.6 0.85', style='rounded'];
+	23[label = 'anvi_gen_contigs_database', color = '0.09 0.6 0.85', style='rounded'];
+	24[label = 'import_krakenuniq_taxonomy', color = '0.57 0.6 0.85', style='rounded'];
+	25[label = 'anvi_profile', color = '0.35 0.6 0.85', style='rounded'];
+	26[label = 'import_krakenuniq_taxonomy', color = '0.57 0.6 0.85', style='rounded'];
+	27[label = 'import_percent_of_reads_mapped', color = '0.62 0.6 0.85', style='rounded'];
+	28[label = 'anvi_profile', color = '0.35 0.6 0.85', style='rounded'];
+	29[label = 'import_percent_of_reads_mapped', color = '0.62 0.6 0.85', style='rounded'];
+	30[label = 'anvi_script_reformat_fasta', color = '0.17 0.6 0.85', style='rounded'];
+	31[label = 'centrifuge', color = '0.43 0.6 0.85', style='rounded'];
+	32[label = 'iu_gen_configs', color = '0.21 0.6 0.85', style='rounded'];
+	33[label = 'krakenuniq_mpa_report', color = '0.60 0.6 0.85', style='rounded'];
+	34[label = 'anvi_init_bam', color = '0.52 0.6 0.85', style='rounded'];
+	35[label = 'krakenuniq_mpa_report', color = '0.60 0.6 0.85', style='rounded'];
+	36[label = 'anvi_script_reformat_fasta', color = '0.17 0.6 0.85', style='rounded'];
+	37[label = 'anvi_init_bam', color = '0.52 0.6 0.85', style='rounded'];
+	38[label = 'anvi_script_reformat_fasta', color = '0.17 0.6 0.85', style='rounded'];
+	39[label = 'krakenuniq_mpa_report', color = '0.60 0.6 0.85', style='rounded'];
+	40[label = 'anvi_init_bam', color = '0.52 0.6 0.85', style='rounded'];
+	41[label = 'krakenuniq_mpa_report', color = '0.60 0.6 0.85', style='rounded'];
+	42[label = 'anvi_init_bam', color = '0.52 0.6 0.85', style='rounded'];
+	43[label = 'anvi_script_reformat_fasta_prefix_only', color = '0.44 0.6 0.85', style='rounded'];
+	44[label = 'export_gene_calls_for_centrifuge', color = '0.41 0.6 0.85', style='rounded'];
+	45[label = 'krakenuniq', color = '0.14 0.6 0.85', style='rounded'];
+	46[label = 'samtools_view', color = '0.51 0.6 0.85', style='rounded'];
+	47[label = 'krakenuniq', color = '0.14 0.6 0.85', style='rounded'];
+	48[label = 'anvi_script_reformat_fasta_prefix_only', color = '0.44 0.6 0.85', style='rounded'];
+	49[label = 'samtools_view', color = '0.51 0.6 0.85', style='rounded'];
+	50[label = 'anvi_script_reformat_fasta_prefix_only', color = '0.44 0.6 0.85', style='rounded'];
+	51[label = 'krakenuniq', color = '0.14 0.6 0.85', style='rounded'];
+	52[label = 'samtools_view', color = '0.51 0.6 0.85', style='rounded'];
+	53[label = 'krakenuniq', color = '0.14 0.6 0.85', style='rounded'];
+	54[label = 'samtools_view', color = '0.51 0.6 0.85', style='rounded'];
+	55[label = 'megahit\ngroup: {group}', color = '0.00 0.6 0.85', style='rounded'];
+	56[label = 'gzip_fastqs\nR: R2', color = '0.30 0.6 0.85', style='rounded'];
+	57[label = 'gzip_fastqs\nR: R1', color = '0.30 0.6 0.85', style='rounded'];
+	58[label = 'bowtie', color = '0.13 0.6 0.85', style='rounded'];
+	59[label = 'gzip_fastqs\nR: R1', color = '0.30 0.6 0.85', style='rounded'];
+	60[label = 'gzip_fastqs\nR: R2', color = '0.30 0.6 0.85', style='rounded'];
+	61[label = 'megahit\ngroup: WA', color = '0.00 0.6 0.85', style='rounded'];
+	62[label = 'bowtie', color = '0.13 0.6 0.85', style='rounded'];
+	63[label = 'megahit\ngroup: EP', color = '0.00 0.6 0.85', style='rounded'];
+	64[label = 'gzip_fastqs\nR: R1', color = '0.30 0.6 0.85', style='rounded'];
+	65[label = 'gzip_fastqs\nR: R2', color = '0.30 0.6 0.85', style='rounded'];
+	66[label = 'bowtie', color = '0.13 0.6 0.85', style='rounded'];
+	67[label = 'gzip_fastqs\nR: R1', color = '0.30 0.6 0.85', style='rounded'];
+	68[label = 'gzip_fastqs\nR: R2', color = '0.30 0.6 0.85', style='rounded'];
+	69[label = 'bowtie', color = '0.13 0.6 0.85', style='rounded'];
+	70[label = 'bowtie_build', color = '0.20 0.6 0.85', style='rounded'];
+	71[label = 'bowtie_build', color = '0.20 0.6 0.85', style='rounded'];
+	1 -> 0
+	2 -> 0
+	3 -> 0
+	4 -> 0
+	5 -> 0
+	6 -> 1
+	7 -> 1
+	8 -> 1
+	9 -> 1
+	10 -> 1
+	11 -> 1
+	12 -> 2
+	13 -> 2
+	14 -> 2
+	15 -> 2
+	6 -> 3
+	7 -> 3
+	8 -> 3
+	9 -> 3
+	10 -> 3
+	11 -> 3
+	16 -> 4
+	17 -> 4
+	18 -> 4
+	19 -> 4
+	20 -> 4
+	21 -> 4
+	22 -> 4
+	23 -> 5
+	24 -> 5
+	25 -> 5
+	26 -> 5
+	27 -> 5
+	28 -> 5
+	29 -> 5
+	7 -> 6
+	30 -> 7
+	7 -> 8
+	7 -> 9
+	31 -> 9
+	7 -> 10
+	10 -> 11
+	7 -> 11
+	32 -> 12
+	32 -> 13
+	32 -> 14
+	32 -> 15
+	21 -> 16
+	33 -> 16
+	22 -> 16
+	18 -> 17
+	20 -> 18
+	34 -> 18
+	17 -> 19
+	35 -> 19
+	18 -> 19
+	36 -> 20
+	22 -> 21
+	20 -> 22
+	37 -> 22
+	38 -> 23
+	28 -> 24
+	29 -> 24
+	39 -> 24
+	23 -> 25
+	40 -> 25
+	25 -> 26
+	41 -> 26
+	27 -> 26
+	25 -> 27
+	23 -> 28
+	42 -> 28
+	28 -> 29
+	43 -> 30
+	44 -> 31
+	45 -> 33
+	46 -> 34
+	47 -> 35
+	48 -> 36
+	49 -> 37
+	50 -> 38
+	51 -> 39
+	52 -> 40
+	53 -> 41
+	54 -> 42
+	55 -> 43
+	7 -> 44
+	56 -> 45
+	57 -> 45
+	58 -> 46
+	59 -> 47
+	60 -> 47
+	61 -> 48
+	62 -> 49
+	63 -> 50
+	64 -> 51
+	65 -> 51
+	66 -> 52
+	67 -> 53
+	68 -> 53
+	69 -> 54
+	12 -> 56
+	12 -> 57
+	70 -> 58
+	60 -> 58
+	59 -> 58
+	13 -> 59
+	13 -> 60
+	59 -> 61
+	60 -> 61
+	56 -> 61
+	57 -> 61
+	70 -> 62
+	56 -> 62
+	57 -> 62
+	65 -> 63
+	67 -> 63
+	64 -> 63
+	68 -> 63
+	14 -> 64
+	14 -> 65
+	71 -> 66
+	67 -> 66
+	68 -> 66
+	15 -> 67
+	15 -> 68
+	71 -> 69
+	64 -> 69
+	65 -> 69
+	36 -> 70
+	38 -> 71
+
+
+	graph [nodesep = 0.1]
+
+}
+")
+
+export_svg(dag) %>%
+  charToRaw() %>%
+  rsvg() %>%
+  png::writePNG("../../../static/img/dag.png")
+
+```
+
+
+![](dag.png)
+
+
+
+{{< figure library="true" src="dag.png" title="A caption" lightbox="true" >}}
+
+{{ figure src="dag.png" title="A caption" lightbox="true" }}
+
+![alternative text for search engines](dag.png)
