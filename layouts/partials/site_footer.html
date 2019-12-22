@@ -12,7 +12,7 @@
   {{ end }}
 
   <p class="powered-by">
-    {{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify}} &middot; {{ end }}
+    {{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify}} {{ end }}
     <br/>
     Powered by
     <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i></a>,

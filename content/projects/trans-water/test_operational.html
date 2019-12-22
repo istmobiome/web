@@ -1,0 +1,40 @@
+---
+title: Test-Operational
+linktitle: Test-Operational
+summary:
+date: 2019-12-13T15:58:49-05:00
+lastmod: 2019-12-13T15:58:49-05:00
+draft: true  # Is this a draft? true/false
+toc: true  # Show table of contents? true/false
+type: docs  # Do not modify.
+weight: 5
+raw: "https://raw.githubusercontent.com/rbind/blogdown-demo/master/content/post/2017-09-07-adding-htmlwidgets-to-r-markdown-posts.Rmd"
+
+# Add menu entry to sidebar.
+# - Substitute `example` with the name of your course/documentation folder.
+# - name: Declare this menu item as a parent with ID `name`.
+# - parent: Reference a parent ID if this page is a child.
+# - weight: Position of link in menu.
+bibliography: [cite.bib]
+url_pdf: http://arxiv.org/pdf/1512.04133v1
+link-citations: true
+menu:
+  trans-water:
+    parent: Environment Setup
+    # parent: YourParentID
+    weight: 5
+---
+
+
+<div id="TOC">
+true
+</div>
+
+{{% figure src="/img/dag.png" title=" Colors indicate broad divisions of workflow: sky blue, short-read prep & co-assembly; blueish green, short-read mapping to assembly; orange, taxonomic or functional classification; yellow, automatic binning. Filled reddish purple boxes indicate steps where databases are constructed. " lightbox="true" alt="Hum, looks like there is something wrong here." %}}
+<p>Directed acyclic graph (DAG) of the metagenomic workflow where edge connections represent dependencies and nodes represent commands. The workflow begins with raw data (trimmed of Illumina adapters) and continues up to and including automatic binning of contigs. At the end of this workflow we then proceed with manual binning and MAG generation. For simplicity, only 2 samples from the Eastern Pacific &amp; 2 samples from the Western Atlantic are shown.</p>
+<p>citation <span class="citation">(Eren et al. <a href="#ref-eren2015anvi">2015</a>)</span></p>
+<div id="refs" class="references">
+<div id="ref-eren2015anvi">
+<p>Eren, A Murat, Özcan C Esen, Christopher Quince, Joseph H Vineis, Hilary G Morrison, Mitchell L Sogin, and Tom O Delmont. 2015. “Anvi’o: An Advanced Analysis and Visualization Platform for ‘Omics Data.” <em>PeerJ</em> 3. PeerJ Inc.: e1319.</p>
+</div>
+</div>

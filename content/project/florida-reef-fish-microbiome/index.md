@@ -2,7 +2,7 @@
 title: Herbivorous Reef Fish Microbiome
 authors: []
 summary: Amplicon analysis of itenstinal microbiomes from 5 species of Florida herbivorous reef fish.
-tags:
+tags: ["fish", "16S rRNA", "amplicon"]
 categories: []
 date: "2019-12-05T00:00:00+01:00"
 external_link:
@@ -61,3 +61,11 @@ In this study, we
 On this site you will find details on our reproducible bioinformatics workflow and how to access all data/data products. We also provide numerous data tables and figures including all tables, figures, and supplementary information from the original publiation.
 
 To access the molecular data and complete bioinformatic workflow use the buttons at the top of the page or visit https://projectdigest.github.io/.
+
+<hr/>
+
+<p><small>
+<em>All banner photos on this page were retreived from Wikimedia Commons and Licensed under Creative Commons Attributions. Each photo was modified from the originals by removing the background</em>.
+
+**Banner photos from left to right**: <em>Acanthurus bahianus/Acanthurus tractus </em><a href="https://commons.wikimedia.org/wiki/Category:Acanthurus_bahianus#/media/File:Acanthurus_bahianus_SI2.jpg">(original)</a> licenced under <a href="https://creativecommons.org/share-your-work/public-domain/cc0">CC-0</a>; <em>Acanthurus coeruleus </em><a href="https://commons.wikimedia.org/wiki/File:Fish13092009a.jpg">(original)</a> by Sylfred1977 licenced under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA-3.0</a>; <em>Scarus taeniopterus</em> (Desmarest 1831) <a href="https://commons.wikimedia.org/wiki/File:Scarus_taeniopterus_-_pone.0010676.g130.png">(original)</a>, <em>Sparisoma aurofrenatum</em> (Valenciennes, 1840) <a href="https://commons.wikimedia.org/wiki/File:Sparisoma_aurofrenatum_-_pone.0010676.g133.png">(original)</a>, and <em>Sparisoma viride</em> (Bonnaterre, 1788) <a href="https://commons.wikimedia.org/wiki/File:Stoplight-parrotfish.jpg">(original)</a> all licenced under <a href="https://creativecommons.org/licenses/by/2.5/">CC-BY-2.5</a> by <a href="https://doi.org/10.1371/journal.pone.0010676">Williams et. al., 2010</a>.
+</small></p>

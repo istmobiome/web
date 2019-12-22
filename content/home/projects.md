@@ -26,12 +26,12 @@ subtitle = "Use the cards to access individual projects, buttons to filter proje
     tag = "*"
 
   [[content.filter_button]]
-    name = "Fish"
-    tag = "Fish"
+    name = "fish"
+    tag = "fish"
 
   [[content.filter_button]]
-    name = "Water"
-    tag = "Water"
+    name = "water"
+    tag = "water"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.

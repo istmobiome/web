@@ -17,7 +17,7 @@ image:
   focal_point: ""
   preview_only: false
 projects: []
-publication: '*Journal of Source Themes, 1*(1)'
+publication: '*Journal of Source Themes II, 1*(1)'
 publication_short: ""
 publication_types:
 - "2"
@@ -36,6 +36,7 @@ url_project: ""
 url_slides: ""
 url_source: ""
 url_video: ""
+draft: true
 ---
 
 {{% alert note %}}

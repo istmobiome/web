@@ -39,6 +39,7 @@ url_project: ""
 url_slides: ""
 url_source: '#'
 url_video: '#'
+draft: true
 ---
 
 {{% alert note %}}

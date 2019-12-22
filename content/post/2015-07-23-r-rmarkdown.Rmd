@@ -4,6 +4,7 @@ author: "Frida Gomam"
 date: 2015-07-23T21:13:14-05:00
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
+draft: true
 ---
 
 ```{r setup, include=FALSE}
@@ -34,4 +35,10 @@ pie(
   col = c('#0292D8', '#F7EA39', '#C4B632'),
   init.angle = -50, border = NA
 )
+```
+
+# Interactive Table
+
+```{r}
+DT::datatable(head(iris, 20))
 ```
