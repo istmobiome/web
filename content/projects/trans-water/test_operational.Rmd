@@ -28,10 +28,9 @@ menu:
 ```{r, setup, echo=FALSE}
 # For DAG
 library(DiagrammeR)
-library(htmlwidgets)
+# library(htmlwidgets)
 library(DiagrammeRsvg)
 library(rsvg)
-
 ```
 
 ```{r, workflow, echo = FALSE}

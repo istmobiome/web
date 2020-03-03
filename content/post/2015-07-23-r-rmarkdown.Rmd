@@ -36,9 +36,3 @@ pie(
   init.angle = -50, border = NA
 )
 ```
-
-# Interactive Table
-
-```{r}
-DT::datatable(head(iris, 20))
-```

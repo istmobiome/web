@@ -5,7 +5,7 @@ summary:
 date: 2019-12-13T15:58:49-05:00
 lastmod: 2019-12-13T15:58:49-05:00
 draft: false  # Is this a draft? true/false
-toc: true  # Show table of contents? true/false
+toc: true
 type: docs  # Do not modify.
 weight: 5
 raw: "https://raw.githubusercontent.com/rbind/blogdown-demo/master/content/post/2017-09-07-adding-htmlwidgets-to-r-markdown-posts.Rmd"
@@ -27,12 +27,41 @@ menu:
     parent: Environment Setup
     # parent: YourParentID
     weight: 5
+exclude_jquery: true
 ---
 
 
-This is an example of a table that does not render up except for the header.
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
 
-```{r, message=FALSE, warning=FALSE}
+# R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+fit <- lm(dist ~ speed, data = cars)
+fit
+```
+
+# Including Plots
+
+You can also embed plots. See Figure \@ref(fig:pie) for example:
+
+```{r pie, fig.cap='A fancy pie chart.', tidy=FALSE}
+par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c('Sky', 'Sunny side of pyramid', 'Shady side of pyramid'),
+  col = c('#0292D8', '#F7EA39', '#C4B632'),
+  init.angle = -50, border = NA
+)
+```
+
+```{r, message=FALSE, warning=FALSE, results = "asis"}
 library(DT)
 library(tidyverse)
 d1 <- iris %>%
@@ -40,31 +69,7 @@ d1 <- iris %>%
 d1
 ```
 
-<hr/>
 
-Until you use htmlwidgets and place it in an iframe like so...
-
-```{r, message=FALSE, warning=FALSE}
-library(htmlwidgets)
-library(htmltools)
-
-htmlwidgets::saveWidget(d1, file = "d1.html", selfcontained = TRUE)
-
-```
-
-<iframe seamless src="../d1/index.html" width="100%" height="500"></iframe>
-
-here is the iframe code:
-`<iframe seamless src="../d1/index.html" width="100%" height="500"></iframe>`
-
-But the container is not responsive. However, the [d1 table](https://istmobiome.rbind.io/projects/trans-water/d1/) fis responsive
-
-<hr/>
-
-
-This is an example of a table that does not show up at all.
-
-
-```{r, message=FALSE, warning=FALSE}
-dt <- DT::datatable(head(iris, 20))
+```{r, message=FALSE, warning=FALSE, results = "asis"}
+DT::datatable(head(iris, 20))
 ```
