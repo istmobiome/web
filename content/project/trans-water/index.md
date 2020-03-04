@@ -15,6 +15,23 @@ image:
 links:
 - name: Go to Project Site
   url: projects/trans-water/
+- icon: database
+  icon_pack: fas
+  name: Data
+  url: https://projectdigest.github.io/data_availability.html
+- icon: code
+  icon_pack: fas
+  name: Code
+  url: https://projectdigest.github.io/raw_code.txt
+- icon: github
+  icon_pack: fab
+  name: GitHub
+  url: https://github.com/projectdigest/web/
+- icon: newspaper
+  icon_pack: fas
+  name: Publication
+  url: https://projectdigest.github.io/publication.html
+  
 #- icon: database
 #  icon_pack: fas
 #  name: Data

@@ -1,5 +1,5 @@
 ---
-title: Project Site
+title: Contents
 subtitle: Assembly-based metagenomics of coral reef & mangrove water samples from both sides of the Isthmus.
 summary: Assembly-based metagenomics of coral reef & mangrove water samples from both sides of the Isthmus.
 categories: []
@@ -16,3 +16,12 @@ toc: false
 type: docs
 weight: 1
 ---
+
+## How to navigate this site.
+
+On the left side is the **Project Menu**, which lists the main topics. Within most topics is an additional menu on the right side that contains conecpts within the topic. 
+
+## Content Description
+
+1) **Environment Setup**: How we installed all software and annotgation databases.
+2) **Workflow**: Various workflows we used to process the data.

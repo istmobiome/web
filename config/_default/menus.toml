@@ -25,20 +25,6 @@
   url = "#projects"
   weight = 40
 
-# To setup a dropdown menu set "identifier " in "parent" and reference
-# parent in child
-#[[main]]
-#  parent = "projects"
-#  name = "Project1"
-#  url = "#projects"
-#  weight = 41
-
-#[[main]]
-#  parent = "projects"
-#  name = "Project2"
-#  url = "#projects"
-#  weight = 42
-
 [[main]]
   name = "<i class=\"fas fa-envelope fa-lg\"></i>"
   url = "contact/"
@@ -59,8 +45,26 @@
   weight = 130
 
 [[main]]
-  name = "TESTING"
-  url = "projects/trans-water/test"
+  parent = "More"
+  name = "Talks"
+  url = "talks/"
+  weight = 140
+
+
+# To setup a dropdown menu set "identifier " in "parent" and reference
+# parent in child
+#[[main]]
+#  parent = "projects"
+#  name = "Project1"
+#  url = "#projects"
+#  weight = 41
+
+#[[main]]
+#  parent = "projects"
+#  name = "Project2"
+#  url = "#projects"
+#  weight = 42
+
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.

@@ -7,7 +7,7 @@ lastmod: 2019-12-07T16:44:26-05:00
 draft: false
 toc: true
 type: docs
-weight: 4
+weight: 40
 # Add menu entry to sidebar.
 # - Substitute `example` with the name of your course/documentation folder.
 # - name: Declare this menu item as a parent with ID `name`.
@@ -15,9 +15,9 @@ weight: 4
 # - weight: Position of link in menu.
 menu:
   trans-water:
-    parent: Environment Setup
-    # parent: YourParentID
-    weight: 4
+    parent: ENVIRONMENT SETUP
+    namet: Databases
+    weight: 40
 ---
 
 <br/>
@@ -167,6 +167,10 @@ anvi-setup-pfams  --pfam-data-dir PATH_TO_PFAM_DIR
 The COG db is 2.3GB and the PFAM db is 283MB.
 
 And thats it. We can add more databases as we need them.
+
+### GhostKOALA/KEGG
+
+Running GhostKOALA/KEGG  was pretty easy thanks to this [handy tutorial](http://merenlab.org/2018/01/17/importing-ghostkoala-annotations/). But since we run the analysis on the GhostKOALA webserver, there is no database to set up here. We provide more details when it comes time to actually set up for the analysis and parse the data.
 
 ### Concluding remarks
 
