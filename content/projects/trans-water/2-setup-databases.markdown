@@ -63,7 +63,7 @@ conda activate kaiji
 conda install -c bioconda kaiju
 ```
 
-After kaiju is installed, the next thing to do is generate the database. You can find a description of kaiju databases [here](https://github.com/bioinformatics-centre/kaiju#creating-the-reference-database-and-index). I downloaded and formatted the `nr` and `mar` databases.
+After kaiju is installed, the next thing to do is generate the database. You can find a description of kaiju databases [here](https://github.com/bioinformatics-centre/kaiju#creating-the-reference-database-and-index). I downloaded and formatted the `nr` and `mar` databases. The `nr` database is a subset of NCBI BLAST nr database containing all proteins belonging to Archaea, Bacteria and Viruses. The `mar` database contains protein sequences from all [Mar databases](https://mmp.sfb.uit.no/).
 
 Simply run the `kaiju-makedb` command and specify a database.
 
@@ -74,6 +74,44 @@ kaiju-makedb -s nr_euk
 ```
 
 The `mar` database is 19GB and the `nr_euk` is 90GB.
+
+<details markdown="1"><summary>Show/hide Kaiju database build job details</summary>
+<pre><code>
+# /bin/sh
+# ----------------Parameters---------------------- #
+#$ -S /bin/sh
+#$ -pe mthread 2
+#$ -q mThM.q
+#$ -l mres=200G,h_data=100G,h_vmem=100G,himem
+#$ -cwd
+#$ -j y
+#$ -N makeDB_e2
+#$ -o makeDB_e2_2.log
+# ----------------Your Commands------------------- #
+#
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
+echo + NSLOTS = $NSLOTS
+#
+# ----------------THIS Activate the conda anvio support, not anvio -------------- #
+#
+export PATH=/home/scottjj/miniconda3/bin:$PATH
+source activate anvio-master
+#
+which kaiju-makedb
+gcc --version
+which perl
+#
+# ----------------For nr_euk db -------------- #
+kaiju-makedb -h
+kaiju-makedb -s nr_euk
+#
+# ----------------For mar db -------------- #
+kaiju-makedb -h
+kaiju-makedb -s mar
+#
+echo = `date` job $JOB_NAME done
+</code></pre>
+</details>
 
 ### KrakenUniq
 
@@ -96,7 +134,7 @@ I was unable to build a database.
 I generally followed [this recipe](https://github.com/simroux/VirSorter) for installing virsorter except I separated out the installation of dependencies to individual commands because I like to monitor any conflics between packages.
 
 ```bash
-conda create --name virsorter python==3.6 -
+conda create --name virsorter python==3.6
 conda activate virsorter
 
 conda install -c bioconda mcl=14.137

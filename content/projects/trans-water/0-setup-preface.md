@@ -7,7 +7,7 @@ lastmod: 2019-12-07T16:50:29-05:00
 draft: false  # Is this a draft? true/false
 toc: false  # Show table of contents? true/false
 type: docs  # Do not modify.
-weight: 20
+weight: 40
 # Add menu entry to sidebar.
 # - Substitute `example` with the name of your course/documentation folder.
 # - name: Declare this menu item as a parent with ID `name`.
@@ -17,7 +17,7 @@ menu:
   trans-water:
     name: ENVIRONMENT SETUP
     # parent: YourParentID
-    weight: 20
+    weight: 40
 ---
 
 <br/>
@@ -28,3 +28,6 @@ The first major step in our analysis of water column metagenomic samples from th
 {{% alert warning %}}
 By the time you read this, some of these instructions may be out of date. Please consult the source material for  individual programs and databases to ensure up-to-date installations.
 {{% /alert %}}
+
+
+For each job we also include the Hydra job script we used (where appropriate) embeded in a handy dropdown.

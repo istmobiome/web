@@ -7,7 +7,7 @@ lastmod: 2019-12-07T16:44:26-05:00
 draft: false
 toc: true
 type: docs
-weight: 30
+weight: 50
 # Add menu entry to sidebar.
 # - Substitute `example` with the name of your course/documentation folder.
 # - name: Declare this menu item as a parent with ID `name`.
@@ -17,7 +17,7 @@ menu:
   trans-water:
     parent: ENVIRONMENT SETUP
     name: Software
-    weight: 30
+    weight: 50
 ---
 
 <br/>

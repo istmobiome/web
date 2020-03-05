@@ -1,5 +1,5 @@
 ---
-title: Assembley-based Metagenomic Workflow
+title: Assembly-based Metagenomic Workflow
 linktitle: Workflow
 summary:
 date: 2019-12-07T16:44:26-05:00
@@ -7,8 +7,8 @@ lastmod: 2019-12-07T16:44:26-05:00
 draft: false
 toc: true
 type: docs
-weight: 80
-bibliography: [cite.bib]
+weight: 100
+bibliography: [files/cite.bib]
 link-citations: true
 # Add menu entry to sidebar.
 # - Substitute `example` with the name of your course/documentation folder.
@@ -18,8 +18,8 @@ link-citations: true
 menu:
   trans-water:
     parent: WORKFLOWS
-    name: Assembley & Annotations
-    weight: 80
+    name: Assembly & Annotations
+    weight: 100
 ---
 
 <br/>
@@ -33,8 +33,6 @@ Specifically we will:
   1) Perform adapter trimming using TRIMMOMATIC.
   2) Use the anvi'o Snakemake workflow to: a) quality filter trimmed, raw reads;  b) co-assemble metagenomic sets; c) recruit reads; d) profile the mapping results; e) merge profile dbs; f) classify reads and genes; g) annotate genes; h) run HMM profiles.
   3) Use some external tools for annotation and clssification.
-
-For each job we also include the Hydra job script we used (where appropriate) embeded in a handy dropdown.
 
 ## Trimming
 
@@ -97,7 +95,7 @@ Thanks to the anvi'o implementation of Snakemake we can run many commands suquen
 
 You can see all the settings we used and download our configs file [here](../files/default-config.txt) or grab it from  the folded code below. Some commands we chose not to run but they remain in the workflow for posterity.
 
-We decided to do 2 separate assemblies, one for the Western Atlantic samples (n = 29) and one for the Eastern Pacific samples (n = 28). To do this we needed a separate file called `samples.txt` which can be downloaded [here](../files/samples.txt). This file tells anvi'o where to find the **trimmed** fastq files for each sample and what group the sample belongs to. The file is a four-column, tab-delimited file. We can use  a two  samples from each assembley to illustrate the format.
+We decided to do 2 separate assemblies, one for the Western Atlantic samples (n = 29) and one for the Eastern Pacific samples (n = 28). To do this we needed a separate file called `samples.txt` which can be downloaded [here](../files/samples.txt). This file tells anvi'o where to find the **trimmed** fastq files for each sample and what group the sample belongs to. The file is a four-column, tab-delimited file. We can use  a two  samples from each assembly to illustrate the format.
 
 
 | sample | group |               r1                        |                r2                       |
@@ -619,7 +617,7 @@ There are many tools used in the workflow that need to be cited. Also, there are
 
 ## VirSorter annotation
 
-We ran Virsorter on conigs from both assemblies (WA & EP) using our newly created `contig.db`'s generated after the co-assembley step. We ran Virsorter with and without the `--virome` flag. See [issue 40](https://github.com/simroux/VirSorter/issues/40) on the Virsorter GitHub site for a discussion of why we did this. Here are the VirSorter commands.
+We ran Virsorter on conigs from both assemblies (WA & EP) using our newly created `contig.db`'s generated after the co-assembly step. We ran Virsorter with and without the `--virome` flag. See [issue 40](https://github.com/simroux/VirSorter/issues/40) on the Virsorter GitHub site for a discussion of why we did this. Here are the VirSorter commands.
 
 ```bash
 wrapper_phage_contigs_sorter_iPlant.pl -f 02_FASTA/WA/WA-contigs.fa --ncpu $NSLOTS --db 2 --wdir 07_TAXONOMY/VIRSORTER/WA --data-dir $PATH/virsorter-data --diamond
@@ -628,7 +626,7 @@ wrapper_phage_contigs_sorter_iPlant.pl -f 02_FASTA/EP/EP-contigs.fa --ncpu $NSLO
 wrapper_phage_contigs_sorter_iPlant.pl -f 02_FASTA/EP/EP-contigs.fa --ncpu $NSLOTS --db 2 --wdir 07_TAXONOMY/VIRSORTER_VIROME/EP --data-dir $PATH/virsorter-data --diamond --virome
 ```
 
-<details markdown="1"><summary>Show/hide VIRSORTER job script</summary>
+<details markdown="1"><summary>Show/hide HYDRA VIRSORTER job script</summary>
 <pre><code>
 # /bin/sh
 # ----------------Parameters---------------------- #
@@ -676,7 +674,7 @@ echo = `date` job $JOB_NAME don
 
 ## Kaiju annotation
 
-In addition to the Centrifuge classification we are going to use [Kaiju](https://doi.org/10.1038/ncomms11257) to classify gene calls. We will do this against the [two databases](https://github.com/bioinformatics-centre/kaiju#downloading-and-compiling-kaiju) we built [earlier](../2-setup-databases/#kaiju).
+In addition to the Centrifuge classification we are going to use [Kaiju](https://doi.org/10.1038/ncomms11257) to classify gene calls. We will do this against the [two databases](https://github.com/bioinformatics-centre/kaiju#creating-the-reference-database-and-index) we built [earlier](../2-setup-databases/#kaiju).
 
 First we need to activate anvi'o, make a directory for the output, and grab the gene calls. Note that `$KAIJU` is the path to the input/output directory, which in this case is the new directory, `07_TAXONOMY/KAIJU/`.
 
@@ -708,7 +706,7 @@ kaiju-addTaxonNames -t $K_FILES/marine_db/nodes.dmp -n $K_FILES/marine_db/names.
 kaiju-addTaxonNames -t $K_FILES/marine_db/nodes.dmp -n $K_FILES/marine_db/names.dmp -i $KAIJU/WA_kaiju_mar.out -o $KAIJU/WA_kaiju_mar.names -r superkingdom,phylum,order,class,family,genus,species
 ```
 
-<details markdown="1"><summary>Show/hide KAIJU job script</summary>
+<details markdown="1"><summary>Show/hide HYDRA KAIJU job script</summary>
 <pre><code>
 # /bin/sh
 # ----------------Parameters---------------------- #
@@ -821,7 +819,7 @@ anvi-import-taxonomy-for-genes -c 03_CONTIGS/EP-contigs.db -p kaiju -i $KAIJU/EP
 anvi-import-taxonomy-for-genes -c 03_CONTIGS/WA-contigs.db -p kaiju -i $KAIJU/WA_kaiju_nr.names --just-do-it
 ```
 
-<details markdown="1"><summary>Show/hide KAIJU import and summarize job script</summary>
+<details markdown="1"><summary>Show/hide HYDRA KAIJU import and summarize job script</summary>
 <pre><code>
 # /bin/sh
 # ----------------Parameters---------------------- #
@@ -949,7 +947,7 @@ ktImportText -o $KRAKEN/WA-kraken.html $KRAKEN/WAM_ALR-kraken.krona $KRAKEN/WAM_
 
 Now we have a Krona plot page for the EP samples (`EP-kraken.html`) and the WA samples (`WA-kraken.html`).
 
-<details markdown="1"><summary>Show/hide Kraken classification job details</summary>
+<details markdown="1"><summary>Show/hide HYDRA Kraken classification job details</summary>
 <pre><code>
 # /bin/sh
 # ----------------Parameters---------------------- #
@@ -1037,7 +1035,7 @@ do
 done
 ```
 
-<details markdown="1"><summary>Show/hide Import Kraken taxonomy job details</summary>
+<details markdown="1"><summary>Show/hide HYDRA Import Kraken taxonomy job details</summary>
 <pre><code>
 # /bin/sh
 # ----------------Parameters---------------------- #
@@ -1103,7 +1101,7 @@ anvi-run-pfams -c 03_CONTIGS/WA-contigs.db --pfam-data-dir /pool/genomics/stri_i
 anvi-run-pfams -c 03_CONTIGS/EP-contigs.db --pfam-data-dir /pool/genomics/stri_istmobiome/dbs/pfam_db/ -T $NSLOTS
 ```
 
-<details markdown="1"><summary>Show/hide SCG and Pfam job details</summary>
+<details markdown="1"><summary>Show/hide HYDRA SCG & Pfam job details</summary>
 <pre><code>
 # /bin/sh
 # ----------------Parameters---------------------- #
@@ -1163,14 +1161,14 @@ echo = `date` job $JOB_NAME done
 
 ## Merge Profiles
 
-Now that everything is added into the `contig.db` for the EP and WA assemblies and layer taxonomy is added to the individual `PROFILE.db`, its now time to merge all `PROFILE.db` into a single database for each assembley.
+Now that everything is added into the `contig.db` for the EP and WA assemblies and layer taxonomy is added to the individual `PROFILE.db`, its now time to merge all `PROFILE.db` into a single database for each assembly.
 
 ```bash
 anvi-merge 05_ANVIO_PROFILE/EP/*/PROFILE.db -c 03_CONTIGS/EP-contigs.db -o 06_MERGED/EP
 anvi-merge 05_ANVIO_PROFILE/WA/*/PROFILE.db -c 03_CONTIGS/WA-contigs.db -o 06_MERGED/WA
 ```
 
-<details markdown="1"><summary>Show/hide  Merge Profile.db job details</summary>
+<details markdown="1"><summary>Show/hide HYDRA  Merge Profile databases job details</summary>
 <pre><code>
 # /bin/sh
 # ----------------Parameters---------------------- #
@@ -1274,7 +1272,7 @@ If you get an error you may need to reformat the gene calls files.
 awk 'BEGIN {FS="\t"; OFS="\t"} {print $1, $2, $6, $7, $3, $4, $5, $8}' all_gene_calls_TEMP.txt > all_gene_calls.txt
 ```
 
-Finally, import all of the data in to the contig and profile dbs from each assembley.
+Finally, import all of the data in to the contig and profile dbs from each assembly.
 
 ```bash
 anvi-import-misc-data $VIRSORTER/WA-virsorter_additional_info.txt -p 06_MERGED/WA/PROFILE.db  --target-data-table items
@@ -1286,7 +1284,7 @@ anvi-import-collection $VIRSORTER/EP-virsorter_collection.txt -c 03_CONTIGS/EP-c
 anvi-import-functions -c 03_CONTIGS/EP-contigs.db -i $VIRSORTER/EP-virsorter_annotations.txt
 ```
 
-<details markdown="1"><summary>Show/hide Virsorter annotation import job details</summary>
+<details markdown="1"><summary>Show/hide HYDRA Virsorter annotation import job details</summary>
 <pre><code>
 # /bin/sh
 # ----------------Parameters---------------------- #
