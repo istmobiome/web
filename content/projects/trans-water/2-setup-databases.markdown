@@ -1,5 +1,5 @@
 ---
-title: Annotation Databases &  Software
+title:  Annotation Databases
 linktitle: Databases
 summary:
 date: 2019-12-07T16:44:26-05:00
@@ -7,7 +7,7 @@ lastmod: 2019-12-07T16:44:26-05:00
 draft: false
 toc: true
 type: docs
-weight: 40
+weight: 60
 # Add menu entry to sidebar.
 # - Substitute `example` with the name of your course/documentation folder.
 # - name: Declare this menu item as a parent with ID `name`.
@@ -16,11 +16,12 @@ weight: 40
 menu:
   trans-water:
     parent: ENVIRONMENT SETUP
-    namet: Databases
-    weight: 40
+    name: Databases
+    weight: 60
 ---
 
 <br/>
+
 
 There are two main types of annotations we are interested in for this metagenomic project---**taxonomic** and **functional**---and there are many, many ways to accomplish both of these goals. This next section involves building the databases and installing any additional tools we need for annotation.
 
@@ -28,8 +29,7 @@ Lets start with the tools and databases for **taxonomic** classification.
 
 ## Taxonomic Classification
 
-anvi-setup-scg-databases
-
+There are many algorithms and databases for taxonomic classification. We will use [KrakenUniq](https://github.com/fbreitwieser/krakenuniq) to classify short reads. We will also use [Centrifuge](https://ccb.jhu.edu/software/centrifuge/), [Kaiju](https://github.com/bioinformatics-centre/kaiju), and [VirSorter](https://github.com/simroux/VirSorter) for contigs. Anvio has methods of importing data from each of these approaches but if you have a have a favorite tool/database there are workarounds to get most results into the appropriate anvio database.
 
 ### Centrifuge
 
@@ -125,7 +125,62 @@ conda install krakenuniq
 conda activate krakenuniq
 ```
 
-I was unable to build a database.
+There are two steps to creating a database for analysis, `krakenuniq-download` which downloads the data and `krakenuniq-build` which, yup you guessed it, builds the database. For some reason building a krakenuniq database has become problematic of late. Specifically, `krakenuniq-build` hangs for days trying to write two files. `database.kraken.tsv` and `database.report.tsv`. There are a few issues about this on GitHub (e.g., [here](https://github.com/fbreitwieser/krakenuniq/issues/38) and [here](https://github.com/fbreitwieser/krakenuniq/issues/56)) but unfortunately these have not been addressed and it is unclear if the platform is still being supported. That said, I tried two databases (refseq and microbial-nt) and here is what I did.
+
+```bash
+# Download & Build refseq
+krakenuniq-download --db DB --taxa "archaea,bacteria,viral,fungi,protozoa" --dust --exclude-environmental-taxa refseq/bacteria refseq/archaea refseq/fungi refseq/protozoa refseq/viral/Any viral-neighbors --threads $NSLOTS
+krakenuniq-build --db DB --kmer-len 31 --threads $NSLOTS --taxids-for-genomes --taxids-for-sequences --jellyfish-hash-size 10000M --max-db-size 300
+# Ran this after job failed to clean up
+krakenuniq-build --db DB --kmer-len 31 --threads $NSLOTS --taxids-for-genomes --taxids-for-sequences --clean
+# Download & Build microbial-nt
+krakenuniq-download --db DB --dust  --exclude-environmental-taxa --threads $NSLOTS microbial-nt
+krakenuniq-build --db DB --kmer-len 31 --threads $NSLOTS --taxids-for-genomes --taxids-for-sequences
+# Ran this after job failed to clean up
+krakenuniq-build --db DB --kmer-len 31 --threads $NSLOTS --taxids-for-genomes --taxids-for-sequences --clean
+```
+
+<details markdown="1"><summary>Show/hide Kraken database build job details</summary>
+<pre><code>
+# /bin/sh
+# ----------------Parameters---------------------- #
+#$ -S /bin/sh
+#$ -pe mthread 3
+#$ -q mThM.q
+#$ -l mres=450G,h_data=150G,h_vmem=150G,himem
+#$ -cwd
+#$ -j y
+#$ -N job_00_build_kraken_db3
+#$ -o job_00_build_kraken_db5.job
+#
+# ----------------Modules------------------------- #
+module load bioinformatics/blast
+#
+# ----------------Load Envs------------------- #
+#
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
+echo + NSLOTS = $NSLOTS
+#
+# ----------------Activate Kraken-------------- #
+#
+export PATH=/home/scottjj/miniconda3/bin:$PATH
+source activate krakenuniq
+#
+# ----------------For refseq DB -------------- #
+krakenuniq-download --db DB --taxa "archaea,bacteria,viral,fungi,protozoa" --dust --exclude-environmental-taxa refseq/bacteria refseq/archaea refseq/fungi refseq/protozoa refseq/viral/Any viral-neighbors --threads $NSLOTS
+krakenuniq-build --db DB --kmer-len 31 --threads $NSLOTS --taxids-for-genomes --taxids-for-sequences --jellyfish-hash-size 10000M --max-db-size 300
+# ----------------RUN after job fails -------------- #
+#krakenuniq-build --db DB --kmer-len 31 --threads $NSLOTS --taxids-for-genomes --taxids-for-sequences --clean
+#
+# ----------------For refseq DB -------------- #
+krakenuniq-download --db DB --dust  --exclude-environmental-taxa --threads $NSLOTS microbial-nt
+krakenuniq-build --db DB --kmer-len 31 --threads $NSLOTS --taxids-for-genomes --taxids-for-sequences
+# ----------------RUN after job fails -------------- #
+krakenuniq-build --db DB --kmer-len 31 --threads $NSLOTS --taxids-for-genomes --taxids-for-sequences --clean
+#
+echo = `date` job $JOB_NAME done
+</code></pre>
+</details>
 
 ### VirSorter
 

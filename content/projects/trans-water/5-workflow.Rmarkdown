@@ -33,9 +33,14 @@ library(htmltools)
 
 <br/>
 
-## About
-
-In this section of the workflow we summarize some of the data generated thus far before moving on to genome reconstruction.
+{{% alert synopsis %}}
+In this section of the workflow we summarize:
+  1) QC & assemby results.
+  2) Kraken short read taxonomy.
+  3) Mapping results.
+  4) Contig classification.
+We use [Krona plots](https://github.com/marbl/Krona/wiki) to visualize and explore the various classification results.
+{{% /alert %}}
 
 ## QC & Contig Stats
 
@@ -119,14 +124,22 @@ Below is an example of the Kraken taxonomy for all of the EP samples. For demons
 
 `r blogdown::shortcode("figure", src = "/img/krona/krona-demo.png", title = " Example Krona plot: The panel on the left controls aspects of the plot. Search by taxon name, select a specific sample, control font size, etc. On the left plot, click once over a taxa and the group is highlighted. Double-click to expand the group as seen on the right. Upper right corner provides a summary of the expanded group.")`
 
-### Separated by Sample
+### Krona plots
+
+#### Separated by Sample
 
 Since the Kraken classification was performed BEFORE assembly we can look at the Krona plots for individual samples.
 
 * [Kraken classifications for all Eastern Pacific samples](../ep-kraken/index.html)
 * [Kraken classifications for all Western Atlantic samples](../wa-kraken/index.html)
 
-### Combined by Ocean
+*Note. Since these plots are web hosted, I decided to keep only the first 10 ranks from the classification files to make the files smaller*.
+
+```bash
+cut -f 1-10 WA_kaiju_mar.out.krona > WA_kaiju_mar-TRIM.out.krona
+```
+
+#### Combined by Ocean
 
 If you prefer to look at all samples combined by ocean we got you covered there too.
 
@@ -226,7 +239,13 @@ You can  download a text version of the table using the buttons or by clicking [
 
 ## Contig Classification
 
-Now we move on to the classification of contigs from each assembly. We can start with the Kaiju classification again using the Krona plots. Remember we classified the contigs the `nr` and `mar`  databases. Lets use the Krona plots to compare the results from these databases for both assemblies.
+Now we move on to the classification of contigs from each assembly. We can start with the Kaiju classification again using the Krona plots. Remember we classified the contigs against both the `nr` and `mar`  databases. Lets use the Krona plots to compare the results from these databases for both assemblies.
+
+### Krona plots
+
+#### Comparing Databases
 
 * [Eastern Pacific Kaiju classification against nr & mar](../ep-kaiju-compare/index.html)
 * [Western Atlantic Kaiju classification against nr & mar](../wa-kaiju-compare/index.html)
+
+We will get into much more of the annotation data later, including the various functional annotations. For now though we have a pretty good idea of the shape and nature of these datasets.

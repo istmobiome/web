@@ -142,7 +142,7 @@
         "--overwrite-output-destinations": true,
         "--report-variability-full": "",
         "--skip-SNV-profiling": "",
-        "--profile-SCVs": "",
+        "--profile-SCVs": true,
         "--description": "",
         "--skip-hierarchical-clustering": "",
         "--distance": "",

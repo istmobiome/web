@@ -1,5 +1,5 @@
 ---
-title: Contents
+title: Site Contents
 subtitle: Assembly-based metagenomics of coral reef & mangrove water samples from both sides of the Isthmus.
 summary: Assembly-based metagenomics of coral reef & mangrove water samples from both sides of the Isthmus.
 categories: []
@@ -17,13 +17,17 @@ type: docs
 weight: 1
 ---
 
+#### [Return to the Portal Page](/project/trans-water/)
+
 ## How to navigate this site.
 
 On the left side is the **Project Menu**, which lists the main topics. Within most topics is an additional menu on the right side that contains conecpts within the topic.
 
 ## Content Description
 
-{{% alert note %}}
+<br/>
+
+{{% alert synopsis %}}
 There are some important abbreviations we use throughout this site that describe different sample types. Our samples come from two oceans and two habitats within each ocean, denoted as follows:
 
 #### Oceans:

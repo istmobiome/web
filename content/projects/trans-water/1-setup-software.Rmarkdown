@@ -22,10 +22,17 @@ menu:
 
 <br/>
 
+The first major step in our analysis of water column metagenomic samples from the Eastern Pacific and Western Atlantic is to setup our working environment. We will do this in two steps. The first is to set up the backbone of our computational operations, which consists of Miniconda and anvio. We will do this below. Next we set up the annotation databases and associated tools. Lets begin.
 
-For this project we are going to use [anvi'o](http://merenlab.org/software/anvio/network/)---an innovative (and dare I say gnarly) platform for metagenomic analysis and visualization. If you put in the time to learn this platform, you will be rewarded---beautifully rendered interactive graphics, a deeper understanding of metagenomics, and the ability to explore your data in novel ways. As the developers like to say, anvi'o helps you get your hands dirty.
+{{% alert synopsis %}}
+* These datasets are a bit large. You will most likely need to do this on a compute cluster. A personal computer will be insufficiant for most of the steps.
+* By the time you read this, some of these instructions may be out of date.  Consult the source material for programs/databases to ensure up-to-date installations.
+* For each step we also include the Hydra job script we used, embeded in a handy dropdown.
+{{% /alert %}}
 
-We will use many other external tools to generate data products that we can port into the anvi'o ecosystem.
+For this project we are going to use [anvi'o](http://merenlab.org/software/anvio/network/)---an innovative (and dare I say gnarly) platform for metagenomic analysis and visualization. If you put in the time to learn this platform, you will be rewarded---beautifully rendered interactive graphics, a deeper understanding of metagenomics, and the ability to explore your data in novel ways. As the developers like to say, anvi'o helps you get your hands dirty. More on that in a minute.
+
+We will also use many other tools to generate data products that we can port into the anvi'o ecosystem.
 
 ## Miniconda
 
@@ -56,7 +63,19 @@ If you ever want to know if there is a conda package for some program, just sear
 
 ## Anvi'o
 
-Now we are ready to install anvi'o. You can find up-to-date installation [instructions](http://merenlab.org/2016/06/26/installation-v2/) on the anvi'o website. For posterity I will describe here exactly how I set everything up at the time of analysis.
+Now we are ready to install anvi'o. If you plan to work with anvio I have a few recommendations.
+
+{{% alert synopsis %}}
+1) Take some time to look around the [anvi'o website](http://merenlab.org/software/anvio/). There is a TON of information, not just about the software platorm but about metagenomics in general. For example have a look at the metagenomic [vocabulary](http://merenlab.org/vocabulary/) page.
+2) The anvio developers offer many options for [getting help](http://merenlab.org/2019/10/07/getting-help/). I suggest joining their Slack channel or Google Group. For technical issues check out the [anvio GitHub site](https://github.com/merenlab/anvio).
+3) There are many tutorials built around core anvio functionality. Be sure to work through some of those.
+4) The [data page](http://merenlab.org/data/) has data and reproducible bioinformatic workflows for all their publications. This is an invaluable resource that I use all the time.
+5) You can find up-to-date installation [instructions](http://merenlab.org/2016/06/26/installation-v2/) on the anvi'o website.
+6) Another excellent resource if you're just getting started is [Happy Belly Bioinformatics](https://astrobiomike.github.io/). Thats right. Great name, great site.
+
+{{% /alert %}}
+
+For posterity I will describe here exactly how I installed anvio  at the time of this analysis.
 
 ### Development anvi'o
 
@@ -303,3 +322,7 @@ Structure DB version .........................: 1
 ```
 
 </details>
+
+## Other Software
+
+As mentioned above, we will use many other tools. Some are installed with anvio, some we installed while installing anvio, while others need to be installed separately. We will do this as the need arises and document it as we move through the workflow. In the next section for example we  build some databases and install the tools we need at the same time. :)

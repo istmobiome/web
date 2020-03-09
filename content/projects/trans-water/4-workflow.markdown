@@ -7,9 +7,10 @@ lastmod: 2019-12-07T16:44:26-05:00
 draft: false
 toc: true
 type: docs
-weight: 80
+weight: 100
 bibliography: [files/cite.bib]
 link-citations: true
+highlight: true
 # Add menu entry to sidebar.
 # - Substitute `example` with the name of your course/documentation folder.
 # - name: Declare this menu item as a parent with ID `name`.
@@ -19,10 +20,18 @@ menu:
   trans-water:
     parent: WORKFLOWS
     name: Assembly & Annotations
-    weight: 80
+    weight: 100
 ---
 
 <br/>
+
+{{% alert synopsis %}}
+The following sections concern the various workflows we used to process the datasets.
+
+1) **Assembly & Annotations**: Trimming, quality control, co-assembly, annotations (taxonomic & functional), and mapping.
+2) **Data Summary**: Summary of qc, co-assembly, annotation, and mapping analyses.
+
+{{% /alert %}}
 
 ## About
 
@@ -470,7 +479,7 @@ echo = `date` job $JOB_NAME don
 </code></pre>
 </details>
 
-There are many tools used in the workflow that need to be cited. Also, there are several tools that we wanted to run external of the workflow. Results from some of these need to be added to the individual `PROFILE.db`'s or the merged `PROFILE.db`. Therefore, before the `anvi-merge` finished we killed the job, ran the analyses described below, and finally restarted the workflow to finish the missing step. Cumbersome, yes, but it got the job done.
+There are many tools used in the workflow that need to be cited. Also, there are several tools that we  run outside of the snakemake workflow. Results from some of these need to be added to the individual `PROFILE.db`'s or the merged `PROFILE.db`. Therefore, before the `anvi-merge` finished we killed the job, ran the analyses described below, and finally restarted the workflow to finish the missing step. Cumbersome, yes, but it got the job done.
 
 ## VirSorter annotation
 
@@ -1210,4 +1219,14 @@ echo = `date` job $JOB_NAME done
 
 ## Conclusion
 
-This section of the workflow is complete. At this point we have fully annotated contig databases, individual and merged profile databases, and summary data to work with. In the next section we can look at some of the summary data and then move on to rebuilding genomes from the assemblies.
+This section of the workflow is complete. Lets take a look at the what we have so far. We will go through each directory.
+
+  1) `00_LOGS` Individual log files for each step of the snakemake workflow.
+  2) `00_TRIMMED` Eight trimmed, compressed fastq files for each sample.
+  3) `01_QC` Merge forward (R1) and reverse (R2) QC'ed fastq files and QC `STATS` file for each sample. Also the `qc-report.txt` file which is a summary table of all QC results.
+  4) `02_FASTA` A contig fasta file and reformat report for each assembly.
+  5) `03_CONTIGS` An annotated contig database for each assembly. Taxonomic annotations = `centrifuge`.
+
+
+
+   fully annotated contig databases, individual and merged profile databases, and summary data to work with. In the next section we can look at some of the summary data and then move on to rebuilding genomes from the assemblies.

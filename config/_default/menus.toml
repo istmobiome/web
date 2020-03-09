@@ -40,16 +40,27 @@
 
 [[main]]
   parent = "More"
-  name = "Workshops"
-  url = "workshops/"
-  weight = 130
+  name = "Talks"
+  url = "talk/"
+  weight = 140
 
 [[main]]
   parent = "More"
-  name = "Talks"
-  url = "talks/"
-  weight = 140
+  name = "Workshops"
+  url = "workshops/"
+  weight = 150
 
+[[main]]
+  name = "People"
+  url = "authors/"
+  weight = 160
+
+[[main]]
+  name = " "
+  identifier = "water"
+  pre = "<i class=\"fas fa-water fa-lg\"></i>"
+  url = "projects/trans-water/"
+  weight = 180
 
 # To setup a dropdown menu set "identifier " in "parent" and reference
 # parent in child

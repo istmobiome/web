@@ -22,19 +22,6 @@ p#hero-lead {
   color: #414141;
 }
 
-.r {
-    background-color: #e8e8e8;
-    font-size: 0.8em;
-    border-left: 5px solid #FC6464;
-  }
-
-code {
-  font-family: $sta-font-mono, monospace;
-  color: #c7254e;
-  background-color: #f9f2f4;
-	font-size: 0.8em;
-}
-
 /*************************************************
  *  Change From assets/scss/academic/_nav.scss
  **************************************************/
@@ -48,7 +35,7 @@ code {
 
 /*************************************************
  *  Custom add to assets/scss/academic/_root.scss
- *  Several choics for boxes and callouts: warning,
+ *  Several choices for boxes and callouts: warning,
  * question, alert, info, and synopsis box.
  * From "Article Alerts (Shortcode) and Asides (Mmark)"
  **************************************************/
@@ -192,3 +179,155 @@ footer p {
   font-size: 0.9rem;
   text-align: center;
 }
+
+/*************************************************
+*  Change from assets/scss/academic/_root.scss
+**************************************************/
+/*************************************************
+* This is my attempt to modify the "github"
+* highlight_style which I think comes from here:
+* https://github.com/highlightjs/highlight.js/blob/master/src/styles/github.css
+**************************************************/
+
+/* controls code block with NO language i think */
+/* But not needed with Github style below */
+/**************************************************/
+
+/*.r {
+    background-color: #e8e8e8;
+    font-size: 1em;
+    border-left: 5px solid #FC6464;
+  } */
+
+/* Use these to make language specific styles. */
+/* Need to add style name to params.toml under highlight_languages */
+/**************************************************/
+
+/*
+code.language-bash.hljs {
+    font-size: 1em;
+    border-left: 7px solid #FC6464;
+  }
+*/
+
+/*
+code.language-r.hljs {
+    font-size: 1em;
+    border-left: 7px solid #FC6464;
+  }
+*/
+
+/* controls only single tick code i think */
+code {
+  font-family: $sta-font-mono, monospace;
+  color: #c7254e;
+  background-color: #f9f2f4;
+	font-size: 0.8em;
+}
+
+/* Github style begins here */
+
+/*
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+	border-left: 7px solid #FC6464;
+	border-top: 0.5px solid #FC6464;
+	border-bottom: 0.5px solid #FC6464;
+	border-right: 1px solid #FC6464;
+	border-radius: 10px;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+/*  color: #333; */
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #FC6464;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+/* Github style ENDS here */

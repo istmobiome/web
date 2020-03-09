@@ -1,7 +1,7 @@
 ---
 title: Transisthmian Water Microbiomes
-subtitle: Assembly-based metagenomics of coral reef & mangrove water samples from both sides of the Isthmus.
-summary: Assembly-based metagenomics of coral reef & mangrove water samples from both sides of the Isthmus.
+subtitle: Assembly-based metagenomics of coral reef & mangrove water samples from both sides of the Isthmus of Panama.
+summary: Assembly-based metagenomics of coral reef & mangrove water samples from both sides of the Isthmus of Panama.
 authors: []
 tags: []
 categories: []
@@ -31,7 +31,7 @@ links:
   icon_pack: fas
   name: Publication
   url: https://projectdigest.github.io/publication.html
-  
+
 #- icon: database
 #  icon_pack: fas
 #  name: Data
@@ -71,8 +71,8 @@ In this study, we
 - Investigate the evolution of free-living marine microbes of both sides of the Isthmus of Panama; the Eastern Pacific (EP) & Western Atlantic (WA).
 - Collected a total of 57 water column samples collected from mangroves and coral reefs, dominant benthic habitats.
 - Each sample (4L) was filtered through a 0.22 micron filter. DNA was extracted from the filters and used for metagenomic sequencing.
--  Performed separate co-assemblies for EP samples and for WA samples.
--  Used automatic and manual binning to generate metagenome assembled genomes (MAGs) from each assembly.
+- Performed separate co-assemblies for EP samples and for WA samples.
+- Used automatic and manual binning to generate metagenome assembled genomes (MAGs) from each assembly.
 
 {{% /alert %}}
 
