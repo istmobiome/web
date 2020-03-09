@@ -34,6 +34,6 @@ url_code: ""
 url_pdf: ""
 url_slides: "https://istmobiome.github.io/rethink-d/rethink-d.html"
 url_video: ""
-draft: true
+draft: false
 
 ---
