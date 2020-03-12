@@ -2,13 +2,13 @@
   publish = "public"
   command = "hugo"
 [context.production.environment]
-  HUGO_VERSION = "0.60.1"
+  HUGO_VERSION = "0.67.0"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
 [context.branch-deploy.environment]
-  HUGO_VERSION = "0.60.1"
+  HUGO_VERSION = "0.67.0"
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.60.1"
+  HUGO_VERSION = "0.67.0"
 
 [[redirects]]
   from = "http://istmobiome.netlify.com/*"

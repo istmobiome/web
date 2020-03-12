@@ -30,15 +30,21 @@ On the left side is the **Project Menu**, which lists the main topics. Within mo
 {{% alert synopsis %}}
 There are some important abbreviations we use throughout this site that describe different sample types. Our samples come from two oceans and two habitats within each ocean, denoted as follows:
 
-#### Oceans:
-* Eastern Pacific = EP
-* Western Atlantic = WA
+<div class="row">
+  <div class="column">
+    <h4>Ocean</h4>
+    <p>Eastern Pacific = EP </br>
+    Western Atlantic = WA</p>
+  </div>
+  <div class="column">
+    <h4>Habitat</h4>
+    <p>Eastern Pacific Mangrove = EPM </br>
+    Eastern Pacific Reef = EPR </br>
+    Western Atlantic Mangrove = WAM </br>
+    Western Atlantic Reef = WAR</p>
+  </div>
+</div>
 
-#### Habitats:
-* Eastern Pacific Mangrove = EPM
-* Eastern Pacific Reef = EPR
-* Western Atlantic Mangrove = WAM
-* Western Atlantic Reef = WAR
 {{% /alert %}}
 
 Additional abbreviations will be described as the need arises.

@@ -13,6 +13,7 @@ date_end: "2019-02-18T20:00:00Z"
 event: STRI Public Lecture Series
 #event_url: https://example.org
 featured: false
+bibliography: [cite.bib]
 image:
   caption:
   focal_point: Right
@@ -33,7 +34,14 @@ title: How the Isthmus of Panama Changed the World
 url_code: ""
 url_pdf: ""
 url_slides: "https://istmobiome.github.io/the-isthmus/the-isthmus.html"
-url_video: ""
+url_video: "https://www.youtube.com/watch?v=M9JDSIwBegk"
 draft: false
 
 ---
+
+
+
+citation [@o2016formation]
+citation [@de2005resurrection]
+citation [@leigh2014historical]
+citation [@lessios2008great]

@@ -6,13 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 40  # Order that this section will appear.
 
 title = "Geminate Species"
-subtitle = "Each card contains a geminate pair; top panels (peach) are Western Atlantic species and bottom panels (royal blue) are Eastern Pacific species."
+subtitle = "Each card contains a geminate pair; top panels (peach) are Western Atlantic species and bottom panels (royal blue) are Eastern Pacific species. <br/> <br/>  [Click here](/geminates/) to see a gallery of all geminates."
 +++
 
 {{< gallery >}}
-
-{{%alert note%}}
-
-<p>Click <a href="geminates/">here</a> for the  geminate gallery.</p>
-
-{{%/alert%}}

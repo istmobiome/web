@@ -32,8 +32,7 @@ In this section of the workflow we summarize:
   1) QC & assemby results.
   2) Kraken short read taxonomy.
   3) Mapping results.
-  4) Contig classification.
-We use [Krona plots](https://github.com/marbl/Krona/wiki) to visualize and explore the various classification results.
+  4) Contig classification visualized with [Krona plots](https://github.com/marbl/Krona/wiki).
 {{% /alert %}}
 
 ## QC & Contig Stats
@@ -47,11 +46,11 @@ The first thing we should do is look at the  the results of the initial QC step.
 
 
 
-<iframe seamless src="../qc_table/index.html" width="100%" height="575"></iframe>
+<iframe seamless src="../qc_table.html" width="100%" height="575"></iframe>
 
 <br/>
 
-You can  download a text version of the table using the buttons or by clicking [here](../files/qc-report.txt). A standalone and more user friendly HTML version is available [here](../qc_table/index.html).
+You can  download a text version of the table using the buttons or by clicking [here](../files/qc-report.txt). A standalone and more user friendly HTML version is available [here](../qc_table.html).
 
 
 ### Assembly results
@@ -63,12 +62,11 @@ Next we can look at the results of the co-assembly, the number  of HMM hits, and
 
 
 
-<iframe seamless src="../contig_table/index.html" width="100%" height="575"></iframe>
+<iframe seamless src="../contig_table.html" width="100%" height="575"></iframe>
 
 <br/>
 
-You can  download a text version of the table using the buttons or by clicking [here](../files/contig-stats.txt). A standalone and more user friendly HTML version is available [here](../contig_table/index.html).
-
+You can  download a text version of the table using the buttons or by clicking [here](../files/contig-stats.txt). A standalone and more user friendly HTML version is available [here](../contig_table.html).
 
 ## Short-read Taxonomy
 
@@ -78,29 +76,81 @@ Below is an example of the Kraken taxonomy for all of the EP samples. For demons
 
 <!--html_preserve-->{{% figure src="/img/krona/krona-demo.png" title=" Example Krona plot: The panel on the left controls aspects of the plot. Search by taxon name, select a specific sample, control font size, etc. On the left plot, click once over a taxa and the group is highlighted. Double-click to expand the group as seen on the right. Upper right corner provides a summary of the expanded group." %}}<!--/html_preserve-->
 
-### Krona plots
-
-#### Separated by Sample
+### By Sample
 
 Since the Kraken classification was performed BEFORE assembly we can look at the Krona plots for individual samples.
 
-* [Kraken classifications for all Eastern Pacific samples](../ep-kraken/index.html)
-* [Kraken classifications for all Western Atlantic samples](../wa-kraken/index.html)
+<div class="row">
+  <div class="column">
+    <div class="krona" style="max-width:500px;">
+        <a href="../ep-kraken.html" target="_blank">
+        <img src="/img/krona/ep-kraken.png" alt="HTML tutorial" style="width:90%">
+        <div class="container-krona">
+        <p>Eastern Pacific<br/><small>Kraken for each sample</small> </p>
+        </div>
+        </a>
+   </div>
+  </div>
 
-*Note. Since these plots are web hosted, I decided to keep only the first 10 ranks from the classification files to make the files smaller*.
+  <div class="column">
+    <div class="krona" style="max-width:500px;">
+        <a href="../wa-kraken.html" target="_blank">
+        <img src="/img/krona/wa-kraken.png" alt="HTML tutorial" style="width:90%;">
+        <div class="container-krona">
+        <p>Western Atlantic<br/><small>Kraken for each sample</small> </p>
+        </div>
+        </a>
+  </div>
+  </div>
+</div>
+
+> CLick on an image to explore the diversity plots.
+
+Since these plots are web hosted, I decided to keep only the first 10 ranks from the classification files to make the files smaller*. To do this we can use the following command, which pulls out only the ranks we are interested in.
 
 ```bash
 cut -f 1-10 WA_kaiju_mar.out.krona > WA_kaiju_mar-TRIM.out.krona
 ```
 
-#### Combined by Ocean
+### By Ocean & Habitat
 
-If you prefer to look at all samples combined by ocean we got you covered there too.
+If you prefer to look at all samples combined by habitat and ocean we got you covered there too. Each panel links to Krona plots for the two oceans. Within each there is a plot for mangrove and reef samples.
 
-* [Eastern Pacific Kraken classification](../ep-combo-kraken/index.html)
-* [Western Atlantic Kraken classification](../wa-combo-kraken/index.html)
+<div class="row">
+  <div class="column">
+    <div class="krona" style="max-width:500px;">
+        <a href="../ep-kraken-habitat.html" target="_blank">
+        <img src="/img/krona/ep-kraken-habitat.png" alt="HTML tutorial" style="width:90%">
+        <div class="container-krona">
+        <p>Eastern Pacific<br/><small>Kraken habitats combined</small> </p>
+        </div>
+        </a>
+   </div>
+  </div>
 
-### Making a Table
+  <div class="column">
+    <div class="krona" style="max-width:500px;">
+        <a href="../wa-kraken-habitat.html" target="_blank">
+        <img src="/img/krona/wa-kraken-habitat.png" alt="HTML tutorial" style="width:90%;">
+        </a>
+        <div class="container-krona">
+        <p>Western Atlantic<br/><small>Kraken habitats combined</small> </p>
+        </div>
+        </a>
+  </div>
+  </div>
+</div>
+
+> CLick on an image to explore the diversity plots.
+
+To accomplish this we used `cat` to combine samples by habitat/ocean (e.g. all the WA reefs samples) and then used `ktImportText` to make a merged HTML file. Note if you add the `-c` flag it makes a single plot.
+
+```bash
+ktImportText  -o wa-kraken-habitat.html WAM.krona WAR.krona
+ktImportText -o ep-kraken-habitat.html EPM.krona EPR.krona
+```
+
+### Summary
 
 If we want to create a taxonomic summary table for the samples we can easily do that in anvio by accessing the `layer_additional_data` table from the  merged profile database.
 
@@ -116,11 +166,11 @@ And then we simply parse out the class data and make a table.
 
 
 
-<iframe seamless src="../class_results/index.html" width="100%" height="575"></iframe>
+<iframe seamless src="../class_results.html" width="100%" height="575"></iframe>
 
 <br/>
 
-You can  download a text version of the table using the buttons or by clicking [here](../files/kraken-class.txt). A standalone and more user friendly HTML version is available [here](../class_results/index.html).
+You can  download a text version of the table using the buttons or by clicking [here](../files/kraken-class.txt). A standalone and more user friendly HTML version is available [here](../class_results.html).
 
 ## Mapping Results
 
@@ -143,23 +193,45 @@ What we want is a table with `sample`, `total_reads`, `total_reads_mapped`, and 
 
 
 
-<iframe seamless src="../mapping_results/index.html" width="100%" height="575"></iframe>
+<iframe seamless src="../mapping_results.html" width="100%" height="575"></iframe>
 
 <br/>
 
-
-You can  download a text version of the table using the buttons or by clicking [here](../files/mapping-results.txt). A standalone and more user friendly HTML version is available [here](../mapping_results/index.html).
+You can  download a text version of the table using the buttons or by clicking [here](../files/mapping-results.txt). A standalone and more user friendly HTML version is available [here](../mapping_results.html).
 
 
 ## Contig Classification
 
-Now we move on to the classification of contigs from each assembly. We can start with the Kaiju classification again using the Krona plots. Remember we classified the contigs against both the `nr` and `mar`  databases. Lets use the Krona plots to compare the results from these databases for both assemblies.
+Now we move on to the classification of contigs from each assembly. We can start with the Kaiju classification again using the Krona plots.
 
-### Krona plots
+### Comparing Databases
 
-#### Comparing Databases
+Remember we classified the contigs against both the `nr` and `mar`  databases. Lets use the Krona plots to compare the results from these databases for both assemblies. Use the panels below to access the classifications for each assemby. In the upper left corner you will find a menu that allows you to switch between plots. There are two per assemby, one for each classification.
 
-* [Eastern Pacific Kaiju classification against nr & mar](../ep-kaiju-compare/index.html)
-* [Western Atlantic Kaiju classification against nr & mar](../wa-kaiju-compare/index.html)
+<div class="row">
+  <div class="column">
+    <div class="krona" style="max-width:500px;">
+        <a href="../ep-kaiju-compare.html" target="_blank">
+        <img src="/img/krona/ep-kaiju-compare.png" alt="HTML tutorial" style="width:90%">
+        <div class="container-krona">
+        <p>Eastern Pacific<br/><small>Kaiju classification</small> </p>
+        </div>
+        </a>
+   </div>
+  </div>
+
+  <div class="column">
+    <div class="krona" style="max-width:500px;">
+        <a href="../wa-kaiju-compare.html" target="_blank">
+        <img src="/img/krona/wa-kaiju-compare.png" alt="HTML tutorial" style="width:90%;">
+        <div class="container-krona">
+        <p>Western Atlantic<br/><small>Kaiju classification</small> </p>
+        </div>
+        </a>
+  </div>
+  </div>
+</div>
+
+> CLick on an image to explore the diversity plots.
 
 We will get into much more of the annotation data later, including the various functional annotations. For now though we have a pretty good idea of the shape and nature of these datasets.

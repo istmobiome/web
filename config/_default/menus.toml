@@ -26,6 +26,16 @@
   weight = 40
 
 [[main]]
+  name = "Talks"
+  url = "#talks"
+  weight = 50
+
+[[main]]
+  name = "People"
+  url = "authors/"
+  weight = 60
+
+[[main]]
   name = "<i class=\"fas fa-envelope fa-lg\"></i>"
   url = "contact/"
   post = ""
@@ -40,20 +50,9 @@
 
 [[main]]
   parent = "More"
-  name = "Talks"
-  url = "talk/"
-  weight = 140
-
-[[main]]
-  parent = "More"
   name = "Workshops"
   url = "workshops/"
   weight = 150
-
-[[main]]
-  name = "People"
-  url = "authors/"
-  weight = 160
 
 [[main]]
   name = " "

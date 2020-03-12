@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include complexity, genomics, and natural history.
 
 interests:
 - Panama
@@ -49,7 +49,7 @@ social:
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 - icon: cv
   icon_pack: ai
-  link: https://istmobiome.github.io/jarrod-cv/cv.html
+  link: https://istmobiome.github.io/jarrod/jarrod-cv.html
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -61,4 +61,4 @@ user_groups:
 - Visitors
 ---
 
-Jarrod is inspired by the tales of old-time naturalists who journeyed the world, identifying patterns in biological diversity and laying the foundation for ecology and evolutionary biology. He sees a similar opportunity for discovery today in the microbial world—to explore genomic space and uncover underlying patterns that explain the diversity and function of microorganisms and how the structure of microbial communities affect host biology, biogeochemical cycles, and ecosystem-level processes. Microorganisms are a major thread that weave through all systems, and microbial ecology serves as an intellectual bridge that connects numerous, often, disparate disciplines. Following this thread has taken Jarrod’s research from the forest floor to the ocean floor. His long-term interests are to understand how collections of comparatively simple elements—-from nucleotides to genes, proteins, and individual cells—coalesce into remarkably complex and dynamic communities, and what mechanisms drive the establishment, organization, and development of these communities. Jarrod’s approach leverages a combination of fieldwork, advanced sequencing technologies, and bioinformatics, to reveal microbial assemblages that are functionally unified and adapted to specific habitats. 
+Jarrod is inspired by the tales of old-time naturalists who journeyed the world, identifying patterns in biological diversity and laying the foundation for ecology and evolutionary biology. He sees a similar opportunity for discovery today in the microbial world—to explore genomic space and uncover underlying patterns that explain the diversity and function of microorganisms and how the structure of microbial communities affect host biology, biogeochemical cycles, and ecosystem-level processes. Microorganisms are a major thread that weave through all systems, and microbial ecology serves as an intellectual bridge that connects numerous, often, disparate disciplines. Following this thread has taken Jarrod’s research from the forest floor to the ocean floor. His long-term interests are to understand how collections of comparatively simple elements—-from nucleotides to genes, proteins, and individual cells—coalesce into remarkably complex and dynamic communities, and what mechanisms drive the establishment, organization, and development of these communities. Jarrod’s approach leverages a combination of fieldwork, advanced sequencing technologies, and bioinformatics, to reveal microbial assemblages that are functionally unified and adapted to specific habitats.
