@@ -29,7 +29,7 @@
   force = true
 
 [[redirects]]
-  from = "https://https://istmobiome.github.io/"
+  from = "https://istmobiome.github.io/"
   to = "https://istmobiome.rbind.io/:splat"
   status = 301
   force = true

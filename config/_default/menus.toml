@@ -34,33 +34,26 @@
   name = "<i class=\"fas fa-envelope fa-lg\"></i>"
   url = "contact/"
   post = ""
-  weight = 100
+  weight = 60
 
 [[main]]
   name = " "
   identifier = "github"
   pre = "<i class=\"fab fa-github fa-lg\"></i>"
   url = "https://github.com/istmobiome/web"
-  weight = 110
+  weight = 70
 
 [[main]]
-  parent = "More"
   name = "Author"
+  pre = "<i class=\"fa fa-pen \"></i>"
   url = "authors/jarrod-j-scott/"
-  weight = 60
+  weight = 80
 
 [[main]]
   parent = "More"
   name = "Workshops"
   url = "workshops/"
-  weight = 150
-
-[[main]]
-  name = " "
-  identifier = "water"
-  pre = "<i class=\"fas fa-water fa-lg\"></i>"
-  url = "projects/trans-water/"
-  weight = 180
+  weight = 100
 
 # To setup a dropdown menu set "identifier " in "parent" and reference
 # parent in child

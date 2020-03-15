@@ -48,7 +48,7 @@ social:
   link: contact/
 - icon: github
   icon_pack: fab
-  link: https://github.com/istmobiome/
+  link: https://github.com/jarrodscott/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 - icon: cv
@@ -68,3 +68,6 @@ email: ""
 I am inspired by the tales of old-time naturalists who journeyed the world, identifying patterns in biological diversity and laying the foundation for ecology and evolutionary biology. I see a similar opportunity for discovery today in the microbial world—-to explore genomic space and uncover underlying patterns that explain the diversity and function of microorganisms; how the structure of these communities affect host biology, biogeochemical cycles, and ecosystem-level processes.
 
 Microorganisms are a major thread that weave through all systems, and microbial ecology serves as an intellectual bridge that connects numerous, often disparate disciplines. Following this thread has taken my research from the forest floor to the ocean floor. My long-term interests are to understand how collections of comparatively simple elements—-from nucleotides to genes, proteins, and individual cells—-coalesce into remarkably complex and dynamic communities. What mechanisms drive the establishment, organization, and development of these communities. My approach leverages a combination of marine and terrestrial fieldwork, advanced sequencing technologies, and bioinformatics, to reveal microbial assemblages that are functionally unified and adapted to specific habitats.
+
+
+<i class="fa fa-download"></i><a href="https://github.com/istmobiome/istmobiome.github.io/raw/master/jarrod/jarrod-cv.pdf" download="jarrod-cv.pdf"> Download a PDF of my CV </a>or click the CV link on the left for an HTML version.
