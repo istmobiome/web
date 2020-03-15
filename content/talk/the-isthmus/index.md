@@ -41,7 +41,4 @@ draft: false
 
 
 
-citation [@o2016formation]
-citation [@de2005resurrection]
-citation [@leigh2014historical]
-citation [@lessios2008great]
+Use the `Cite` button above to access a BibTeX formatted bibliography for liturature used in researching & preparing this presentation.

@@ -17,7 +17,7 @@ type: docs
 weight: 1
 ---
 
-#### [Return to the Portal Page](/project/trans-water/)
+#### [Return to the Portal Page](/project/trans-water/) to for quick links to data, code, etc.
 
 ## How to navigate this site.
 
@@ -48,6 +48,10 @@ There are some important abbreviations we use throughout this site that describe
 {{% /alert %}}
 
 Additional abbreviations will be described as the need arises.
+
+## Content Overview
+
+The main content of these processing and analytical workflows are as follows:
 
 ### ENVIRONMENT SETUP
 

@@ -18,22 +18,26 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include complexity, genomics, and natural history.
+bio: I am interested in complexity, genomics, & natural history.
 
 interests:
+- Ants
 - Panama
 - Complex systems
-- Host-microbiomes
+- Microbiomes
 - Coral reefs
+- Hydrothermal vents
+- Archaeology
+- Knots
 
 education:
   courses:
   - course: PhD in Microbiology
     institution: University of Wisconsin—Madison
-    year: 2011
-  - course: BSc Aquatic Biology
+    year:
+  - course: BSc Aquatic Biology/Archaeology
     institution: University of  Texas—Austin
-    year: 2002
+    year:
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
@@ -56,9 +60,11 @@ email: ""
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-user_groups:
-- Researchers
-- Visitors
+#user_groups:
+#- Researchers
+#- Visitors
 ---
 
-Jarrod is inspired by the tales of old-time naturalists who journeyed the world, identifying patterns in biological diversity and laying the foundation for ecology and evolutionary biology. He sees a similar opportunity for discovery today in the microbial world—to explore genomic space and uncover underlying patterns that explain the diversity and function of microorganisms and how the structure of microbial communities affect host biology, biogeochemical cycles, and ecosystem-level processes. Microorganisms are a major thread that weave through all systems, and microbial ecology serves as an intellectual bridge that connects numerous, often, disparate disciplines. Following this thread has taken Jarrod’s research from the forest floor to the ocean floor. His long-term interests are to understand how collections of comparatively simple elements—-from nucleotides to genes, proteins, and individual cells—coalesce into remarkably complex and dynamic communities, and what mechanisms drive the establishment, organization, and development of these communities. Jarrod’s approach leverages a combination of fieldwork, advanced sequencing technologies, and bioinformatics, to reveal microbial assemblages that are functionally unified and adapted to specific habitats.
+I am inspired by the tales of old-time naturalists who journeyed the world, identifying patterns in biological diversity and laying the foundation for ecology and evolutionary biology. I see a similar opportunity for discovery today in the microbial world—-to explore genomic space and uncover underlying patterns that explain the diversity and function of microorganisms; how the structure of these communities affect host biology, biogeochemical cycles, and ecosystem-level processes.
+
+Microorganisms are a major thread that weave through all systems, and microbial ecology serves as an intellectual bridge that connects numerous, often disparate disciplines. Following this thread has taken my research from the forest floor to the ocean floor. My long-term interests are to understand how collections of comparatively simple elements—-from nucleotides to genes, proteins, and individual cells—-coalesce into remarkably complex and dynamic communities. What mechanisms drive the establishment, organization, and development of these communities. My approach leverages a combination of marine and terrestrial fieldwork, advanced sequencing technologies, and bioinformatics, to reveal microbial assemblages that are functionally unified and adapted to specific habitats.

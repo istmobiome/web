@@ -31,11 +31,6 @@
   weight = 50
 
 [[main]]
-  name = "People"
-  url = "authors/"
-  weight = 60
-
-[[main]]
   name = "<i class=\"fas fa-envelope fa-lg\"></i>"
   url = "contact/"
   post = ""
@@ -47,6 +42,12 @@
   pre = "<i class=\"fab fa-github fa-lg\"></i>"
   url = "https://github.com/istmobiome/web"
   weight = 110
+
+[[main]]
+  parent = "More"
+  name = "Author"
+  url = "authors/jarrod-j-scott/"
+  weight = 60
 
 [[main]]
   parent = "More"

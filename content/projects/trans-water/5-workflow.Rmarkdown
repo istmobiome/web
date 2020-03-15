@@ -1,5 +1,5 @@
 ---
-title: Assembley & Annotation Summaries
+title: Assembley & Annotation Summary
 linktitle: Workflow
 summary:
 date: 2019-12-07T16:44:26-05:00
@@ -124,7 +124,7 @@ Below is an example of the Kraken taxonomy for all of the EP samples. For demons
 
 ### By Sample
 
-Since the Kraken classification was performed BEFORE assembly we can look at the Krona plots for individual samples.
+Since the Kraken classification was performed BEFORE assembly we can look at the Krona plots for each individual samples.
 
 <div class="row">
   <div class="column">
@@ -243,7 +243,7 @@ You can  download a text version of the table using the buttons or by clicking [
 Lets go ahead and look at the mapping results. This took a little swindling but in the end this crude approach worked. First we needed all the `bowtie.log` files from the `00_LOGS` directory and grab the first line of each file, which has the total number of *individual reads that were paired* (after QC) in each sample.
 
 ```bash
-head -1 *.log > head.txt
+head -1 *-bowtie.log > head.txt
 ```
 
 Just like we did above, we needed to grab the `layer_additional_data` from the  merged profile databases. This table contains `total_reads_mapped`, `num_SNVs_reported`, and the taxonomic info from the short read Kraken annotations.

@@ -1,5 +1,5 @@
 ---
-title: Assembly-based Metagenomic Workflow
+title: Assembly & Annotations
 linktitle: Workflow
 summary:
 date: 2019-12-07T16:44:26-05:00
@@ -26,10 +26,18 @@ menu:
 <br/>
 
 {{% alert synopsis %}}
-The following sections concern the various workflows we used to process the datasets.
+TOn this page we go througb the steps and workflows we used to process the data. The main objectives of this section are:
 
-1) **Assembly & Annotations**: Trimming, quality control, co-assembly, annotations (taxonomic & functional), and mapping.
-2) **Data Summary**: Summary of qc, co-assembly, annotation, and mapping analyses.
+1) **TRIMMING** adaptor sequences using [Trimmomatic](https://github.com/timflutre/trimmomatic).
+2) **QUALITY-FILTERING** of raw reads using [IU filter quality Minoche](https://github.com/merenlab/illumina-utils).
+3) **CO-ASSEMBLING**  metagenomic samples using [MEGAHIT](https://github.com/voutcn/megahit).
+4) **GENERATING** a contigs database & gene calling using [PRODIGAL](https://github.com/hyattpd/Prodigal).
+5) **TAXONOMIC ANNOTATION** of short reads using [KrakenUniq](https://github.com/fbreitwieser/krakenuniq).
+6) **RECRUITMENT** of  reads to assembly, a.k.a. mapping using [BOWTIE2](https://github.com/BenLangmead/bowtie2).
+7) **PROFILING** the mapping results.
+8) **TAXONOMIC ANNOTATION** of genes using [KAIJU](https://github.com/bioinformatics-centre/kaiju) & [CENTRIFUGE](https://github.com/DaehwanKimLab/centrifuge).
+9) **FUNCTIONAL ANNOTATION** of genes using [Pfams](https://pfam.xfam.org/), [COGS](https://www.ncbi.nlm.nih.gov/COG/), [KEGG](http://www.kegg.jp/ghostkoala/).
+10) **MERGING** the profiles from each sample.
 
 {{% /alert %}}
 
@@ -65,12 +73,13 @@ runtrimmomatic PE -threads $NSLOTS RAW/ML1699_S6_L001_R1_001.fastq.gz /
           MINLEN:40
 ```
 
-Next, we run the command for the other 3 pairs,
+Now we run the command for the other 3 pairs,
 
 * ML1699_S6_L002_R1_001 & ML1699_S6_L002_R2_001
 * ML1699_S6_L003_R1_001 & ML1699_S6_L003_R2_001
 * ML1699_S6_L004_R1_001 & ML1699_S6_L004_R2_001
 
+And then do the same for the rest of the samples.
 
 <details markdown="1"><summary>Show/hide HYDRA TRIMMOMATIC job script</summary>
 <pre><code>
@@ -273,7 +282,7 @@ Directed acyclic graph (DAG) of the metagenomic workflow where edge connections 
         "--overwrite-output-destinations": true,
         "--report-variability-full": "",
         "--skip-SNV-profiling": "",
-        "--profile-SCVs": "",
+        "--profile-SCVs": true,
         "--description": "",
         "--skip-hierarchical-clustering": "",
         "--distance": "",
@@ -835,7 +844,7 @@ echo + NSLOTS = $NSLOTS
 #
 # ----------------Activate Kraken -------------- #
 #
-export PATH=/home/scottjj/usr/miniconda3/bin:$PATH
+export PATH=/home/scottjj/miniconda3/bin:$PATH
 source activate kraken
 # ----------------SETUP Kraken Directories-------------- #
 #
@@ -844,7 +853,7 @@ mkdir 07_TAXONOMY/KRAKEN/READS
 #
 KRAKEN='/data/genomics/stri_istmobiome/TRANS_WATER_MG_DATA/07_TAXONOMY/KRAKEN/READS/'
 K_FILES='/pool/genomics/stri_istmobiome/dbs/kraken_dbs/'
-KRA_to_KRON='/home/scottjj/usr/miniconda3/envs/metawrap-env/bin/metawrap-scripts/'
+KRA_to_KRON='/home/scottjj/miniconda3/envs/metawrap-env/bin/metawrap-scripts/'
 # ----------------Run Kraken------------------- #
 #
 for sample in `cat list.txt`
@@ -1219,13 +1228,16 @@ echo = `date` job $JOB_NAME done
 
 ## Conclusion
 
-This section of the workflow is complete. Lets take a look at the what we have so far. We will go through each directory.
+This section of the workflow is complete. Lets take a look at the what we have so far.
 
   1) `00_LOGS` Individual log files for each step of the snakemake workflow.
   2) `00_TRIMMED` Eight trimmed, compressed fastq files for each sample.
   3) `01_QC` Merge forward (R1) and reverse (R2) QC'ed fastq files and QC `STATS` file for each sample. Also the `qc-report.txt` file which is a summary table of all QC results.
   4) `02_FASTA` A contig fasta file and reformat report for each assembly.
   5) `03_CONTIGS` An annotated contig database for each assembly. Taxonomic annotations = `centrifuge`.
+  6) `04_MAPPING` Short read BAM files.
+  7) `05_ANVIO_PROFILE` Individual profile database for each sample.
+  8) `06_MERGED` Single merged profile database for each assembly.
 
 
 

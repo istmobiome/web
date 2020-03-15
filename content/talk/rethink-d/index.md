@@ -37,3 +37,5 @@ url_video: ""
 draft: false
 
 ---
+
+Use the `Cite` button above to access a BibTeX formatted bibliography for liturature used in researching & preparing this presentation.

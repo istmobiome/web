@@ -1,11 +1,13 @@
 ---
-title: Herbivorous Reef Fish Microbiome
+title: ProjectDigest
+subtitle: Intestinal microbes as an axis of functional diversity among large marine consumers
 authors: []
-summary: Amplicon analysis of itenstinal microbiomes from 5 species of Florida herbivorous reef fish.
+summary: Amplicon analysis of itenstinal microbiomes from 5 species of herbivorous reef fish.
 tags: ["fish", "16S rRNA", "amplicon"]
 categories: []
 date: "2019-12-05T00:00:00+01:00"
 external_link:
+bibliography: [cite.bib]
 header:
   caption: ""
   image: "banners/florida_fish.png"
@@ -45,6 +47,9 @@ weight: 1
 Welcome. This page provides a link to the <em>external</em> website for our study on the intestinal microbiome of herbivorous reef fish entitled <em>Intestinal microbes: as axis of functional diversity among large marine consumers</em>. Microbes are ubiquitous throughout the world’s ocean yet the extent of their influence on the ecology and evolution of large, mobile fauna is poorly understood.
 <br/>
 
+To access the complete bioinformatic workflow & raw data use the buttons at the top of the page or visit
+>https://projectdigest.github.io/
+
 {{% alert synopsis %}}
 
 SYNOPSIS
@@ -60,7 +65,7 @@ In this study, we
 
 On this site you will find details on our reproducible bioinformatics workflow and how to access all data/data products. We also provide numerous data tables and figures including all tables, figures, and supplementary information from the original publiation.
 
-To access the molecular data and complete bioinformatic workflow use the buttons at the top of the page or visit https://projectdigest.github.io/.
+Use the `Cite` button above to access a BibTeX formatted bibliography for the references we used in this study.
 
 <hr/>
 

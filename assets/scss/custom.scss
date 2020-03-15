@@ -229,7 +229,9 @@ code {
 	font-size: 0.8em;
 }
 
-/* Github style begins here */
+/*************************************************
+* Messing with Github style. begins here
+**************************************************/
 
 /*
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
@@ -335,7 +337,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 }
 /* Github style ENDS here */
 
-/* code for side by side krona plots*/
+/*************************************************
+*  code for side by side krona plot
+**************************************************/
 
 .column {
   float: left;
@@ -374,5 +378,5 @@ div.container-krona p {
 
 blockquote p {
 	font-size: 1.3em;
-	font-family: 'Inconsolata';
+	font-family: 'Lato';
 }
