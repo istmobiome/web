@@ -1,5 +1,5 @@
 http://istmobiome.rbind.io/* https://istmobiome.rbind.io/:splat 301!
 https://istmobiome.netlify.com/* https://istmobiome.rbind.io/:splat 301!
 http://istmobiome.netlify.com/* https://istmobiome.rbind.io/:splat 301!
-http://istmobiome.github.io/ https://istmobiome.rbind.io/:splat 301!
-https://istmobiome.github.io/ https://istmobiome.rbind.io/:splat 301!
+http://istmobiome.github.io/index.html https://istmobiome.rbind.io/:splat 301!
+https://istmobiome.github.io/index.html https://istmobiome.rbind.io/:splat 301!
