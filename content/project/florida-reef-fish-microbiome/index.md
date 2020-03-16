@@ -2,7 +2,7 @@
 title: ProjectDigest
 subtitle: Intestinal microbes as an axis of functional diversity among large marine consumers
 authors: []
-summary: Amplicon analysis of itenstinal microbiomes from 5 species of herbivorous reef fish.
+summary: Amplicon analysis of intenstinal microbiomes from five species of herbivorous fish of a Florida reef.
 tags: ["fish", "16S rRNA", "amplicon"]
 categories: []
 date: "2019-12-05T00:00:00+01:00"
