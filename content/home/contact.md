@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 130  # Order that this section will appear.
 
 title = "Contact"
-subtitle = ""
+subtitle = "We make mistakes, probably a lot. So if you see any, please  drop us a note or submit an issue to the [GitHub repo](https://github.com/istmobiome/web/)."
 
 # Automatically link email and phone?
 autolink = true
@@ -17,3 +17,5 @@ autolink = true
 #   2: formspree.io
 email_form = 2
 +++
+
+<em>We would love to hear from you.  Please use this form to contact us with any questions, suggestions, ideas, whatever. </em>

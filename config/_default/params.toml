@@ -110,8 +110,8 @@ contact_links = [
 #  {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
 #  {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
 #  {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
-  {icon = "github", icon_pack = "fab", name = "GitHub", link = "https://github.com/istmobiome/"},
-  {icon = "figshare", icon_pack = "ai", name = "figshare", link = "https://figshare.com/" }
+  {icon = "github", icon_pack = "fab", name = "GitHub", link = "https://github.com/istmobiome/web/"},
+#  {icon = "figshare", icon_pack = "ai", name = "figshare", link = "https://figshare.com/" }
 ]
 
 ############################

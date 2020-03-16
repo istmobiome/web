@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
-title = "Project Portal"
+title = "Project Portals"
 subtitle = "Use the cards to access individual project pages."
 
 [content]

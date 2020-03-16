@@ -17,36 +17,36 @@
 [[main]]
   name = "The Geminates"
   url = "#gallery"
-  weight = 30
+  weight = 40
 
 [[main]]
 #  identifier = "projects"
   name = "The Projects"
   url = "#projects"
-  weight = 40
+  weight = 50
+
+[[main]]
+#  identifier = "projects"
+  name = "The Site"
+  url = "#about-site"
+  weight = 30
 
 [[main]]
   name = "Talks"
   url = "#talks"
-  weight = 50
+  weight = 60
 
 [[main]]
   name = "<i class=\"fas fa-envelope fa-lg\"></i>"
-  url = "contact/"
+  url = "#contact"
   post = ""
-  weight = 60
+  weight = 70
 
 [[main]]
   name = " "
   identifier = "github"
   pre = "<i class=\"fab fa-github fa-lg\"></i>"
   url = "https://github.com/istmobiome/web"
-  weight = 70
-
-[[main]]
-  name = "Author"
-  pre = "<i class=\"fa fa-pen \"></i>"
-  url = "authors/jarrod-j-scott/"
   weight = 80
 
 [[main]]
@@ -54,6 +54,13 @@
   name = "Workshops"
   url = "workshops/"
   weight = 100
+
+[[main]]
+  parent = "More"
+  name = "Author"
+  pre = "<i class=\"fa fa-pen \"></i>"
+  url = "authors/jarrod-j-scott/"
+  weight = 110
 
 # To setup a dropdown menu set "identifier " in "parent" and reference
 # parent in child
