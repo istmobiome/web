@@ -20,6 +20,8 @@ menu:
     weight: 60
 ---
 
+#### [Return to the Portal Page](/project/trans-water/) to for quick links to data, code, etc.
+
 <br/>
 
 
@@ -268,3 +270,5 @@ Running GhostKOALA/KEGG  was pretty easy thanks to this [handy tutorial](http://
 ### Concluding remarks
 
 At this point we should be good to go with the main setup. We may need to install other tools along the way---we can add those instructions here. Or you may decide to use other tools instead. For example, we are using [megahit](https://github.com/voutcn/megahit) for the assemblies but you may want to use [metaspades](https://github.com/ablab/spades) or [idba_ud](https://github.com/loneknightpy/idba). These packages need to be installed separately.
+
+> [Return to the Portal Page](/project/trans-water/) to for quick links to data, code, etc.

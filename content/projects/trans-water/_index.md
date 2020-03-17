@@ -28,7 +28,7 @@ On the left side is the **Project Menu**, which lists the main topics. Within mo
 <br/>
 
 {{% alert synopsis %}}
-There are some important abbreviations we use throughout this site that describe different sample types. Our samples come from two oceans and two habitats within each ocean, denoted as follows:
+There are a few important abbreviations we use throughout this site that describe different sample types. Our samples come from two oceans and two habitats within each ocean, denoted as follows:
 
 <div class="row">
   <div class="column">
@@ -45,9 +45,10 @@ There are some important abbreviations we use throughout this site that describe
   </div>
 </div>
 
+Additional abbreviations will be described as the need arises.
+
 {{% /alert %}}
 
-Additional abbreviations will be described as the need arises.
 
 ## Content Overview
 

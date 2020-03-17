@@ -23,10 +23,12 @@ menu:
     weight: 100
 ---
 
+#### [Return to the Portal Page](/project/trans-water/) to for quick links to data, code, etc.
+
 <br/>
 
 {{% alert synopsis %}}
-TOn this page we go througb the steps and workflows we used to process the data. The main objectives of this section are:
+This page describes the steps and workflows we used to process the data. The main objectives of this section are:
 
 1) **TRIMMING** adaptor sequences using [Trimmomatic](https://github.com/timflutre/trimmomatic).
 2) **QUALITY-FILTERING** of raw reads using [IU filter quality Minoche](https://github.com/merenlab/illumina-utils).
@@ -794,7 +796,7 @@ echo = `date` job $JOB_NAME don
 </code></pre>
 </details>
 
-## Summarize & Import Kaiju Annotation
+## Import Kaiju
 
 Now its is time to add the Kaiju annotation to the `contig.db`. We will also use the opportunity to generate some [Krona plots](https://github.com/marbl/Krona/wiki).
 
@@ -965,7 +967,7 @@ ktImportText -o $KRAKEN/WA-kraken.html $KRAKEN/WAM_ALR-kraken.krona $KRAKEN/WAM_
 
 Now we have a Krona plot page for the EP samples (`EP-kraken.html`) and the WA samples (`WA-kraken.html`).
 
-<details markdown="1"><summary>Show/hide HYDRA Kraken classification job details</summary>
+<details markdown="1"><summary>Show/hide HYDRA Kraken classification job script</summary>
 <pre><code>
 # /bin/sh
 # ----------------Parameters---------------------- #
@@ -1053,7 +1055,7 @@ do
 done
 ```
 
-<details markdown="1"><summary>Show/hide HYDRA Import Kraken taxonomy job details</summary>
+<details markdown="1"><summary>Show/hide HYDRA Import Kraken taxonomy job script</summary>
 <pre><code>
 # /bin/sh
 # ----------------Parameters---------------------- #
@@ -1119,7 +1121,7 @@ anvi-run-pfams -c 03_CONTIGS/WA-contigs.db --pfam-data-dir /pool/genomics/stri_i
 anvi-run-pfams -c 03_CONTIGS/EP-contigs.db --pfam-data-dir /pool/genomics/stri_istmobiome/dbs/pfam_db/ -T $NSLOTS
 ```
 
-<details markdown="1"><summary>Show/hide HYDRA SCG & Pfam job details</summary>
+<details markdown="1"><summary>Show/hide HYDRA SCG & Pfam job script</summary>
 <pre><code>
 # /bin/sh
 # ----------------Parameters---------------------- #
@@ -1186,7 +1188,7 @@ anvi-merge 05_ANVIO_PROFILE/EP/*/PROFILE.db -c 03_CONTIGS/EP-contigs.db -o 06_ME
 anvi-merge 05_ANVIO_PROFILE/WA/*/PROFILE.db -c 03_CONTIGS/WA-contigs.db -o 06_MERGED/WA
 ```
 
-<details markdown="1"><summary>Show/hide HYDRA  Merge Profile databases job details</summary>
+<details markdown="1"><summary>Show/hide HYDRA  Merge Profile databases job script</summary>
 <pre><code>
 # /bin/sh
 # ----------------Parameters---------------------- #
@@ -1302,7 +1304,7 @@ anvi-import-collection $VIRSORTER/EP-virsorter_collection.txt -c 03_CONTIGS/EP-c
 anvi-import-functions -c 03_CONTIGS/EP-contigs.db -i $VIRSORTER/EP-virsorter_annotations.txt
 ```
 
-<details markdown="1"><summary>Show/hide HYDRA Virsorter annotation import job details</summary>
+<details markdown="1"><summary>Show/hide HYDRA Virsorter annotation import job script</summary>
 <pre><code>
 # /bin/sh
 # ----------------Parameters---------------------- #
@@ -1369,6 +1371,216 @@ echo = `date` job $JOB_NAME done
 </code></pre>
 </details>
 
+
+## GhostKOALA Annotations
+
+The last thing we can do is run KEGG annotations using the [GhostKOALA server](http://www.kegg.jp/ghostkoala/). Running GhostKOALA/KEGG  was pretty easy thanks to this [handy tutorial](http://merenlab.org/2018/01/17/importing-ghostkoala-annotations/).
+
+The steps we used to annotate genes with GhostKOALA/KEGG are reproduced from the tutorial.
+
+A little setup first. Make a directory for the analysis and grab the parsing script.
+```bash
+mkdir -p GhostKOALA/
+git clone https://github.com/edgraham/GhostKoalaParser.git
+```
+
+Now we need to export anvio gene calls as amino acid sequences.
+
+```bash
+anvi-get-sequences-for-gene-calls -c 03_CONTIGS/WA-contigs.db --get-aa-sequences -o GhostKOALA/WA-protein-sequences.fa
+anvi-get-sequences-for-gene-calls -c 03_CONTIGS/EP-contigs.db --get-aa-sequences -o GhostKOALA/EP-protein-sequences.fa
+```
+
+Because of a peculiarity with the way the server handles fasta files we need to modify the fatsa headers. Anvio gene calls begin with a digit and the server doesn't like that. So we will the prefix `genecall` to every gene call ID.
+
+```bash
+sed -i 's/>/>genecall_/' GhostKOALA/WA-protein-sequences.fa
+sed -i 's/>/>genecall_/' GhostKOALA/EP-protein-sequences.fa
+```
+
+At this point we can upload our modified amino acid gene call files to the [GhostKOALA](http://www.kegg.jp/ghostkoala/) server.
+
+{{% alert warning %}}
+You can only run one instance of GhostKOALA at a time per email address and the upload limit is 300Mb. You may need to split large fasta files in to smaller chunks.
+{{% /alert %}}
+
+<details markdown="1"><summary>Show/hide HYDRA GhostKOALA annotation import job script</summary>
+<pre><code>
+# /bin/sh
+# ----------------Parameters---------------------- #
+#$ -S /bin/sh
+#$ -pe mthread 20
+#$ -q sThM.q
+#$ -l mres=140G,h_data=7G,h_vmem=7G,himem
+#$ -cwd
+#$ -j y
+#$ -N job_06_run_ghostkoala
+#$ -o hydra_logs/job_01_run_ghostkoala.log
+#$ -M scottjj@si.edu
+#
+# ----------------Modules------------------------- #
+module load gcc/4.9.2
+#
+# ----------------Your Commands------------------- #
+#
+echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + NSLOTS = $NSLOTS
+#
+# ----------------Activate Anvio -------------- #
+#
+export PATH=/home/scottjj/miniconda3:$PATH
+export PATH=/home/scottjj/miniconda3/bin:$PATH
+source activate anvio-master
+#
+which python
+python --version
+source /home/scottjj/virtual-envs/anvio-master/bin/activate
+which python
+python --version
+which anvi-interactive
+diamond --version
+anvi-self-test -v
+#
+# ----------------Setup -------------- #
+#
+mkdir -p GhostKOALA/
+git clone https://github.com/edgraham/GhostKoalaParser.git
+# ----------------Export Anvio Gene Calls -------------- #
+#
+anvi-get-sequences-for-gene-calls -c 03_CONTIGS/WA-contigs.db --get-aa-sequences -o GhostKOALA/WA-protein-sequences.fa
+anvi-get-sequences-for-gene-calls -c 03_CONTIGS/EP-contigs.db --get-aa-sequences -o GhostKOALA/EP-protein-sequences.fa
+# ----------------Reformat fata headers -------------- #
+#
+sed -i 's/>/>genecall_/' 07_GhostKOALA/WA-protein-sequences.fa
+sed -i 's/>/>genecall_/' 07_GhostKOALA/EP-protein-sequences.fa
+# ----------------STOP!!! Run GhostKOALA-------------- #
+# At this point you must upload modified gene calls to the SERVER
+# http://www.kegg.jp/ghostkoala/
+#
+echo = `date` job $JOB_NAME don
+</code></pre>
+</details>
+
+## Import GhostKOALA
+
+Once the jobs have finished we can import the data into our contig databases. In the repository you cloned earlier there is a file called `KO_Orthology_ko00001.txt`. [See this](http://merenlab.org/2018/01/17/importing-ghostkoala-annotations/#generate-the-kegg-orthology-table) section for an explaination of the next step about converting the KEGG Orthology assignments to functions. We need this htext file to match the orthologies with function.
+
+```
+mkdir GhostKOALA/GhostKoalaParser
+wget 'https://www.genome.jp/kegg-bin/download_htext?htext=ko00001&format=htext&filedir=' -O GhostKOALA/GhostKoalaParser/ko00001.keg
+# Set the variable path
+kegfile="GhostKOALA/GhostKoalaParser/ko00001.keg"
+```
+Now we need to parse the file using this code snippet from the tutorial.
+
+```bash
+while read -r prefix content
+do
+    case "$prefix" in A) col1="$content";; \
+                      B) col2="$content" ;; \
+                      C) col3="$content";; \
+                      D) echo -e "$col1\t$col2\t$col3\t$content";;
+    esac
+done < <(sed '/^[#!+]/d;s/<[^>]*>//g;s/^./& /' < "$kegfile") > GhostKOALA/GhostKoalaParser/KO_Orthology_ko00001.txt
+```
+
+Time to parse the annotation file...
+
+```bash
+python GhostKOALA/GhostKoalaParser/KEGG-to-anvio --KeggDB GhostKOALA/GhostKoalaParser//KO_Orthology_ko00001.txt -i GhostKOALA/wa_ko.txt -o GhostKOALA/wa-KeggAnnotations-AnviImportable.txt
+python GhostKOALA/GhostKoalaParser/KEGG-to-anvio --KeggDB GhostKOALA/GhostKoalaParser//KO_Orthology_ko00001.txt -i GhostKOALA/ep_ko.txt -o GhostKOALA/ep-KeggAnnotations-AnviImportable.txt
+```
+
+...and parse the KEGG taxonomy
+
+```bash
+python GhostKOALA/GhostKoalaParser/GhostKOALA-taxonomy-to-anvio GhostKOALA/wa.out.top GhostKOALA/wa-KeggTaxonomy.txt
+python GhostKOALA/GhostKoalaParser/GhostKOALA-taxonomy-to-anvio GhostKOALA/ep.out.top GhostKOALA/ep-KeggTaxonomy.txt
+```
+
+Now we can import it all into the anvio contig databases.
+
+```bash
+anvi-import-functions -c 03_CONTIGS/WA-contigs.db -i GhostKOALA/wa-KeggAnnotations-AnviImportable.txt
+anvi-import-functions -c 03_CONTIGS/EP-contigs.db -i GhostKOALA/ep-KeggAnnotations-AnviImportable.txt
+#
+anvi-import-taxonomy-for-genes -c 03_CONTIGS/WA-contigs.db -i GhostKOALA/wa-KeggTaxonomy.txt -p default_matrix
+anvi-import-taxonomy-for-genes -c 03_CONTIGS/EP-contigs.db -i GhostKOALA/ep-KeggTaxonomy.txt -p default_matrix
+```
+
+And that's it!
+
+<details markdown="1"><summary>Show/hide HYDRA GhostKOALA parsing job script</summary>
+<pre><code>
+# /bin/sh
+# ----------------Parameters---------------------- #
+#$ -S /bin/sh
+#$ -pe mthread 20
+#$ -q sThM.q
+#$ -l mres=140G,h_data=7G,h_vmem=7G,himem
+#$ -cwd
+#$ -j y
+#$ -N job_06_run_ghostkoala2
+#$ -o hydra_logs/job_01_run_ghostkoala2.log
+#$ -M scottjj@si.edu
+#
+# ----------------Modules------------------------- #
+module load gcc/4.9.2
+#
+# ----------------Your Commands------------------- #
+#
+echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + NSLOTS = $NSLOTS
+#
+# ----------------Activate Anvio -------------- #
+#
+export PATH=/home/scottjj/miniconda3:$PATH
+export PATH=/home/scottjj/miniconda3/bin:$PATH
+source activate anvio-master
+#
+which python
+python --version
+source /home/scottjj/virtual-envs/anvio-master/bin/activate
+which python
+python --version
+which anvi-interactive
+diamond --version
+anvi-self-test -v
+#
+# ----------------Generate the KEGG orthology table-------------- #
+mkdir GhostKOALA/GhostKoalaParser
+wget 'https://www.genome.jp/kegg-bin/download_htext?htext=ko00001&format=htext&filedir=' -O GhostKOALA/GhostKoalaParser/ko00001.keg
+#
+kegfile="GhostKOALA/GhostKoalaParser/ko00001.keg"
+#
+while read -r prefix content
+do
+    case "$prefix" in A) col1="$content";; \
+                      B) col2="$content" ;; \
+                      C) col3="$content";; \
+                      D) echo -e "$col1\t$col2\t$col3\t$content";;
+    esac
+done < <(sed '/^[#!+]/d;s/<[^>]*>//g;s/^./& /' < "$kegfile") > GhostKOALA/GhostKoalaParser/KO_Orthology_ko00001.txt
+#
+# ----------------Parsing the results from GhostKOALA-------------- #
+#
+python GhostKOALA/GhostKoalaParser/KEGG-to-anvio --KeggDB GhostKOALA/GhostKoalaParser//KO_Orthology_ko00001.txt -i GhostKOALA/wa_ko.txt -o GhostKOALA/wa-KeggAnnotations-AnviImportable.txt
+python GhostKOALA/GhostKoalaParser/KEGG-to-anvio --KeggDB GhostKOALA/GhostKoalaParser//KO_Orthology_ko00001.txt -i GhostKOALA/ep_ko.txt -o GhostKOALA/ep-KeggAnnotations-AnviImportable.txt
+#
+python GhostKOALA/GhostKoalaParser/GhostKOALA-taxonomy-to-anvio GhostKOALA/wa.out.top GhostKOALA/wa-KeggTaxonomy.txt
+python GhostKOALA/GhostKoalaParser/GhostKOALA-taxonomy-to-anvio GhostKOALA/ep.out.top GhostKOALA/ep-KeggTaxonomy.txt
+# ----------------Importing GhostKOALA results-------------- #
+#
+anvi-import-functions -c 03_CONTIGS/WA-contigs.db -i GhostKOALA/wa-KeggAnnotations-AnviImportable.txt
+anvi-import-functions -c 03_CONTIGS/EP-contigs.db -i GhostKOALA/ep-KeggAnnotations-AnviImportable.txt
+#
+anvi-import-taxonomy-for-genes -c 03_CONTIGS/WA-contigs.db -i GhostKOALA/wa-KeggTaxonomy.txt -p default_matrix
+anvi-import-taxonomy-for-genes -c 03_CONTIGS/EP-contigs.db -i GhostKOALA/ep-KeggTaxonomy.txt -p default_matrix
+#
+echo = `date` job $JOB_NAME don
+</code></pre>
+</details>
+
 ## Conclusion
 
 This section of the workflow is complete. Lets take a look at the what we have so far.
@@ -1384,4 +1596,6 @@ This section of the workflow is complete. Lets take a look at the what we have s
 
 
 
-   fully annotated contig databases, individual and merged profile databases, and summary data to work with. In the next section we can look at some of the summary data and then move on to rebuilding genomes from the assemblies.
+Now we have fully annotated contig databases, individual and merged profile databases, and summary data to work with. In the next section we can look at some of the summary data and then move on to rebuilding genomes from the assemblies.
+
+> [Return to the Portal Page](/project/trans-water/) to for quick links to data, code, etc.

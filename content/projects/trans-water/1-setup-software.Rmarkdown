@@ -20,6 +20,9 @@ menu:
     weight: 50
 ---
 
+#### [Return to the Portal Page](/project/trans-water/) to for quick links to data, code, etc.
+
+
 <br/>
 
 The first major step in our analysis of water column metagenomic samples from the Eastern Pacific and Western Atlantic is to setup our working environment. We will do this in two steps. The first is to set up the backbone of our computational operations, which consists of Miniconda and anvio. We will do this below. Next we set up the annotation databases and associated tools. Lets begin.
@@ -326,3 +329,5 @@ Structure DB version .........................: 1
 ## Other Software
 
 As mentioned above, we will use many other tools. Some are installed with anvio, some we installed while installing anvio, while others need to be installed separately. We will do this as the need arises and document it as we move through the workflow. In the next section for example we  build some databases and install the tools we need at the same time. :)
+
+> [Return to the Portal Page](/project/trans-water/) to for quick links to data, code, etc.

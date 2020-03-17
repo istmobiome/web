@@ -36,6 +36,7 @@ p#hero-lead {
 	 max-height: 40px;
 }
 
+
 /*************************************************
  *  Custom add to assets/scss/academic/_root.scss
  *  Several choices for boxes and callouts: warning,
@@ -243,11 +244,11 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   padding: 0.5em;
   color: #333;
   background: #f8f8f8;
-	border-left: 7px solid #FC6464;
-	border-top: 0.5px solid #FC6464;
-	border-bottom: 0.5px solid #FC6464;
-	border-right: 1px solid #FC6464;
-	border-radius: 5px;
+	border-left: 6px solid #2962ff;
+	border-top: 0.5px solid #333332;
+	border-bottom: 0.5px solid #333332;
+	border-right: 1px solid #333332;
+	border-radius: 4px;
 }
 
 .hljs-comment,

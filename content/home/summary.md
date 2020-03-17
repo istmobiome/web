@@ -63,8 +63,9 @@ subtitle = "### A bridge on land, a barrier in the sea <br/> <br/>  <small>[Clic
   <p>Yet pairs of closely related sister species (<span class="callout">geminates</span>) thrive on either side today. Some of these species pairs are so similar that morphology alone is not enough to tell them apart.</p>
 
 
-  > How did the close of the Isthmus affect the evolution of microorganisms, the structure of microbial communities, and the function of host-associated microbiomes?
+  > <font size=4.5em>How did the close of the Isthmus affect the evolution of microorganisms, the structure of microbial communities, and the function of host-associated microbiomes?</font>
 
-  <p>In this project, we make use of contrasting (a) <span class="callout">geographic regions</span>, (b) <span class="callout">benthic habitats</span>, and (c) <span class="callout">environmental gradients</span>, to understand the evolutionary divergence of marine microbiomes in changing environments & their functional significance in different systems.</p>
-
+{{% alert synopsis %}}
+  <p><font size=4.5em>In this project, we make use of contrasting (a) <span class="callout">geographic regions</span>, (b) <span class="callout">benthic habitats</span>, and (c) <span class="callout">environmental gradients</span>, to understand the evolutionary divergence of marine microbiomes in changing environments & their functional significance in different systems.</font></p>
+{{% /alert %}}
 </div>

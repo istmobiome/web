@@ -9,7 +9,7 @@ active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
 title = "About <small>the</small> Site"
-subtitle = "The purpose of this site is to make our science as tranparent & reproducible as possible."
+subtitle = "The purpose of this site is to make our science tranparent & reproducible."
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -56,9 +56,9 @@ This site was contructed to capture **bioinformatic workflows, raw data, data pr
 
 Now, some PROJECT Portals link to sites outside istmobiome.rbind.io to github.io sites. Just so you know. This is an issue related to the difficulty of running R code on a Hugo website.
 
-Keep your eye out for this <i class="fas fa-pencil-alt"> Edit this page</i> on the bottom of most pages. You can edit these pages in GitHub and then submit a pull request so we can incorporate your suggestions.
+Keep your eye out for an <i class="fas fa-pencil-alt"> Edit this page</i> link on the bottom of most pages. You can edit these pages in GitHub and then submit a pull request so we can incorporate your suggestions.
 
-Finally, if you are a HYDRA user we have also embedded  scripts for every job we ran on the cluster. Just keep your eye out for the **Show/hide HYDRA script**. The scripts are always hidden. Have fun!
+Finally, if you are a HYDRA user we have also embedded  scripts for every job we ran on the cluster.  Keep your eye out for the **Show/hide HYDRA script**. The scripts are always hidden. Click the arrow to see the script. Have fun!
 
 <details markdown="1"><summary>Show/hide HYDRA KAIJU job script</summary>
 <pre><code>
