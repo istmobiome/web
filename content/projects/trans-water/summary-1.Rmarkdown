@@ -1,0 +1,323 @@
+---
+title: Assembley & Annotation Summary
+linktitle: Workflow
+summary:
+date: 2019-12-07T16:44:26-05:00
+lastmod: 2019-12-07T16:44:26-05:00
+draft: false
+toc: true
+type: docs
+weight: 110
+bibliography: [files/cite.bib]
+link-citations: true
+# Add menu entry to sidebar.
+# - Substitute `example` with the name of your course/documentation folder.
+# - name: Declare this menu item as a parent with ID `name`.
+# - parent: Reference a parent ID if this page is a child.
+# - weight: Position of link in menu.
+menu:
+  trans-water:
+    parent: Processing
+    name: Data Summary
+    weight: 110
+exclude_jquery: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+library(kableExtra)
+library(DT)
+library(htmlwidgets)
+library(htmltools)
+```
+
+<br/>
+
+{{% alert synopsis %}}
+In this section of the workflow we summarize:
+  1) QC & assemby results.
+  2) Kraken short read taxonomy.
+  3) Mapping results.
+  4) Contig classification visualized with [Krona plots](https://github.com/marbl/Krona/wiki).
+{{% /alert %}}
+
+## QC & Contig Stats
+
+### QC results
+
+The first thing we should do is look at the  the results of the initial QC step. For each sample, anvio spits out individual quality control reports. Thankfully anvio also concatonates those files into one table. This table contains information like the number of pairs analyzed, the total pairs passed, etc.
+
+```{r qc_table, echo=FALSE, include=FALSE}
+qc <- read.table("files/qc-report.txt", sep = "\t", header = TRUE)
+
+qc_table <- datatable(qc, rownames = FALSE, extensions = "Buttons",
+                      caption = htmltools::tags$caption(style =
+                                                          "caption-side: bottom;
+                                                        text-align: left;",
+                                                        "QC report by sample"),
+          options = list(
+            pageLength = 10,
+            dom = "Blfrtip",
+            lengthMenu = c(10, 30, 60),
+            buttons = c("csv", "copy"),
+            autoWidth = TRUE,
+            columnDefs = list(list(
+              className = 'dt-left',
+              targets = 0),
+              list(className = 'dt-center', targets = 1))))
+```
+
+
+```{r, message=FALSE, warning=FALSE, include=FALSE}
+htmlwidgets::saveWidget(qc_table, file = "qc_table.html", selfcontained = TRUE)
+```
+
+<iframe seamless src="../qc_table.html" width="100%" height="575"></iframe>
+
+<br/>
+
+You can  download a text version of the table using the buttons or by clicking [here](../files/qc-report.txt). A standalone and more user friendly HTML version is available [here](../qc_table.html).
+
+
+### Assembly results
+
+Next we can look at the results of the co-assembly, the number  of HMM hits, and the estimated number of genomes. These data not only give us a general idea of assemby quality but will also help us decide parameters for automatic clustering down the road.
+
+```{r contig_table, echo=FALSE, include=FALSE}
+contig <- read.table("files/contig-stats.txt", sep = "\t", header = TRUE)
+
+contig_table <- datatable(contig, rownames = FALSE, extensions = "Buttons",
+                      caption = htmltools::tags$caption(style =
+                                                          "caption-side: bottom;
+                                                        text-align: left;",
+                                                        "Assembly contig stats"),
+          options = list(
+            pageLength = 10,
+            dom = "Blfrtip",
+            lengthMenu = c(10, 25),
+            buttons = c("csv", "copy"),
+            autoWidth = TRUE,
+            columnDefs = list(list(columns.width = '50px', targets = c(1, 2, 3),
+              className = 'dt-left',
+              targets = 1),
+              list(className = 'dt-left', targets = c(1, 2, 3)))))
+```
+
+
+```{r, message=FALSE, warning=FALSE, include=FALSE}
+htmlwidgets::saveWidget(contig_table, file = "contig_table.html", selfcontained = TRUE)
+```
+
+<iframe seamless src="../contig_table.html" width="100%" height="575"></iframe>
+
+<br/>
+
+You can  download a text version of the table using the buttons or by clicking [here](../files/contig-stats.txt). A standalone and more user friendly HTML version is available [here](../contig_table.html).
+
+## Short-read Taxonomy
+
+Next lets take a look at the taxonomic breakdown from the krakenuniq classification of short reads. There is a lot of data here so we decided to present these as standalone HTML pages. There are two pages---one for all EP samples and the other for all WA samples---that contain separate [Krona plots](https://github.com/marbl/Krona/wiki) for each sample. In brief, a Krona plot allow hierarchical data to be explored with multi-layered pie charts. So these charts are interactive. We will use these on a few occasions so it is worth explaining in a little more  detail.
+
+Below is an example of the Kraken taxonomy for all of the EP samples. For demonstration purposes we are placing the top level and expanded plots for sample `EPM_12A3` side-by-side but in practice it will just be a single plot. Inner rings represent higher taxonomic ranks. For example, the two most inner rings are *cellular organisms* and *viruses*. Taxonomic ranks decrease towards the outside. When a grup is expanded the inner ring becomes the highest rank. For example in the plot of the right we expanded the *Proteobacteria* (which is a phylum) so the classes form the inner rings.
+
+`r blogdown::shortcode("figure", src = "/img/krona/krona-demo.png", title = " Example Krona plot: The panel on the left controls aspects of the plot. Search by taxon name, select a specific sample, control font size, etc. On the left plot, click once over a taxa and the group is highlighted. Double-click to expand the group as seen on the right. Upper right corner provides a summary of the expanded group.")`
+
+### By Sample
+
+Since the Kraken classification was performed BEFORE assembly we can look at the Krona plots for each individual samples.
+
+<div class="row">
+  <div class="column">
+    <div class="krona" style="max-width:500px;">
+        <a href="../krona-files/ep-kraken.html" target="_blank">
+        <img src="/img/krona/ep-kraken.png" alt="HTML tutorial" style="width:90%">
+        <div class="container-krona">
+        <p>Eastern Pacific<br/><small>Kraken for each sample</small> </p>
+        </div>
+        </a>
+   </div>
+  </div>
+
+  <div class="column">
+    <div class="krona" style="max-width:500px;">
+        <a href="../krona-files/wa-kraken.html" target="_blank">
+        <img src="/img/krona/wa-kraken.png" alt="HTML tutorial" style="width:90%;">
+        <div class="container-krona">
+        <p>Western Atlantic<br/><small>Kraken for each sample</small> </p>
+        </div>
+        </a>
+  </div>
+  </div>
+</div>
+
+> CLick on an image to explore the diversity plots.
+
+Since these plots are web hosted, I decided to keep only the first 10 ranks from the classification files to make the files smaller*. To do this we can use the following command, which pulls out only the ranks we are interested in.
+
+```bash
+cut -f 1-10 WA_kaiju_mar.out.krona > WA_kaiju_mar-TRIM.out.krona
+```
+
+### By Ocean & Habitat
+
+If you prefer to look at all samples combined by habitat and ocean we got you covered there too. Each panel links to Krona plots for the two oceans. Within each there is a plot for mangrove and reef samples.
+
+<div class="row">
+  <div class="column">
+    <div class="krona" style="max-width:500px;">
+        <a href="../krona-files/ep-kraken-habitat.html" target="_blank">
+        <img src="/img/krona/ep-kraken-habitat.png" alt="HTML tutorial" style="width:90%">
+        <div class="container-krona">
+        <p>Eastern Pacific<br/><small>Kraken habitats combined</small> </p>
+        </div>
+        </a>
+   </div>
+  </div>
+
+  <div class="column">
+    <div class="krona" style="max-width:500px;">
+        <a href="../krona-files/wa-kraken-habitat.html" target="_blank">
+        <img src="/img/krona/wa-kraken-habitat.png" alt="HTML tutorial" style="width:90%;">
+        </a>
+        <div class="container-krona">
+        <p>Western Atlantic<br/><small>Kraken habitats combined</small> </p>
+        </div>
+        </a>
+  </div>
+  </div>
+</div>
+
+> CLick on an image to explore the diversity plots.
+
+To accomplish this we used `cat` to combine samples by habitat/ocean (e.g. all the WA reefs samples) and then used `ktImportText` to make a merged HTML file. Note if you add the `-c` flag it makes a single plot.
+
+```bash
+ktImportText  -o wa-kraken-habitat.html WAM.krona WAR.krona
+ktImportText -o ep-kraken-habitat.html EPM.krona EPR.krona
+```
+
+### Summary
+
+If we want to create a taxonomic summary table for the samples we can easily do that in anvio by accessing the `layer_additional_data` table from the  merged profile database.
+
+```bash
+anvi-export-table 06_MERGED/WA/PROFILE.db --table layer_additional_data -o wa-layer_additional_data.txt
+anvi-export-table 06_MERGED/EP/PROFILE.db --table layer_additional_data -o ep-layer_additional_data.txt
+```
+
+And then we simply parse out the class data and make a table.
+
+```{r class_table, echo=FALSE, include=FALSE}
+class <- read.table("files/kraken-class.txt", sep = "\t", header = TRUE)
+
+class_table <- datatable(class, rownames = FALSE, extensions = "Buttons",
+                      caption = htmltools::tags$caption(style =
+                                                          "caption-side: bottom;
+                                                        text-align: left;",
+                                                        "Number of reads by Class"),
+          options = list(
+            pageLength = 10,
+            dom = "Blfrtip",
+            lengthMenu = c(10, 25, 50),
+            buttons = c("csv", "copy"),
+            autoWidth = TRUE,
+            columnDefs = list(list(columns.width = '50px', targets = c(1, 2, 3, 4),
+              className = 'dt-left',
+              targets = 1),
+              list(className = 'dt-left', targets = c(1, 2, 3, 4)))))
+```
+
+
+```{r, message=FALSE, warning=FALSE, include=FALSE}
+htmlwidgets::saveWidget(class_table, file = "class_results.html", selfcontained = TRUE)
+```
+
+<iframe seamless src="../class_results.html" width="100%" height="575"></iframe>
+
+<br/>
+
+You can  download a text version of the table using the buttons or by clicking [here](../files/kraken-class.txt). A standalone and more user friendly HTML version is available [here](../class_results.html).
+
+## Mapping Results
+
+Lets go ahead and look at the mapping results. This took a little swindling but in the end this crude approach worked. First we needed all the `bowtie.log` files from the `00_LOGS` directory and grab the first line of each file, which has the total number of *individual reads that were paired* (after QC) in each sample.
+
+```bash
+head -1 *-bowtie.log > head.txt
+```
+
+Just like we did above, we needed to grab the `layer_additional_data` from the  merged profile databases. This table contains `total_reads_mapped`, `num_SNVs_reported`, and the taxonomic info from the short read Kraken annotations.
+
+```bash
+anvi-export-table 06_MERGED/WA/PROFILE.db --table layer_additional_data -o wa-layer_additional_data.txt
+anvi-export-table 06_MERGED/EP/PROFILE.db --table layer_additional_data -o ep-layer_additional_data.txt
+```
+What we want is a table with `sample`, `total_reads`, `total_reads_mapped`, and `num_SNVs_reported`. After a little fancy grep work in [BBEdit](https://www.barebones.com/products/bbedit/) (the free mode) we have a table the looks like this...
+
+```{r mapping_table, echo=FALSE, include=FALSE}
+mapping <- read.table("files/mapping-results.txt", sep = "\t", header = TRUE)
+
+mapping_table <- datatable(mapping, rownames = FALSE, extensions = "Buttons",
+                      caption = htmltools::tags$caption(style =
+                                                          "caption-side: bottom;
+                                                        text-align: left;",
+                                                        "Mapping results"),
+          options = list(
+            pageLength = 10,
+            dom = "Blfrtip",
+            lengthMenu = c(10, 25, 60),
+            buttons = c("csv", "copy"),
+            autoWidth = TRUE,
+            columnDefs = list(list(columns.width = '50px', targets = c(1, 2, 3),
+              className = 'dt-left',
+              targets = 1),
+              list(className = 'dt-left', targets = c(1, 2, 3)))))
+```
+
+
+```{r, message=FALSE, warning=FALSE, include=FALSE}
+htmlwidgets::saveWidget(mapping_table, file = "mapping_results.html", selfcontained = TRUE)
+```
+
+<iframe seamless src="../mapping_results.html" width="100%" height="575"></iframe>
+
+<br/>
+
+You can  download a text version of the table using the buttons or by clicking [here](../files/mapping-results.txt). A standalone and more user friendly HTML version is available [here](../mapping_results.html).
+
+
+## Contig Taxonomy
+
+Now we move on to the classification of contigs from each assembly. We can start with the Kaiju classification again using the Krona plots.
+
+### Comparing Databases
+
+Remember we classified the contigs against both the `nr` and `mar`  databases. Lets use the Krona plots to compare the results from these databases for both assemblies. Use the panels below to access the classifications for each assemby. In the upper left corner you will find a menu that allows you to switch between plots. There are two per assemby, one for each classification.
+
+<div class="row">
+  <div class="column">
+    <div class="krona" style="max-width:500px;">
+        <a href="../krona-files/ep-kaiju-compare.html" target="_blank">
+        <img src="/img/krona/ep-kaiju-compare.png" alt="HTML tutorial" style="width:90%">
+        <div class="container-krona">
+        <p>Eastern Pacific<br/><small>Kaiju classification</small> </p>
+        </div>
+        </a>
+   </div>
+  </div>
+
+  <div class="column">
+    <div class="krona" style="max-width:500px;">
+        <a href="../krona-files/wa-kaiju-compare.html" target="_blank">
+        <img src="/img/krona/wa-kaiju-compare.png" alt="HTML tutorial" style="width:90%;">
+        <div class="container-krona">
+        <p>Western Atlantic<br/><small>Kaiju classification</small> </p>
+        </div>
+        </a>
+  </div>
+  </div>
+</div>
+
+> CLick on an image to explore the diversity plots.
+
+We will get into much more of the annotation data later, including the various functional annotations. For now though we have a pretty good idea of the shape and nature of these datasets.

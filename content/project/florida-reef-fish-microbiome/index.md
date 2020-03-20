@@ -34,6 +34,8 @@ links:
   icon_pack: fas
   name: Publication
   url: https://projectdigest.github.io/publication.html
+- name: Authors
+  url: https://projectdigest.github.io/people.html
 publication: null
 slides:
 url_code: ""
@@ -66,6 +68,9 @@ In this study, we
 On this site you will find details on our reproducible bioinformatics workflow and how to access all data/data products. We also provide numerous data tables and figures including all tables, figures, and supplementary information from the original publiation.
 
 Use the `Cite` button above to access a BibTeX formatted bibliography for the references we used in this study.
+
+This study is a collaboration between [Jarrod](/authors/jarrod-j-scott/), [Thomas A Adam](https://orcid.org/0000-0001-6146-0260), [Alain Duran](https://orcid.org/0000-0002-7847-6426), [Deron E. Burkepile](https://orcid.org/0000-0002-0427-0484), and [Douglas D Rasher](https://orcid.org/0000-0002-0212-8070).
+
 
 <hr/>
 

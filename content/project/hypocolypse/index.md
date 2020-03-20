@@ -41,7 +41,7 @@ url_pdf: ""
 url_slides: ""
 url_video: ""
 
-weight: 1
+weight: 10
 ---
 
 Welcome. This page provides a link to the <em>external</em> website for our study on hypoxia-driven coral bleaching & microbial shifts in Caribbean Panama. Ocean deoxygenation poses a serious threat to marine ecosystems, but has only recently been identified as a critical, emerging stressor in tropical ecosystems. Despite the catastrophic implications, the effects of oxygen-loss on coral reefs and associated microbial communities remains poorly understood.

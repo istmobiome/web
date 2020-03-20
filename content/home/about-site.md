@@ -52,15 +52,15 @@ subtitle = "The purpose of this site is to make our science tranparent & reprodu
 
 This site was contructed to capture **bioinformatic workflows, raw data, data products**, and any other helpful information in our quest to understand marine microbes. To that end, we do our best to document every step of the process. We hope that what we lack in fun content we make up for with useful content.
 
-**A quick note about how to use the site**. Most of the site is pretty straightforward. Some presentations, obligatory bios, etc. However the bulk of the site is made up of the various [PROJECTS](#project) and this is worth a moment of explaination. Think of a PROJECT as a website within this website. Each PROJECT has a home page, which we call a *Portal*. On the Portal page you will find a brief project overview plus quick links to the PROJECT site, raw data, GitHub repo, code, etc.
+**A quick note about how to use the site**. Most of the site is pretty straightforward. Some presentations, obligatory bios, etc. However the bulk of the site is made up of the various [PROJECTS](#projects) and this is worth a moment of explaination. Think of a PROJECT as a website within this website. Each PROJECT has a home page where you will find a brief project overview plus quick links to the PROJECT workflow, raw data, GitHub repo, code, etc.
 
-Now, some PROJECT Portals link to sites outside istmobiome.rbind.io to github.io sites. Just so you know. This is an issue related to the difficulty of running R code on a Hugo website.
+Just so you know, some PROJECT home pages link to workflows outside of the istmobiome.rbind.io to  github.io sites. This is an issue related to the difficulty of running R code on a Hugo website.
 
 Keep your eye out for an <i class="fas fa-pencil-alt"> Edit this page</i> link on the bottom of most pages. You can edit these pages in GitHub and then submit a pull request so we can incorporate your suggestions.
 
-Finally, if you are a HYDRA user we have also embedded  scripts for every job we ran on the cluster.  Keep your eye out for the **Show/hide HYDRA script**. The scripts are always hidden. Click the arrow to see the script. Have fun!
+Finally, if you are a HYDRA user we have also embedded  scripts for every job we ran on the cluster.  Keep your eye out for the **Show/hide HYDRA script**. The scripts are always hidden because they are long. Click the arrow to see the script. Have fun!
 
-<details markdown="1"><summary>Show/hide HYDRA KAIJU job script</summary>
+<details markdown="1"><summary>Show/hide xxample HYDRA  job script</summary>
 <pre><code>
 # /bin/sh
 # ----------------Parameters---------------------- #
