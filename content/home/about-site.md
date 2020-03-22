@@ -6,7 +6,7 @@
 widget = "blank"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 30  # Order that this section will appear.
+weight = 200  # Order that this section will appear.
 
 title = "About <small>the</small> Site"
 subtitle = "The purpose of this site is to make our science tranparent & reproducible."
@@ -60,7 +60,7 @@ Keep your eye out for an <i class="fas fa-pencil-alt"> Edit this page</i> link o
 
 Finally, if you are a HYDRA user we have also embedded  scripts for every job we ran on the cluster.  Keep your eye out for the **Show/hide HYDRA script**. The scripts are always hidden because they are long. Click the arrow to see the script. Have fun!
 
-<details markdown="1"><summary>Show/hide xxample HYDRA  job script</summary>
+<details markdown="1"><summary>Show/hide example HYDRA  job script</summary>
 <pre><code>
 # /bin/sh
 # ----------------Parameters---------------------- #

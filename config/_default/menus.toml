@@ -17,24 +17,25 @@
 [[main]]
   name = "The Geminates"
   url = "#gallery"
-  weight = 40
+  weight = 30
 
 [[main]]
 #  identifier = "projects"
   name = "The Projects"
   url = "#projects"
-  weight = 50
-
-[[main]]
-#  identifier = "projects"
-  name = "The Site"
-  url = "#about-site"
-  weight = 30
+  weight = 40
 
 [[main]]
   name = "Talks"
   url = "#talks"
+  weight = 50
+
+[[main]]
+#  identifier = "projects"
+  name = "About"
+  url = "#about-site"
   weight = 60
+
 
 [[main]]
   name = "<i class=\"fas fa-envelope fa-lg\"></i>"
@@ -47,7 +48,7 @@
   identifier = "github"
   pre = "<i class=\"fab fa-github fa-lg\"></i>"
   url = "https://github.com/istmobiome/web"
-  weight = 80
+  weight = 280
 
 [[main]]
   parent = "More"
@@ -67,7 +68,6 @@
   url = "/projects/trans-water/intro/"
   weight = 1000
   pre = "<i class=\"fas fa-water \"></i>"
-
 
 
 # To setup a dropdown menu set "identifier " in "parent" and reference
