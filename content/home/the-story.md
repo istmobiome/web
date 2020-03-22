@@ -65,10 +65,8 @@ subtitle = "### A bridge on land, a barrier in the sea <br/> <br/>  <small>[Clic
 
   > <font size=4.5em>How did the close of the Isthmus affect the evolution of microorganisms, the structure of microbial communities, and the function of host-associated microbiomes?</font>
 
-{{% alert synopsis %}}
   <p><font size=4.5em>In this project, we make use of contrasting (a) <span class="callout">geographic regions</span>, (b) <span class="callout">benthic habitats</span>, (c) <span class="callout">environmental gradients</span>, and (d) <span class="callout">host biology</span>, to understand the evolutionary divergence of marine microbiomes in changing environments & their functional significance in different systems.
 
   We also look more generally at microbial communities from a variety of habitats and envrionments around Panama and beyond.
   </font></p>
-{{% /alert %}}
 </div>

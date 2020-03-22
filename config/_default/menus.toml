@@ -38,9 +38,9 @@
 
 [[main]]
   name = "<i class=\"fas fa-envelope fa-lg\"></i>"
-  url = "#contact"
+  url = "contact/"
   post = ""
-  weight = 70
+  weight = 270
 
 [[main]]
   name = " "
