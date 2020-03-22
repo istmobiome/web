@@ -60,7 +60,7 @@
   parent = "More"
   name = "Authors"
   pre = "<i class=\"fa fa-pen \"></i>"
-  url = "authors/jarrod-j-scott/"
+  url = "authors/"
   weight = 110
 
 [[main]]
