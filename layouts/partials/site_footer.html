@@ -14,14 +14,16 @@
   <p class="powered-by">
     {{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify}} {{ end }}
     <br/>
-    Powered by
-    <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i></a>,
-    <a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a>,
-     and a modified version of the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    Theme modified from
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic</a> for
     <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-    Hosted on <a href="https://www.netlify.com/" target="_blank" rel="noopener">netlify.</a>
-
+     Powered by
+    <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i></a> &
+    <a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a>.
+     Built & deployed by
+    <a href="https://www.netlify.com/" target="_blank" rel="noopener">netlify.</a>
+    Hosted by
+    <a href="https://support.rbind.io/about/" target="_blank" rel="noopener">Rbind.</a>
     {{ if not (in (slice "docs" "updates") .Type) }}
     <span class="float-right" aria-hidden="true">
       <a href="#" class="back-to-top">

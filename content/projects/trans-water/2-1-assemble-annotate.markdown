@@ -1,13 +1,13 @@
 ---
 title: Assembling & Annotating Metagenomes
-linktitle: Workflow
+linktitle: Assembly
 summary:
 date: 2019-12-07T16:44:26-05:00
 lastmod: 2019-12-07T16:44:26-05:00
 draft: false
 toc: true
 type: docs
-weight: 100
+weight: 40
 bibliography: [files/cite.bib]
 link-citations: true
 highlight: true
@@ -18,9 +18,9 @@ highlight: true
 # - weight: Position of link in menu.
 menu:
   trans-water:
-    parent: Processing
+    parent: processing
     name: Assembly & Annotations
-    weight: 100
+    weight: 10
 ---
 
 <br/>
@@ -98,7 +98,7 @@ module load bioinformatics/trimmomatic
 #
 # ----------------Your Commands------------------- #
 #
-echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
 echo + NSLOTS = $NSLOTS
 #
 # ----------------COMMANDS------------------- #
@@ -128,154 +128,11 @@ Remember, there are 4 fastq files *per* direction (forward or reverse) *per* sam
 Now lets visualize the anvi'o Snakemake workflow.
 
 
-```{r, setup, echo=FALSE}
-# For DAG
-library(DiagrammeR)
-# library(htmlwidgets)
-library(DiagrammeRsvg)
-library(rsvg)
-```
 
-```{r, workflow, echo = FALSE}
-dag <- grViz ("
-digraph boxes_and_circles {
-  graph [layout = dot, align=center]
 
-  node [shape = rectangle, style = 'rounded,filled' fontname=sans, fontsize=12, penwidth=4]
-  edge[penwidth=4, color=grey];
 
-0[label = 'metagenomics_workflow_target_rule', color = 'grey'];
-1[label = 'anvi_merge', color = '#CC79A7'];
-2[label = 'anvi_merge', color = '#CC79A7'];
-3[label = 'annotate_contigs_database', color = '#E69F00'];
-4[label = 'annotate_contigs_database', color = '#E69F00'];
-5[label = 'gen_qc_report', color = '#56B4E9'];
-6[label = 'anvi_cluster_contigs\ndriver: concoct', color = '#F0E442'];
-7[label = 'anvi_cluster_contigs\ndriver: concoct', color = '#F0E442'];
-8[label = 'anvi_gen_contigs_database', color = '#CC79A7'];
-9[label = 'anvi_profile', color = '#CC79A7'];
-10[label = 'anvi_profile', color = '#CC79A7'];
-11[label = 'import_percent_of_reads_mapped', color = '#009E73'];
-12[label = 'import_percent_of_reads_mapped', color = '#009E73'];
-13[label = 'import_krakenuniq_taxonomy', color = '#E69F00'];
-14[label = 'import_krakenuniq_taxonomy', color = '#E69F00'];
-15[label = 'anvi_gen_contigs_database', color = '#CC79A7'];
-16[label = 'anvi_profile', color = '#CC79A7'];
-17[label = 'anvi_profile', color = '#CC79A7'];
-18[label = 'import_percent_of_reads_mapped', color = '#009E73'];
-19[label = 'import_percent_of_reads_mapped', color = '#009E73'];
-20[label = 'import_krakenuniq_taxonomy', color = '#E69F00'];
-21[label = 'import_krakenuniq_taxonomy', color = '#E69F00'];
-22[label = 'anvi_import_taxonomy_for_genes', color = '#E69F00'];
-23[label = 'anvi_run_hmms', color = '#E69F00'];
-24[label = 'anvi_run_ncbi_cogs', color = '#E69F00'];
-25[label = 'anvi_run_scg_taxonomy', color = '#E69F00'];
-26[label = 'anvi_run_pfams', color = '#E69F00'];
-27[label = 'anvi_import_taxonomy_for_genes', color = '#E69F00'];
-28[label = 'anvi_run_hmms', color = '#E69F00'];
-29[label = 'anvi_run_ncbi_cogs', color = '#E69F00'];
-30[label = 'anvi_run_scg_taxonomy', color = '#E69F00'];
-31[label = 'anvi_run_pfams', color = '#E69F00'];
-32[label = 'iu_filter_quality_minoche\nsample: EPR_9A', color = '#56B4E9'];
-33[label = 'iu_filter_quality_minoche\nsample: EPR_11A', color = '#56B4E9'];
-34[label = 'iu_filter_quality_minoche\nsample: WAR_MAR', color = '#56B4E9'];
-35[label = 'iu_filter_quality_minoche\nsample: WAM_MYS', color = '#56B4E9'];
-36[label = 'anvi_script_reformat_fasta', color = '#56B4E9'];
-37[label = 'anvi_init_bam', color = '#009E73'];
-38[label = 'anvi_init_bam', color = '#009E73'];
-39[label = 'krakenuniq_mpa_report', color = '#E69F00'];
-40[label = 'krakenuniq_mpa_report', color = '#E69F00'];
-41[label = 'anvi_script_reformat_fasta', color = '#56B4E9'];
-42[label = 'anvi_init_bam', color = '#009E73'];
-43[label = 'anvi_init_bam', color = '#009E73'];
-44[label = 'krakenuniq_mpa_report', color = '#E69F00'];
-45[label = 'krakenuniq_mpa_report', color = '#E69F00'];
-46[label = 'centrifuge', color = '#E69F00'];
-47[label = 'centrifuge', color = '#E69F00'];
-48[label = 'iu_gen_configs', color = '#56B4E9'];
-49[label = 'anvi_script_reformat_fasta_prefix_only', color = '#56B4E9'];
-50[label = 'samtools_view', color = '#009E73'];
-51[label = 'samtools_view', color = '#009E73'];
-52[label = 'krakenuniq', color = '#E69F00'];
-53[label = 'krakenuniq', color = '#E69F00'];
-54[label = 'anvi_script_reformat_fasta_prefix_only', color = '#56B4E9'];
-55[label = 'samtools_view', color = '#009E73'];
-56[label = 'samtools_view', color = '#009E73'];
-57[label = 'krakenuniq', color = '#E69F00'];
-58[label = 'krakenuniq', color = '#E69F00'];
-59[label = 'export_gene_calls_for_centrifuge', color = '#E69F00'];
-60[label = 'export_gene_calls_for_centrifuge', color = '#E69F00'];
-61[label = 'megahit\ngroup: EP', color = '#56B4E9'];
-62[label = 'bowtie', color = '#009E73'];
-63[label = 'bowtie', color = '#009E73'];
-64[label = 'gzip_fastqs\nR: R1', color = '#56B4E9'];
-65[label = 'gzip_fastqs\nR: R2', color = '#56B4E9'];
-66[label = 'gzip_fastqs\nR: R1', color = '#56B4E9'];
-67[label = 'gzip_fastqs\nR: R2', color = '#56B4E9'];
-68[label = 'megahit\ngroup: WA', color = '#56B4E9'];
-69[label = 'bowtie', color = '#009E73'];
-70[label = 'bowtie', color = '#009E73'];
-71[label = 'gzip_fastqs\nR: R1', color = '#56B4E9'];
-72[label = 'gzip_fastqs\nR: R2', color = '#56B4E9'];
-73[label = 'gzip_fastqs\nR: R1', color = '#56B4E9'];
-74[label = 'gzip_fastqs\nR: R2', color = '#56B4E9'];
-75[label = 'bowtie_build', color = '#009E73'];
-76[label = 'bowtie_build', color = '#009E73'];
-77[label = 'virsorter', color = '#E69F00', style = 'dashed'];
-78[label = 'virsorter', color = '#E69F00', style = 'dashed'];
-79[label = 'kaiju', color = '#E69F00', style = 'dashed'];
-80[label = 'kaiju', color = '#E69F00', style = 'dashed'];
 
-1->0; 2->0; 3->0; 4->0; 5->0; 6->0; 7->0; 8->1; 9->1;
-10->1; 11->1; 12->1; 13->1; 14->1; 15->2; 16->2; 17->2;
-18->2; 19->2; 20->2; 21->2; 8->3; 22->3; 23->3; 24->3;
-25->3; 26->3; 15->4; 27->4; 28->4; 29->4; 30->4; 31->4;
-{32 33 34 35}->5;
-48->{32 33 34 35};
-32->{64 65};
-33->{66 67};
-{64 65 66 67}->61;
-{64 65}->52;
-{66 67}->53;
-34->{71 72};
-35->{73 74};
-{71 72 73 74}->68
-{71 72}->57;
-{73 74}->58;
-
-8->6; 1->6; 15->7; 2->7;
-36->8; 37->9; 8->9; 38->10; 8->10; 9->11; 10->12; 39->13;
-11->13; 9->13; 40->14; 12->14; 10->14; 41->15; 42->16; 15->16;
-43->17; 15->17; 16->18; 17->19; 44->20; 18->20; 16->20; 45->21;
-19->21; 17->21; 46->22; 8->22; 8->23; 8->24; 23->25; 8->25;
-8->26; 47->27; 15->27; 15->28; 15->29; 28->30; 15->30; 15->31;
-49->36; 50->37; 51->38; 52->39;
-53->40; 54->41; 55->42; 56->43; 57->44; 58->45; 59->46; 60->47;
-61->49; 62->50; 63->51; 68->54;
-69->55; 70->56; 8->59; 15->60;
-75->62; 64->62; 65->62; 75->63;
-66->63; 67->63; 76->69; 71->69; 72->69; 76->70; 73->70; 74->70;
-36->75; 41->76; 79->22; 80->27;
-15->77; 8->78; 77->4; 78->3; 59->79; 60->80;
-
-	graph [nodesep = 0.1]
-{ rank=same; 13, 14, 20, 21 }
-{ rank=same; 39, 40, 44, 45 }
-{ rank=same; 32, 33, 34, 35 }
-{ rank=same; 64, 65, 66, 67, 71, 72, 73, 74 }
-{ rank=same; 5, 49, 54 }
-
-}
-")
-
-export_svg(dag) %>%
-  charToRaw() %>%
-  rsvg() %>%
-  png::writePNG("../../../static/img/dag.png")
-
-```
-
-`r blogdown::shortcode("figure", src = "/img/dag.png", title = " Colors indicate broad divisions of workflow: sky blue, short-read prep & co-assembly; blueish green, short-read mapping to assembly; orange, taxonomic or functional classification; yellow, automatic binning; reddish purple, databases construction. ", lightbox = "true", alt = "Hum, looks like there is something wrong here.")`
+<!--html_preserve-->{{% figure src="/img/dag.png" title=" Colors indicate broad divisions of workflow: sky blue, short-read prep & co-assembly; blueish green, short-read mapping to assembly; orange, taxonomic or functional classification; yellow, automatic binning; reddish purple, databases construction. " lightbox="true" alt="Hum, looks like there is something wrong here." %}}<!--/html_preserve-->
 
 Directed acyclic graph (DAG) of the metagenomic workflow where edge connections represent dependencies and nodes represent commands. The workflow begins with raw data (trimmed of Illumina adapters) and continues up to and including automatic binning of contigs. At the end of this workflow we then proceed with manual binning and MAG generation. For simplicity, only two samples from the Eastern Pacific & two samples from the Western Atlantic are shown. We also added nodes for Virsorter and Kaiju annotations since these are not part of the workflow. You can  download an image of the workflow [here](../../../img/dag.png).
 
@@ -597,7 +454,7 @@ module load gcc/4.9.2
 #
 # ----------------Your Commands------------------- #
 #
-echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
 echo + NSLOTS = $NSLOTS
 #
 # ----------------CALLING ANVIO------------------- #
@@ -662,7 +519,7 @@ module load gcc/4.9.2
 #
 # ----------------Your Commands------------------- #
 #
-echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
 echo + NSLOTS = $NSLOTS
 #
 export PATH=/home/scottjj/miniconda3:$PATH
@@ -741,7 +598,7 @@ kaiju-addTaxonNames -t $K_FILES/marine_db/nodes.dmp -n $K_FILES/marine_db/names.
 #
 # ----------------Load Envs------------------- #
 #
-echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
 echo + NSLOTS = $NSLOTS
 #
 export PATH=/home/scottjj/miniconda3:$PATH
@@ -854,7 +711,7 @@ anvi-import-taxonomy-for-genes -c 03_CONTIGS/WA-contigs.db -p kaiju -i $KAIJU/WA
 #
 # ----------------Load Envs------------------- #
 #
-echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
 echo + NSLOTS = $NSLOTS
 #
 export PATH=/home/scottjj/miniconda3:$PATH
@@ -982,7 +839,7 @@ Now we have a Krona plot page for the EP samples (`EP-kraken.html`) and the WA s
 #
 # ----------------Load Envs------------------- #
 #
-echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
 echo + NSLOTS = $NSLOTS
 #
 # ----------------Activate Kraken -------------- #
@@ -1001,10 +858,10 @@ KRA_to_KRON='/home/scottjj/miniconda3/envs/metawrap-env/bin/metawrap-scripts/'
 #
 for sample in `cat list.txt`
 do
-    krakenuniq --report-file $KRAKEN/$sample-REPORT.tsv 01_QC/$sample-QUALITY_PASSED_R1.fastq.gz 01_QC/$sample-QUALITY_PASSED_R2.fastq.gz --db $K_FILES/DB/ --threads 2 --preload  --fastq-input --gzip-compressed --paired --output $KRAKEN/$sample-kraken.out
-    krakenuniq-report --db $K_FILES/DB/ $KRAKEN/$sample-kraken.out > $KRAKEN/$sample-kraken_report.txt
-    krakenuniq-mpa-report --header-line --db $K_FILES/DB/ $KRAKEN/$sample-kraken.out > $KRAKEN/$sample-kraken_mpa_report.txt
-    krakenuniq-translate --db $K_FILES/DB/ $KRAKEN/$sample-kraken.out > $KRAKEN/$sample-kraken.trans
+    krakenuniq --report-file `\(KRAKEN/\)`sample-REPORT.tsv 01_QC/$sample-QUALITY_PASSED_R1.fastq.gz 01_QC/$sample-QUALITY_PASSED_R2.fastq.gz --db $K_FILES/DB/ --threads 2 --preload  --fastq-input --gzip-compressed --paired --output `\(KRAKEN/\)`sample-kraken.out
+    krakenuniq-report --db $K_FILES/DB/ `\(KRAKEN/\)`sample-kraken.out > `\(KRAKEN/\)`sample-kraken_report.txt
+    krakenuniq-mpa-report --header-line --db $K_FILES/DB/ `\(KRAKEN/\)`sample-kraken.out > `\(KRAKEN/\)`sample-kraken_mpa_report.txt
+    krakenuniq-translate --db $K_FILES/DB/ `\(KRAKEN/\)`sample-kraken.out > `\(KRAKEN/\)`sample-kraken.trans
 done
 #
 source deactivate
@@ -1015,7 +872,7 @@ source activate metawrap-env
 #
 for sample in `cat list.txt`
 do
-    $KRA_to_KRON/kraken_to_krona.py $KRAKEN/$sample-kraken.trans > $KRAKEN/$sample-kraken.krona
+    $KRA_to_KRON/kraken_to_krona.py `\(KRAKEN/\)`sample-kraken.trans > `\(KRAKEN/\)`sample-kraken.krona
 done
 source deactivate
 # ----------------MAKE KRONA PLOTS------------------- #
@@ -1024,7 +881,7 @@ source activate krona_env
 #
 for sample in `cat list.txt`
 do
-    ktImportText -o $KRAKEN/$sample-kraken.html $KRAKEN/$sample-kraken.krona
+    ktImportText -o `\(KRAKEN/\)`sample-kraken.html `\(KRAKEN/\)`sample-kraken.krona
 done
 #
 ktImportText -o $KRAKEN/EP-kraken.html $KRAKEN/EPM_12A1-kraken.krona $KRAKEN/EPM_12A2-kraken.krona $KRAKEN/EPM_12A3-kraken.krona $KRAKEN/EPM_12A4-kraken.krona $KRAKEN/EPM_13A1-kraken.krona $KRAKEN/EPM_13A2-kraken.krona $KRAKEN/EPM_13A3-kraken.krona $KRAKEN/EPM_13A4-kraken.krona $KRAKEN/EPM_14A1-kraken.krona $KRAKEN/EPM_14A2-kraken.krona $KRAKEN/EPM_14A3-kraken.krona $KRAKEN/EPM_14A4-kraken.krona $KRAKEN/EPR_10A-kraken.krona $KRAKEN/EPR_10B-kraken.krona $KRAKEN/EPR_11A-kraken.krona $KRAKEN/EPR_11B-kraken.krona $KRAKEN/EPR_11C-kraken.krona $KRAKEN/EPR_13B-kraken.krona $KRAKEN/EPR_13C-kraken.krona $KRAKEN/EPR_14B-kraken.krona $KRAKEN/EPR_14C-kraken.krona $KRAKEN/EPR_14E-kraken.krona $KRAKEN/EPR_15A-kraken.krona $KRAKEN/EPR_15B-kraken.krona $KRAKEN/EPR_8A-kraken.krona $KRAKEN/EPR_8B-kraken.krona $KRAKEN/EPR_9A-kraken.krona $KRAKEN/EPR_9B-kraken.krona
@@ -1070,7 +927,7 @@ module load gcc/4.9.2
 #
 # ----------------Your Commands------------------- #
 #
-echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
 echo + NSLOTS = $NSLOTS
 #
 # ----------------Activate Anvio -------------- #
@@ -1137,7 +994,7 @@ module load gcc/4.9.2
 #
 # ----------------Your Commands------------------- #
 #
-echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
 echo + NSLOTS = $NSLOTS
 #
 # ----------------Activate Anvio -------------- #
@@ -1204,7 +1061,7 @@ module load gcc/4.9.2
 #
 # ----------------Your Commands------------------- #
 #
-echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
 echo + NSLOTS = $NSLOTS
 #
 # ----------------Activate Anvio -------------- #
@@ -1320,7 +1177,7 @@ module load gcc/4.9.2
 #
 # ----------------Your Commands------------------- #
 #
-echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
 echo + NSLOTS = $NSLOTS
 #
 # ----------------Activate Anvio -------------- #
@@ -1421,7 +1278,7 @@ module load gcc/4.9.2
 #
 # ----------------Your Commands------------------- #
 #
-echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
 echo + NSLOTS = $NSLOTS
 #
 # ----------------Activate Anvio -------------- #
@@ -1527,7 +1384,7 @@ module load gcc/4.9.2
 #
 # ----------------Your Commands------------------- #
 #
-echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
 echo + NSLOTS = $NSLOTS
 #
 # ----------------Activate Anvio -------------- #

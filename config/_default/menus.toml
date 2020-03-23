@@ -1,10 +1,11 @@
-# Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
+##########################
+# NavBar Links
+##########################
 
 [[main]]
-  name = " Home"
   url = "#slider"
   weight = 10
   pre = "<i class=\"fas fa-home fa-lg\"></i>"
@@ -26,29 +27,27 @@
   weight = 40
 
 [[main]]
+  name = "Pubs"
+#  pre = "<i class=\"fa fa-users \"></i>"
+  url = "#publications"
+  weight = 50
+
+[[main]]
   name = "Talks"
   url = "#talks"
-  weight = 50
+  weight = 60
 
 [[main]]
 #  identifier = "projects"
   name = "About"
   url = "#about-site"
-  weight = 60
-
-
-[[main]]
-  name = "<i class=\"fas fa-envelope fa-lg\"></i>"
-  url = "contact/"
-  post = ""
-  weight = 270
+  weight = 80
 
 [[main]]
-  name = " "
-  identifier = "github"
-  pre = "<i class=\"fab fa-github fa-lg\"></i>"
-  url = "https://github.com/istmobiome/web"
-  weight = 280
+  name = "People"
+#  pre = "<i class=\"fa fa-users \"></i>"
+  url = "#people"
+  weight = 90
 
 [[main]]
   parent = "More"
@@ -56,19 +55,67 @@
   url = "workshops/"
   weight = 100
 
-[[main]]
-  parent = "More"
-  name = "Authors"
-  pre = "<i class=\"fa fa-pen \"></i>"
-  url = "authors/"
-  weight = 110
-
-[[main]]
+[[main_right]]
   name = " "
-  url = "/projects/trans-water/intro/"
+  url = "/projects/trans-water/"
   weight = 1000
   pre = "<i class=\"fas fa-water \"></i>"
 
+[[main_right]]
+  name = "<i class=\"fas fa-envelope fa-lg\"></i>"
+  url = "contact/"
+  post = ""
+  weight = 270
+
+[[main_right]]
+  name = " "
+  identifier = "github"
+  pre = "<i class=\"fab fa-github fa-lg\"></i>"
+  url = "https://github.com/istmobiome/web"
+  weight = 280
+
+##########################
+# TRANS_WATER MENU
+##########################
+
+[[trans-water]]
+  name = "Project Home Page"
+  weight = 10
+  url = "/project/trans-water/"
+
+[[trans-water]]
+  name = "Introduction"
+  weight = 20
+  identifier = "intro"
+  url = "/projects/trans-water/"
+
+[[trans-water]]
+  name = "WORKFLOW"
+  weight = 25
+  identifier = "workflow"
+
+[[trans-water]]
+  name = "Environement Setup"
+  weight = 30
+  identifier = "setup"
+
+[[trans-water]]
+  name = "Read Processing"
+  weight = 40
+  identifier = "processing"
+
+[[trans-water]]
+  name = "Binning MAGs"
+  weight = 50
+  identifier = "binning_a"
+
+
+#[[main]]
+#  parent = "More"
+#  name = "Authors"
+#  pre = "<i class=\"fa fa-pen \"></i>"
+#  url = "authors/"
+#  weight = 110
 
 # To setup a dropdown menu set "identifier " in "parent" and reference
 # parent in child

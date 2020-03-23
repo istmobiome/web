@@ -7,7 +7,10 @@ lastmod: 2019-12-07T16:44:26-05:00
 draft: false
 toc: true
 type: docs
-weight: 60
+weight: 30
+
+
+
 # Add menu entry to sidebar.
 # - Substitute `example` with the name of your course/documentation folder.
 # - name: Declare this menu item as a parent with ID `name`.
@@ -15,9 +18,10 @@ weight: 60
 # - weight: Position of link in menu.
 menu:
   trans-water:
-    parent: Environement Setup
+    parent: setup
     name: Databases
-    weight: 60
+    weight: 20
+
 ---
 
 
@@ -90,7 +94,7 @@ The `mar` database is 19GB and the `nr_euk` is 90GB.
 #$ -o makeDB_e2_2.log
 # ----------------Your Commands------------------- #
 #
-echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
 echo + NSLOTS = $NSLOTS
 #
 # ----------------THIS Activate the conda anvio support, not anvio -------------- #
@@ -159,7 +163,7 @@ module load bioinformatics/blast
 #
 # ----------------Load Envs------------------- #
 #
-echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + `date` job $JOB_NAME started in `\(QUEUE with jobID=\)`JOB_ID on $HOSTNAME
 echo + NSLOTS = $NSLOTS
 #
 # ----------------Activate Kraken-------------- #

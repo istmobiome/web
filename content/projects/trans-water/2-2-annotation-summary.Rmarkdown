@@ -1,15 +1,16 @@
 ---
 title: Assembley & Annotation Summary
-linktitle: Workflow
+linktitle: Assembly Summary
 summary:
 date: 2019-12-07T16:44:26-05:00
 lastmod: 2019-12-07T16:44:26-05:00
 draft: false
 toc: true
 type: docs
-weight: 110
+weight: 50
 bibliography: [files/cite.bib]
 link-citations: true
+
 # Add menu entry to sidebar.
 # - Substitute `example` with the name of your course/documentation folder.
 # - name: Declare this menu item as a parent with ID `name`.
@@ -17,10 +18,10 @@ link-citations: true
 # - weight: Position of link in menu.
 menu:
   trans-water:
-    parent: Processing
-    name: Data Summary
-    weight: 110
-exclude_jquery: true
+    parent: processing
+    name: Assembly Summary
+    weight: 20
+#exclude_jquery: true
 ---
 
 ```{r setup, include=FALSE}

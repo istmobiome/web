@@ -3,23 +3,14 @@
 # This section displays people from `content/authors/` which belong to the `user_groups` below.
 
 widget = "people"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = true  # This file represents a page section.
+headless = false  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 100  # Order that this section will appear.
+weight = 1  # Order that this section will appear.
 
-title = "Meet the Istmobiome Team"
-subtitle = ""
-
-[content]
-  # Choose which groups/teams of users to display.
-  #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
-  user_groups = ["Principal Investigators",
-                 "Researchers",
-                 "Grad Students",
-                 "Administration",
-                 "Visitors",
-                 "Alumni"]
-
+title = "People Page"
+subtitle = "Meet the people that are part of the Istmobiome Project. "
+[header]
+  image = "banner_trim.jpg"
 [design]
   # Show user's social networking links? (true/false)
   show_social = true

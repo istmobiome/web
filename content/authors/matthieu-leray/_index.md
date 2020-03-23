@@ -22,13 +22,13 @@ bio: Drivers, functions, and evolution of marine biodiversity.
 
 interests:
 - Biodiversity
-- symbiosis
-- shrimp
-- trophic ecology
-- microbes
-- coral reefs
-- tropical fish
-- mangroves
+- Symbiosis
+- Shrimp
+- Trophic ecology
+- Microbes
+- Coral reefs
+- Tropical fish
+- Mangroves
 
 education:
   courses:
@@ -49,9 +49,6 @@ social:
 - icon: envelope
   icon_pack: fas
   link: contact/
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/Matt_Leray
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 - icon: cv
@@ -60,13 +57,19 @@ social:
 - icon: globe
   icon_pack: fa
   link: https://www.matthieuleray.website/
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?hl=en&user=DfhawycAAAAJ
+- icon: twitter
+  icon_pack: fab
+  link: https://twitter.com/Matt_Leray
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-#user_groups:
-#- Researchers
+user_groups:
+- Researchers
 #- Visitors
 ---
